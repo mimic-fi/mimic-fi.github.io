@@ -12,6 +12,7 @@ import {
   MenuList,
   MenuItem,
   SimpleGrid,
+  Icon
 } from "@chakra-ui/react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -235,8 +236,7 @@ the deposited asset. "
           className={styles.image}
           position="absolute"
           w="full"
-          // px="20%"
-          px={{ base: "5%", md: "20%" }}
+          px={{ base: "10%", md: "20%" }}
           justify="center"
           direction={{ base: "column", sm: "row", md: "row" }}
         >
@@ -312,8 +312,17 @@ const BoxFeature = ({ number, title, description }) => {
       borderBottom={border}
       borderRight={border}
     >
-      <Flex bg="#1F122B" maxW="40px" color="white" fontSize="0.9rem" px="1">
-        ↘️ <Text ml="1">{number}</Text>
+      <Flex align="center" bg="#1F122B" maxW="55px" color="white" fontSize="0.9rem" px="1">
+ 
+            <Icon fontSize="0.5rem" viewBox='200 200 200 200' color='white'>
+
+  <path
+  fill='currentColor'
+	d="M481,157.6L368.5,270.1L129.4,31L31,129.4l239.1,239.1L157.6,481H481V157.6z"
+
+     />
+</Icon>
+        <Text ml="1">{number}</Text>
       </Flex>
       <Text
         color="#C172FF"
