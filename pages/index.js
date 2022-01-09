@@ -12,7 +12,7 @@ import {
   MenuList,
   MenuItem,
   SimpleGrid,
-  Icon
+  Icon,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -288,7 +288,13 @@ the deposited asset. "
           the blockchain. We are starting a new era, a next-gen management layer
           for yield strategies in the DeFi world.
         </Text>
-        <Button variant="solid" size="lg" rounded="0" mb="12">
+        <Button
+          variant="solid"
+          size="lg"
+          rounded="0"
+          mb="12"
+          onClick={() => redirectPortfolio()}
+        >
           Create new portfolio
         </Button>
       </Flex>
@@ -312,16 +318,20 @@ const BoxFeature = ({ number, title, description }) => {
       borderBottom={border}
       borderRight={border}
     >
-      <Flex align="center" bg="#1F122B" maxW="55px" color="white" fontSize="0.9rem" px="1">
- 
-            <Icon fontSize="0.5rem" viewBox='200 200 200 200' color='white'>
-
-  <path
-  fill='currentColor'
-	d="M481,157.6L368.5,270.1L129.4,31L31,129.4l239.1,239.1L157.6,481H481V157.6z"
-
-     />
-</Icon>
+      <Flex
+        align="center"
+        bg="#1F122B"
+        maxW="55px"
+        color="white"
+        fontSize="0.9rem"
+        px="1"
+      >
+        <Icon fontSize="0.5rem" viewBox="200 200 200 200" color="white">
+          <path
+            fill="currentColor"
+            d="M481,157.6L368.5,270.1L129.4,31L31,129.4l239.1,239.1L157.6,481H481V157.6z"
+          />
+        </Icon>
         <Text ml="1">{number}</Text>
       </Flex>
       <Text
