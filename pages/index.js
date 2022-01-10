@@ -300,7 +300,7 @@ the deposited asset. "
       </Flex>
       <Flex py="12" px={{ base: "6", md: "24" }} justify="flex-end">
         <Text color="gray.500" fontWeight="500" textAlign="right">
-          2022 MIMIC. ALL RIGHTS RESERVED
+          2022 MIMIC. ALL RIGHTS RESERVED.
         </Text>
       </Flex>
     </>
@@ -324,14 +324,15 @@ const BoxFeature = ({ number, title, description }) => {
         maxW="55px"
         color="white"
         fontSize="0.9rem"
-        px="1"
+        px="0"
       >
-        <Icon fontSize="0.5rem" viewBox="200 200 200 200" color="white">
-          <path
-            fill="currentColor"
-            d="M481,157.6L368.5,270.1L129.4,31L31,129.4l239.1,239.1L157.6,481H481V157.6z"
-          />
-        </Icon>
+         <Image
+        src="/arrow.png"
+        alt="arrow"
+        objectFit="contain"
+        width={25}
+        height={15}
+      />
         <Text ml="1">{number}</Text>
       </Flex>
       <Text
