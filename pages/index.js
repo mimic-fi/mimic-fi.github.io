@@ -63,9 +63,9 @@ export default function Home() {
             variant="flushed"
             id="address"
             name="address"
-            placeholder={`Portfolio Address ${
+            placeholder={`Add Portfolio Address ${
               network === "ethereum" ? "/ ENS" : ""
-            }`}
+            } or your wallet`}
             size="lg"
             _placeholder={{ color: "white" }}
           />
@@ -77,7 +77,7 @@ export default function Home() {
             rounded="0"
             mt="6"
           >
-            Manage / Create Porfolio
+            Manage
           </Button>
         </Flex>
       </form>
