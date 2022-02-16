@@ -63,9 +63,9 @@ export default function Home() {
             variant="flushed"
             id="address"
             name="address"
-            placeholder={`Add Portfolio Address ${
-              network === "ethereum" ? "/ ENS" : ""
-            } or your wallet`}
+            placeholder={`Add Portfolio Address${
+              network === "ethereum" ? " / ENS" : ""
+            } or Your Wallet`}
             size="lg"
             _placeholder={{ color: "white" }}
           />
@@ -77,7 +77,7 @@ export default function Home() {
             rounded="0"
             mt="6"
           >
-            Manage
+            Manage with mimic
           </Button>
         </Flex>
       </form>
@@ -116,7 +116,7 @@ export default function Home() {
                       <MenuItem onClick={() => changeNetwork("polygon")}>
                         <Polygon />
                       </MenuItem>
-                      <MenuItem onClick={() => changeNetwork("ethereum")}>
+                      <MenuItem>
                         <Ethereum />
                       </MenuItem>
                     </MenuList>
@@ -147,7 +147,7 @@ export default function Home() {
               <span color="#1F122B" className={styles.mainTitle__black}>
                 DeFi Portfolios
               </span>
-              with mimic - yield aggragator in one simple protocol
+              with mimic - yield aggregator in one simple protocol
             </Box>
           </Flex>
           <CallToAction />
