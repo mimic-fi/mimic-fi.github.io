@@ -141,13 +141,18 @@ export default function Home() {
           pb="250px"
           pt={{ base: "200px", lg: "70px" }}
         >
-          <Flex align="center" w="full" flexWrap="wrap">
+          <Flex align="center" w="full" flexWrap="wrap" justify="center" >
             <Box className={styles.mainTitle}>
-              Manage many
+              Managing 3rd-party
               <span color="#1F122B" className={styles.mainTitle__black}>
-                DeFi Portfolios
+                treasures
               </span>
-              with mimic - yield aggregator in one simple protocol
+            </Box>
+          </Flex>
+          <Flex align="center" w="full" flexWrap="wrap" justify="center" >
+          <Box className={styles.mainTitle}>
+              made simple and 
+              <span color="#1F122B" className={styles.mainTitle__black}>secure</span>
             </Box>
           </Flex>
           <CallToAction />
@@ -184,8 +189,14 @@ export default function Home() {
           pt={{ base: "220px", sm: "0px", md: "0px", lg: 0 }}
           pb="10"
           fontSize="2rem"
+          align="center"
         >
-          Everything you need to be a profitable portfolio manager in one app
+          Mimic is your one-stop DeFi platform to manage treasures of:
+          <Flex justify="space-around" w="full" flexWrap={"wrap"} pt="12" pb="12">
+            <Text px="4" align="center" fontWeight={"black"}>DAOs</Text>
+            <Text px="4" align="center" fontWeight={"black"}>Institutional clients</Text>
+            <Text px="4" align="center" fontWeight={"black"}>Friends & family</Text>
+          </Flex>
         </Text>
         <SimpleGrid columns={{ sm: 2, md: 3 }} borderTop="1px solid #bbbbbb">
           <BoxFeature
@@ -280,11 +291,11 @@ the deposited asset. "
           textAlign="center"
         >
           WITH MIMIC, THE MANAGER IS ONLY RESPONSIBLE FOR THE YIELD STRATEGY.
-          THE CLIENT IS ALWAYS IN CONTROL.
+          THE TREASURY OWNER IS ALWAYS IN CONTROL.
         </Heading>
         <Text py="12" fontSize="1.5rem" color="white" textAlign="center">
           Withdraw options are always available. We developed an agreement
-          between the manager and the client to enable trust-less relation on
+          between the manager and the treasury owner to enable trust-less relation on
           the blockchain. We are starting a new era, a next-gen management layer
           for yield strategies in the DeFi world.
         </Text>
