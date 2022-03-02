@@ -141,12 +141,16 @@ export default function Home() {
           pb="250px"
           pt={{ base: "200px", lg: "70px" }}
         >
-          <Flex align="center" w="full" flexWrap="wrap">
+          <Flex align="center" w="full" flexWrap="wrap" justify="center" >
             <Box className={styles.mainTitle}>
               Managing 3rd-party
               <span color="#1F122B" className={styles.mainTitle__black}>
                 treasures
               </span>
+            </Box>
+          </Flex>
+          <Flex align="center" w="full" flexWrap="wrap" justify="center" >
+          <Box className={styles.mainTitle}>
               made simple and 
               <span color="#1F122B" className={styles.mainTitle__black}>secure</span>
             </Box>
@@ -185,11 +189,14 @@ export default function Home() {
           pt={{ base: "220px", sm: "0px", md: "0px", lg: 0 }}
           pb="10"
           fontSize="2rem"
+          align="center"
         >
           Mimic is your one-stop DeFi platform to manage treasures of:
-           <li><b>DAOs</b></li>
-           <li> <b>Institutional clients</b></li>
-           <li> <b>Friends & family</b> </li>
+          <Flex justify="space-around" w="full" flexWrap={"wrap"} pt="12" pb="12">
+            <Text px="4" align="center" fontWeight={"black"}>DAOs</Text>
+            <Text px="4" align="center" fontWeight={"black"}>Institutional clients</Text>
+            <Text px="4" align="center" fontWeight={"black"}>Friends & family</Text>
+          </Flex>
         </Text>
         <SimpleGrid columns={{ sm: 2, md: 3 }} borderTop="1px solid #bbbbbb">
           <BoxFeature
