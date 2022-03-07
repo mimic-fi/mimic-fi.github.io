@@ -199,6 +199,8 @@ export default function Home() {
             <Text px="4" align="center" fontWeight={"black"}>Friends & family</Text>
           </Flex>
         </Text>
+      </Flex>
+<Flex pb="24">
         <SimpleGrid columns={{ sm: 2, md: 3 }} borderTop="1px solid #bbbbbb">
           <BoxFeature
             number="01"
