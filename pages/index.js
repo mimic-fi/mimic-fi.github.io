@@ -13,6 +13,7 @@ import {
   MenuItem,
   SimpleGrid,
   Icon,
+  Badge,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -387,7 +388,8 @@ const Ethereum = () => {
         width={30}
         height={30}
       />
-      <Text pl="4">Ethereum</Text>
+      <Text pl="4">Ethereum </Text>
+      <Badge ml="4" colorScheme="purple"> SOON</Badge>
     </Flex>
   );
 };
