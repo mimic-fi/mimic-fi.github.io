@@ -183,22 +183,21 @@ export default function Home() {
           />
         </Flex>
       </Flex>
-      <Text
+      <Flex pb="24" direction="column">
+        <Text
           px="16"
-          pt={{ base: "220px", sm: "0px", md: "10", lg: 10 }}
-          pb="0"
+          pt={{ base: "220px", sm: "0px", md: "20", lg: 20 }}
+          pb="24"
           fontSize="2rem"
           align="center"
         >
           Mimic is your one-stop DeFi platform to manage treasures of:
-          <Flex justify="space-around" w="full" flexWrap={"wrap"} pt="12" pb="12">
+          <Flex justify="space-around" w="full" flexWrap={"wrap"}>
             <Text px="4" align="center" fontWeight={"black"}>DAOs</Text>
             <Text px="4" align="center" fontWeight={"black"}>Institutional clients</Text>
             <Text px="4" align="center" fontWeight={"black"}>Friends & family</Text>
           </Flex>
         </Text>
-      <Flex pb="24" direction="column">
-   
         <SimpleGrid columns={{ sm: 2, md: 3 }} borderTop="1px solid #bbbbbb">
           <BoxFeature
             number="01"
