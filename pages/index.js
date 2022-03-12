@@ -146,7 +146,7 @@ export default function Home() {
             <Box className={styles.mainTitle}>
               Managing 3rd-party
               <span color="#1F122B" className={styles.mainTitle__black}>
-                treasures
+                treasuries
               </span>
             </Box>
           </Flex>
