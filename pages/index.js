@@ -144,16 +144,16 @@ export default function Home() {
         >
           <Flex align="center" w="full" flexWrap="wrap" justify="center" >
             <Box className={styles.mainTitle}>
-              Managing 3rd-party
+              
               <span color="#1F122B" className={styles.mainTitle__black}>
-                treasuries
+              Trustless
               </span>
+              Treasury
             </Box>
           </Flex>
           <Flex align="center" w="full" flexWrap="wrap" justify="center" >
           <Box className={styles.mainTitle}>
-              made simple and 
-              <span color="#1F122B" className={styles.mainTitle__black}>secure</span>
+          Management
             </Box>
           </Flex>
           <CallToAction />
@@ -192,54 +192,44 @@ export default function Home() {
           fontSize="2rem"
           align="center"
         >
-          Mimic is your one-stop DeFi platform to manage treasures of:
-          <Flex justify="space-around" w="full" flexWrap={"wrap"}>
-            <Text px="4" align="center" fontWeight={"black"}>DAOs</Text>
-            <Text px="4" align="center" fontWeight={"black"}>Institutional clients</Text>
-            <Text px="4" align="center" fontWeight={"black"}>Friends & family</Text>
-          </Flex>
+           <b px="4" align="center" fontWeight={"black"}> Mimic</b> offers efficient tooling to allocate <b px="4" align="center" fontWeight={"black"}>DAOs treasury assets</b> on several  <b px="4" align="center" fontWeight={"black"}>DeFi strategies</b> while maintaining ownership and saving time & money. 
+
         </Text>
       </Flex>
 <Flex pb="24">
         <SimpleGrid columns={{ sm: 2, md: 3 }} borderTop="1px solid #bbbbbb">
           <BoxFeature
             number="01"
-            title="PORTFOLIO MANAGEMENT:"
-            description="Manage
-many DeFi portfolios with ease and dedicated tools. "
+            title="TRANSPARENT"
+            description="All managers' activity is open, auditable and verifiable by anyone. "
           />
           <BoxFeature
             number="02"
-            title="CUSTOM AGREEMENTS:"
-            description="You set custom deals and fees for each client. "
+            title="TRUSTLESS:"
+            description="Custom agreement terms help limit manager activity. DAO retains the ability to delegate/revoke management permissions.
+            "
           />
           <BoxFeature
             number="03"
-            title="DEFI STRATEGIES:"
-            description="Follow unique strategies
-designed to maximize the yield of
-the deposited asset. "
+            title="NON CUSTODIAL:"
+            description="Managers never have ownership of treasury funds, they cannot withdraw or move them to external addresses.
+            "
           />
           <BoxFeature
             number="04"
-            title="SIMPLE ENOUGH FOR
-            ANYONE:"
-            description="You can work with clients
-            without access to web3"
+            title="ON-CHAIN ACCOUNTING:"
+            description="Managers can do in-DAO accounting for investments, gains and performance fees. No off-chain trust needed.
+            "
           />
           <BoxFeature
             number="05"
-            title="RISK MANAGEMENT:"
-            description="The 'Risk' definition it is not the
-            same for all clients"
+            title="STRONG PRIMITIVES:"
+            description="Strategies can adapt to earn yield from any DeFi instruments while agreements to limit managers actions according to DAOs requirements."
           />
           <BoxFeature
             number="06"
-            title="NON-CUSTODIAL PLATFORM:"
-            description="Your clients have full
-            ownership of their funds at all
-            times. Onlv owners of the
-            assets can touch them"
+            title="POWERFUL ANALYTICS:"
+            description="Easily get insights into DAOs holdings, investments, fees and where yield is coming from."
           />
         </SimpleGrid>
       </Flex>
@@ -293,13 +283,12 @@ the deposited asset. "
           fontSize={{ base: "2rem", md: "3rem" }}
           textAlign="center"
         >
-          WITH MIMIC, THE MANAGER IS ONLY RESPONSIBLE FOR THE YIELD STRATEGY.
-          THE TREASURY OWNER IS ALWAYS IN CONTROL.
+          WITH MIMIC, THE MANAGER IS ONLY RESPONSIBLE FOR ALLOCATING THE TREASURY ASSETS WHILE THE DAO IS ALWAYS IN CONTROL.
         </Heading>
         <Text py="12" fontSize="1.5rem" color="white" textAlign="center">
           Withdraw options are always available. We developed an agreement
-          between the manager and the treasury owner to enable trust-less relation on
-          the blockchain. We are starting a new era, a next-gen management layer
+          between the manager and the DAO to enable trustless relation on
+          the blockchain. We are starting a new era, a next-gen DAO treasury management layer
           for yield strategies in the DeFi world.
         </Text>
         <Button
