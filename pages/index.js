@@ -310,7 +310,13 @@ export default function Home() {
           Create new portfolio
         </Button>
       </Flex>
-      <Flex py="12" px={{ base: "6", md: "24" }} justify="flex-end">
+      <Flex py="12" px={{ base: "6", md: "24" }} justify="flex-end" align="center">
+      <Link
+              px="6"
+              href="/terms"
+            >
+              TERMS
+            </Link>
         <Text color="gray.500" fontWeight="500" textAlign="right">
           2022 MIMIC. ALL RIGHTS RESERVED.
         </Text>
