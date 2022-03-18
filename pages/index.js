@@ -142,19 +142,16 @@ export default function Home() {
           pb="250px"
           pt={{ base: "200px", lg: "70px" }}
         >
-          <Flex align="center" w="full" flexWrap="wrap" justify="center" >
+          <Flex align="center" w="full" flexWrap="wrap" justify="center">
             <Box className={styles.mainTitle}>
-              
               <span color="#1F122B" className={styles.mainTitle__black}>
-              Trustless
+                Trustless
               </span>
-              Treasury
+              Treasury Management
             </Box>
           </Flex>
-          <Flex align="center" w="full" flexWrap="wrap" justify="center" >
-          <Box className={styles.mainTitle}>
-          Management
-            </Box>
+          <Flex align="center" w="full" flexWrap="wrap" justify="center">
+            <Box className={styles.subTitle}>made simple & secure</Box>
           </Flex>
           <CallToAction />
         </Flex>
@@ -192,11 +189,22 @@ export default function Home() {
           fontSize="2rem"
           align="center"
         >
-           <b px="4" align="center" fontWeight={"black"}> Mimic</b> offers efficient tooling to allocate <b px="4" align="center" fontWeight={"black"}>DAOs treasury assets</b> on several  <b px="4" align="center" fontWeight={"black"}>DeFi strategies</b> while maintaining ownership and saving time & money. 
-
+          <b px="4" align="center" fontWeight={"black"}>
+            {" "}
+            Mimic
+          </b>{" "}
+          offers efficient tooling to allocate{" "}
+          <b px="4" align="center" fontWeight={"black"}>
+            DAOs treasury assets
+          </b>{" "}
+          on several{" "}
+          <b px="4" align="center" fontWeight={"black"}>
+            DeFi strategies
+          </b>{" "}
+          while maintaining ownership and saving time & money.
         </Text>
       </Flex>
-<Flex pb="24">
+      <Flex pb="24">
         <SimpleGrid columns={{ sm: 2, md: 3 }} borderTop="1px solid #bbbbbb">
           <BoxFeature
             number="01"
@@ -283,13 +291,14 @@ export default function Home() {
           fontSize={{ base: "2rem", md: "3rem" }}
           textAlign="center"
         >
-          WITH MIMIC, THE MANAGER IS ONLY RESPONSIBLE FOR ALLOCATING THE TREASURY ASSETS WHILE THE DAO IS ALWAYS IN CONTROL.
+          WITH MIMIC, THE MANAGER IS ONLY RESPONSIBLE FOR ALLOCATING THE
+          TREASURY ASSETS WHILE THE DAO IS ALWAYS IN CONTROL.
         </Heading>
         <Text py="12" fontSize="1.5rem" color="white" textAlign="center">
           Withdraw options are always available. We developed an agreement
-          between the manager and the DAO to enable trustless relation on
-          the blockchain. We are starting a new era, a next-gen DAO treasury management layer
-          for yield strategies in the DeFi world.
+          between the manager and the DAO to enable trustless relation on the
+          blockchain. We are starting a new era, a next-gen DAO treasury
+          management layer for yield strategies in the DeFi world.
         </Text>
         <Button
           variant="solid"
@@ -329,13 +338,13 @@ const BoxFeature = ({ number, title, description }) => {
         fontSize="0.9rem"
         px="0"
       >
-         <Image
-        src="/arrow.png"
-        alt="arrow"
-        objectFit="contain"
-        width={25}
-        height={15}
-      />
+        <Image
+          src="/arrow.png"
+          alt="arrow"
+          objectFit="contain"
+          width={25}
+          height={15}
+        />
         <Text ml="1">{number}</Text>
       </Flex>
       <Text
@@ -380,7 +389,10 @@ const Ethereum = () => {
         height={30}
       />
       <Text pl="4">Ethereum </Text>
-      <Badge ml="4" colorScheme="purple"> SOON</Badge>
+      <Badge ml="4" colorScheme="purple">
+        {" "}
+        SOON
+      </Badge>
     </Flex>
   );
 };

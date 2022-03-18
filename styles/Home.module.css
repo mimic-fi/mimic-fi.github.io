@@ -34,6 +34,15 @@
   padding: 0px 20px;
 }
 
+.subTitle {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: normal;
+  padding: 0px 20px;
+
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .mainTitle {
