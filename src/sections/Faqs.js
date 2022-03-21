@@ -17,8 +17,8 @@ export default function App() {
             rowContentTextSize: '16px',
             rowContentPaddingTop: '10px',
             rowContentPaddingBottom: '10px',
-            rowContentPaddingLeft: '50px',
-            rowContentPaddingRight: '150px',
+            rowContentPaddingLeft: '2rem',
+            rowContentPaddingRight: '2rem',
             arrowColor: 'white',
             zIndex: '999'
           }}
