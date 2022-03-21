@@ -8,6 +8,8 @@ import mail from '../assets/mail.svg'
 import twitter from '../assets/twitter.svg'
 import logo from '../assets/contact-logo.svg'
 import logoMobile from '../assets/mimic-logo-mobile.svg'
+import { Link } from "react-router-dom";
+
 
 const Contact = () => {
   const [width, setWidth] = React.useState(window.innerWidth)
@@ -86,6 +88,10 @@ const Contact = () => {
           </div>
         </MobileContact>
       )}
+      <Footer>
+      <Link to="/terms">Terms</Link>
+      2022 MIMIC. ALL RIGHTS RESERVED.
+      </Footer>
     </>
   )
 }
@@ -105,7 +111,20 @@ const ContactSection = styled.section`
     padding-top: 1500px;
   }
 
+  
 `
+const Footer = styled.div`
+ background-color: white;
+ padding: 20px 40px;
+ display: flex;
+ justify-content: flex-end;
+ a {
+   text-transform: uppercase;
+   font-weight: 500;
+   padding: 0px 20px;
+ }
+`
+
 const Logo = styled.img`
   max-width: 120px;
 `
