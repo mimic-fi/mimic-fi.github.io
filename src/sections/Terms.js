@@ -221,12 +221,10 @@ export default function Terms() {
 const Line = styled.div`
   display: flex;
   align-items: center;
-	margin-bottom: 15px;
-	h2 {
-		padding-left: 15px;
-	}
-
-
+  margin-bottom: 15px;
+  h2 {
+    padding-left: 15px;
+  }
 `;
 
 const Box = styled.div`
@@ -234,7 +232,7 @@ const Box = styled.div`
   color: white;
   text-align: left;
   h1 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
@@ -246,7 +244,5 @@ const Box = styled.div`
       white-space: break-spaces;
       padding: 0 15px;
     }
-  }
-
   }
 `;
