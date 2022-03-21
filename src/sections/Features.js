@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import check from '../assets/white-check.svg'
 import app from '../assets/app.svg'
@@ -19,7 +19,7 @@ const Features = () => {
     <FeaturesSection>
       <Logo src={logo} />
       <div className="container">
-        <h1>Enhance your investment strategies</h1>
+        <h1>Grow DAOs treasury</h1>
         <h2>
           Mimic is a dapp that runs on Ethereum and Polygon and allows you to
           simplify 10 steps into 1
@@ -47,7 +47,7 @@ const Features = () => {
             </div>
           </Box>
           <Box>
-            {width >= breakpoint && <h3>Simplified for DeFi</h3>}
+            {width >= breakpoint && <h3>Simplified strategies</h3>}
             <div>
               <img src={check} />
               <p>Lending</p>

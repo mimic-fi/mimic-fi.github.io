@@ -5,20 +5,20 @@ import done from '../assets/done.svg'
 const Steps = () => (
   <StepsSection>
     <Container>
-      <h1>Establish a trustless relationship with your clients</h1>
+      <h1>Establish a trustless relationship</h1>
       <CardsContainer>
         <Card className="violet">
           <h2>1</h2>
           <div>
             <h3>Set terms</h3>
-            <p>Create a portfolio with specific conditions</p>
+            <p>Specify the conditions of what assets will be allocated and where</p>
           </div>
         </Card>
         <Card>
           <h2>2</h2>
           <div>
             <h3>Seal the deal</h3>
-            <p>Your client agrees by sending assets to the portfolio</p>
+            <p>The DAO agrees on the conditions by simply transferring assets</p>
           </div>
         </Card>
         <Card>
@@ -34,7 +34,7 @@ const Steps = () => (
           </h2>
           <div>
             <h3>..and done!</h3>
-            <p>Collect your fees automatically</p>
+            <p>Track all the accounting on-chain and generate reports</p>
           </div>
         </Card>
       </CardsContainer>

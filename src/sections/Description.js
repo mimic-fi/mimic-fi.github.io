@@ -25,40 +25,52 @@ const Description = () => {
           </h1>
           <div>
             <img src={check} />
-            <p>Unlimited accounts and portfolios</p>
-          </div>
-          <div>
-            <img src={check} />
-            <p>One dashboard to view it all</p>
+            <p>
+              Fully automated DeFi <br />
+              strategies
+            </p>
           </div>
           <div>
             <img src={check} />
             <p>
-              Real time investment strategy <br />
-              suggestions to support you
+              One dashboard to manage <br />
+              it all
+            </p>
+          </div>
+          <div>
+            <img src={check} />
+            <p>
+              On-chain and real-time <br />
+              accounting
             </p>
           </div>
         </Box>
         {width < breakpoint && <Laptop src={laptopMobile} />}
         <Box>
           <h1>
-            Your clients will <br />
+            DAO members will <br />
             be able to
           </h1>
           <div>
             <img src={check} />
             <p>
-              Retain full asset <br />
-              ownership at all times
+              Keep full ownership of <br />
+              the treasury
             </p>
           </div>
           <div>
             <img src={check} />
-            <p>Simplified asset funding</p>
+            <p>
+              Check managers activity <br />
+              on-chain
+            </p>
           </div>
           <div>
             <img src={check} />
-            <p>Exit at anytime</p>
+            <p>
+              Revoke manager's access <br />
+              at anytime
+            </p>
           </div>
         </Box>
       </Container>

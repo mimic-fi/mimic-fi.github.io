@@ -11,24 +11,23 @@ const Hero = () => (
     <Navbar/>
     <Container>
       <h1>
-        Managing 3rd-party investments made simple <span>and secure!</span>
+        Trustless treasury management made simple <span>and secure!</span>
       </h1>
       <h2>
-        Mimic is your one-stop platform to manage multiple accounts and
-        portfolios at once.
+        Mimic is your one-stop platform to allocate DAOs treasury assets on several DeFi strategies while saving time & money.
       </h2>
       <Icons>
         <Box>
-          <img src={friends} />
-          <p>Friends & Family</p>
+          <img src={dao} />
+          <p>Transparent</p>
         </Box>
         <Box>
           <img src={professional} />
-          <p>Professional brokers</p>
+          <p>Non-custodial</p>
         </Box>
         <Box>
-          <img src={dao} />
-          <p>DAO Treasuries</p>
+          <img src={friends} />
+          <p>Trustless</p>
         </Box>
       </Icons>
     </Container>

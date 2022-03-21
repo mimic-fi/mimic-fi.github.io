@@ -40,10 +40,6 @@ const data = {
       title: 'What blockchains are supported by the protocol?',
       content: "Ethereum and Polygon for now. We're more than happy to know if there is interest in supporting new ones. You can drop a message here.",
     },
-    {
-      title: 'Is there a token involved?',
-      content: 'Not now, but we are working on a governance solution to start building a community and a liquidity mining implementation to reward users.',
-    },
   ],
 }
 

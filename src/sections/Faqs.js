@@ -1,4 +1,3 @@
-import React from 'react'
 import Faq from 'react-faq-component'
 import styled from 'styled-components'
 import data from '../faqs-data'
@@ -35,7 +34,7 @@ const FaqsSection = styled.section`
   background: #191930;
   margin: auto;
   color: white;
-  padding: 100px 200px 600px 200px;
+  padding: 100px 200px 400px 200px;
   @media only screen and (max-width: 700px) {
     padding: 30px 30px 300px 30px;
   }
