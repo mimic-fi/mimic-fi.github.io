@@ -97,7 +97,7 @@ const ContactSection = styled.section`
   padding: 76px 0 400px 0;
   background-size: cover;
   background-position: top;
-  margin-top: ${p => (p.compact ? '-230px' : '-500px')};
+  margin-top: ${p => (p.compact ? '-230px' : '-400px')};
   padding-top: ${p => (p.compact ? '110px' : '600px')};
   position: relative;
   z-index: 3;

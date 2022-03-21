@@ -1,4 +1,8 @@
 const data = {
+  styles:{
+
+    zIndex: '9999'
+  },
   title: 'FAQs',
   rows: [
     {

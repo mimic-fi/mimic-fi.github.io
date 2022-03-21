@@ -20,6 +20,7 @@ export default function App() {
             rowContentPaddingLeft: '50px',
             rowContentPaddingRight: '150px',
             arrowColor: 'white',
+            zIndex: '999'
           }}
           config={{
             animate: true,
