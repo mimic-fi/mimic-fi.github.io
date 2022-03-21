@@ -4,17 +4,17 @@ const data = {
     {
       title: 'What is Mimic?',
       content:
-        'Mimic is a tool to manage third-party treasuries in a decentralized, trustless, and secure way. It is built for any DAO treasury, institutional investments, and friends & family savings.',
+        'Mimic solves DAOs treasury investment management by providing a fully transparent, trustless, and non-custodial solution. It offers efficient tools to allocate DAOs treasury assets on several DeFi strategies while maintaining ownership, and saving time & money.',
     },
     {
       title: 'How does it work?',
       content:
-        'The treasury manager creates a portfolio setting under what conditions assets will be allocated. The treasury owner (eg. DAO) simply accepts those terms by sending assets to the portfolio. The owner is always in full control of those assets and can withdraw them at any time.',
+        'The manager creates a DAO portfolio setting under what conditions treasury assets will be allocated. The DAO simply accepts those terms by sending assets to the portfolio. It is always in full control of those assets and can withdraw them at any time.',
     },
     {
       title: 'Where can a treasury be allocated?',
       content:
-        'The manager can only allocate the treasury assets in DeFi strategies that were specified in the portfolio beforehand. Each strategy is well defined and works with one or more DeFi instruments (eg. Aave, Yearn, etc.).',
+        'The manager can only allocate the DAO`s treasury assets in DeFi strategies that were specified in the portfolio beforehand. Each strategy is well defined and works with one or more DeFi instruments (eg. Aave, Yearn, etc.).',
     },
     {
       title: 'What other terms are set in the portfolio?',
@@ -25,11 +25,15 @@ const data = {
       content: 'No, the manager can only reallocate the assets based on the portfolio conditions that were agreed by the owner.',
     },
     {
-      title: 'Can the treasury owner exit at any time?',
-      content: 'Yes. If for some reason the treasury owner wants to withdraw his assets, he can do it directly without asking for permission to the manager.',
+      title: 'Is it possible to change the manager?',
+      content: 'Yes. DAOs have the ability to delegate their management permissions or revoke access, without affecting the underlying treasury assets.',
     },
     {
-      title: 'Can I create my own strategies?',
+      title: 'Can the DAO exit at any time?',
+      content: 'Yes. If for some reason the DAO wants to withdraw its assets, it can do it directly without asking for permission to the manager.',
+    },
+    {
+      title: 'I am a dev, is it possible to create my own strategy?',
       content: 'Of course! Mimic protocol allows to create custom strategies. You can connect them to any DeFi instrument that you desire. Right know, programming knowledge is required. However, in the near future, we will create tools to facilitate creating these.',
     },
     {
@@ -38,7 +42,7 @@ const data = {
     },
     {
       title: 'What blockchains are supported by the protocol?',
-      content: "Ethereum and Polygon for now. We're more than happy to know if there is interest in supporting new ones. You can drop a message here.",
+      content: "Ethereum and Polygon for now. We're more than happy to know if there is interest in supporting new ones. You can drop a message to us.",
     },
   ],
 }
