@@ -4,18 +4,13 @@ import logo from '../assets/navbar-logo.svg'
 import Networks from './Networks'
 
 const Navbar = () => {
-  const [width, setWidth] = React.useState(window.innerWidth)
-  const breakpointMedium = 1000
 
-  React.useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
-  }, [])
 
   return (
     <NavbarSection>
       <Container>
         <img src={logo} />
-        {width >= breakpointMedium && <Networks />}
+        <Networks />
       </Container>
     </NavbarSection>
   )
@@ -31,6 +26,7 @@ const Container = styled.div`
   display: flex;
   max-width: 94%;
   justify-content: space-between;
+  flex-wrap: wrap;
   @media only screen and (max-width: 370px) {
     padding: 0 20px 0 20px;
   }
