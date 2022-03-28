@@ -1,46 +1,65 @@
-import React from 'react'
-import styled from 'styled-components'
-import done from '../assets/done.svg'
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import done from "../assets/done.svg";
 
-const Steps = () => (
-  <StepsSection>
-    <Container>
-      <h1>Establish a trustless relationship</h1>
-      <CardsContainer>
-        <Card className="violet">
-          <h2>1</h2>
-          <div>
-            <h3>Set terms</h3>
-            <p>Specify the conditions of what assets will be allocated and where</p>
-          </div>
-        </Card>
-        <Card>
-          <h2>2</h2>
-          <div>
-            <h3>Seal the deal</h3>
-            <p>The DAO agrees on the conditions by simply transferring assets</p>
-          </div>
-        </Card>
-        <Card>
-          <h2>3</h2>
-          <div>
-            <h3>Put to it work</h3>
-            <p>Choose between multiple DeFi strategies</p>
-          </div>
-        </Card>
-        <Card>
-          <h2>
-            <img src={done} />
-          </h2>
-          <div>
-            <h3>..and done!</h3>
-            <p>Track all the accounting on-chain and generate reports</p>
-          </div>
-        </Card>
-      </CardsContainer>
-    </Container>
-  </StepsSection>
-)
+const Steps = () => {
+  const [step, setStep] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (step === 3) {
+        setStep(0);
+      } else setStep(step + 1);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [step]);
+
+  return (
+    <StepsSection>
+      <Container>
+        <h1>Establish a trustless relationship</h1>
+        <CardsContainer>
+          <Card className={step == 0 && "violet"}>
+            <h2>1</h2>
+            <div>
+              <h3>Set portfolio terms</h3>
+              <p>
+                Specify the conditions of what assets will be allocated and
+                where
+              </p>
+            </div>
+          </Card>
+          <Card className={step == 1 && "violet"}>
+            <h2>2</h2>
+            <div>
+              <h3>Seal the deal</h3>
+              <p>
+                The DAO agrees on the conditions by simply transferring assets
+              </p>
+            </div>
+          </Card>
+          <Card className={step == 2 && "violet"}>
+            <h2>3</h2>
+            <div>
+              <h3>Put to it work</h3>
+              <p>Choose between multiple DeFi strategies</p>
+            </div>
+          </Card>
+          <Card className={step == 3 && "violet"}>
+            <h2>
+              <img src={done} />
+            </h2>
+            <div>
+              <h3>..and done!</h3>
+              <p>Track all the accounting on-chain and generate reports</p>
+            </div>
+          </Card>
+        </CardsContainer>
+      </Container>
+    </StepsSection>
+  );
+};
 
 const StepsSection = styled.section`
   background: #191930;
@@ -48,14 +67,14 @@ const StepsSection = styled.section`
   color: white;
   padding: 0 0 30px 0;
   text-align: right;
-`
+`;
 
 const Container = styled.div`
   max-width: 1056px;
   margin: auto;
   text-align: right;
   h1 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
@@ -71,7 +90,7 @@ const Container = styled.div`
       text-align: center;
     }
   }
-`
+`;
 
 const CardsContainer = styled.div`
   display: grid;
@@ -87,7 +106,7 @@ const CardsContainer = styled.div`
     align-content: center;
     padding: 0 20px;
   }
-`
+`;
 const Card = styled.div`
   border-radius: 16px;
   padding: 26px;
@@ -109,7 +128,7 @@ const Card = styled.div`
   margin: 15px 0;
 
   h2 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 0.99px;
@@ -123,7 +142,7 @@ const Card = styled.div`
     }
   }
   h3 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.99px;
@@ -134,7 +153,7 @@ const Card = styled.div`
     }
   }
   p {
-    font-family: 'Poppins-SemiBold';
+    font-family: "Poppins-SemiBold";
     font-size: 17px;
     line-height: 28px;
     letter-spacing: 0.75px;
@@ -152,6 +171,11 @@ const Card = styled.div`
     padding: 30px;
     margin: 0;
     width: 247px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     @media only screen and (max-width: 700px) {
       width: 100%;
       padding: 0;
@@ -166,6 +190,6 @@ const Card = styled.div`
       }
     }
   }
-`
+`;
 
-export default Steps
+export default Steps;

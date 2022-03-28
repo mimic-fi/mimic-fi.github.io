@@ -176,7 +176,7 @@ const Counter = styled.div`
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     text-align: center;
     letter-spacing: 0.75px;
     color: #fcfcfc;
