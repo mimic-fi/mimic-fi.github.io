@@ -1,11 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import logo from '../assets/navbar-logo.svg'
-import Networks from './Networks'
+import React from "react";
+import styled from "styled-components";
+import logo from "../assets/navbar-logo.svg";
+import Networks from "./Networks";
 
 const Navbar = () => {
-
-
   return (
     <NavbarSection>
       <Container>
@@ -13,13 +11,13 @@ const Navbar = () => {
         <Networks />
       </Container>
     </NavbarSection>
-  )
-}
+  );
+};
 
 const NavbarSection = styled.section`
   background: transparent;
   margin: auto;
-`
+`;
 
 const Container = styled.div`
   padding: 0 40px 0 40px;
@@ -42,6 +40,6 @@ const Container = styled.div`
       width: 50%;
     }
   }
-`
+`;
 
-export default Navbar
+export default Navbar;
