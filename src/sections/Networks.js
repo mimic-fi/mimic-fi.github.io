@@ -49,6 +49,7 @@ const NetworksSection = styled.div`
     font-weight: 500;
     font-size: 1.25rem;
     font-family: "Poppins-Bold";
+    background-color: #312357;
     @media only screen and (max-width: 700px) {
       margin: 10px 10px;
     }
