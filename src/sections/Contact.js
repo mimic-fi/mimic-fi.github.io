@@ -49,8 +49,8 @@ const Contact = () => {
             </div>
             <div>
               <img src={mail} />
-              <a target="_blank" href="mailto:mimicfi@protonmail.com">
-                mimicfi@protonmail.com
+              <a target="_blank" href="mailto:hello@mimic.fi">
+                hello@mimic.fi
               </a>
             </div>
             <div>
