@@ -5,19 +5,31 @@ import { useRandomInterval } from "../hooks/useRandomInterval";
 
 export const ValueLocked = () => {
   const [tvl, setTvl] = useState("loading");
+  const generalFormat = "$0,0.00";
 
   const url = `https://firestore.googleapis.com/v1beta1/projects/apy-mimic/databases/(default)/documents/tvl/tvl`;
-
+  const fn = (n) => {
+    return numeral(n).format(generalFormat);
+  };
   useEffect(() => {
     // declare the async data fetching function
     const fetchData = async () => {
       const ot = localStorage.getItem("t");
+      const otts = localStorage.getItem("tts");
       const data = await axios.get(url);
-      setTvl(
-        numeral(ot ? ot : data?.data?.fields?.value?.stringValue).format(
-          "$0,0.00"
-        )
-      );
+      const tts = data?.data?.fields?.updatedAt?.timestampValue;
+      const t = data?.data?.fields?.value?.stringValue;
+      if (ot) {
+        if (otts === tts) {
+          setTvl(fn(ot));
+        } else {
+          setTvl(fn(t));
+          localStorage.setItem("tts", tts);
+        }
+      } else {
+        setTvl(fn(t));
+        localStorage.setItem("tts", tts);
+      }
     };
 
     // call the function
@@ -33,7 +45,7 @@ export const ValueLocked = () => {
   const transmute = () => {
     if (tvl !== "loading") {
       const added = Math.random();
-      const nt = numeral(tvl).add(added).format("$0,0.00");
+      const nt = numeral(tvl).add(added).format(generalFormat);
       setTvl(nt);
       localStorage.setItem("t", nt);
     }
