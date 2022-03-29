@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Terms from "./sections/Terms";
+import Whitepaper from "./sections/Whitepaper";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.render(
         <Route path="/" >
           <Route index element={<App />} />
           <Route path="terms" element={<Terms />} />
+          <Route path="whitepaper" element={<Whitepaper />} />
         </Route>
       </Routes>
     </BrowserRouter>
