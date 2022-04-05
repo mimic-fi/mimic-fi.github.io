@@ -24,21 +24,21 @@ const Description = () => {
             at hand
           </h1>
           <div>
-            <img src={check} />
+            <img src={check} alt='tick'/>
             <p>
               Fully automated DeFi <br />
               strategies
             </p>
           </div>
           <div>
-            <img src={check} />
+            <img src={check} alt='tick'/>
             <p>
               One dashboard to manage <br />
               it all
             </p>
           </div>
           <div>
-            <img src={check} />
+            <img src={check} alt='tick'/>
             <p>
               On-chain and real-time <br />
               accounting
@@ -52,21 +52,21 @@ const Description = () => {
             be able to
           </h1>
           <div>
-            <img src={check} />
+            <img src={check} alt='tick'/>
             <p>
               Keep full ownership of <br />
               the treasury
             </p>
           </div>
           <div>
-            <img src={check} />
+            <img src={check} alt='tick'/>
             <p>
               Check managers activity <br />
               on-chain
             </p>
           </div>
           <div>
-            <img src={check} />
+            <img src={check} alt='tick'/>
             <p>
               Revoke manager's access <br />
               at anytime

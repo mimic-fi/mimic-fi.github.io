@@ -20,7 +20,7 @@ const Steps = () => {
       <Container>
         <h1>Establish a trustless relationship</h1>
         <CardsContainer>
-          <Card className={step == 0 && "violet"}>
+          <Card className={step === 0 && "violet"}>
             <h2>1</h2>
             <div>
               <h3>Set portfolio terms</h3>
@@ -30,7 +30,7 @@ const Steps = () => {
               </p>
             </div>
           </Card>
-          <Card className={step == 1 && "violet"}>
+          <Card className={step === 1 && "violet"}>
             <h2>2</h2>
             <div>
               <h3>Seal the deal</h3>
@@ -39,16 +39,16 @@ const Steps = () => {
               </p>
             </div>
           </Card>
-          <Card className={step == 2 && "violet"}>
+          <Card className={step === 2 && "violet"}>
             <h2>3</h2>
             <div>
               <h3>Put to it work</h3>
               <p>Choose between multiple DeFi strategies</p>
             </div>
           </Card>
-          <Card className={step == 3 && "violet"}>
+          <Card className={step === 3 && "violet"}>
             <h2>
-              <img src={done} />
+              <img src={done} alt='done' />
             </h2>
             <div>
               <h3>..and done!</h3>
