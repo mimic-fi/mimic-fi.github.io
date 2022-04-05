@@ -19,7 +19,7 @@ const Features = () => {
     <FeaturesSection>
       <Logo src={logo} />
       <div className="container">
-        <h1>Grow DAOs treasury</h1>
+        <h1>Grow 3P treasuries</h1>
         <h2>
           Mimic is a dapp that runs on Ethereum and Polygon and allows you to
           simplify 10 steps into 1

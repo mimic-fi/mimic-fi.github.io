@@ -21,22 +21,21 @@ const Hero = () => (
         <p> of total value locked across 2 networks and over 7 strategies.</p>
       </Counter>
       <h2>
-        Mimic is your one-stop platform to allocate DAOs treasury assets on
-        several DeFi strategies while saving time & money.
+        Mimic is your one-stop platform to allocate third-party assets on
+        different DeFi strategies while saving time & money.
       </h2>
       <Icons>
         <Box>
-          <img src={transparency} alt='transparency' />
-          <p>Transparent</p>
+          <img src={trust} alt='trustless' />
+          <p>Trustless</p>
         </Box>
-
         <Box>
           <img src={custodial} alt='non-custodial' />
           <p>Non-custodial</p>
         </Box>
         <Box>
-          <img src={trust} alt='trustless' />
-          <p>Trustless</p>
+          <img src={transparency} alt='transparency' />
+          <p>Transparent</p>
         </Box>
       </Icons>
     </Container>
