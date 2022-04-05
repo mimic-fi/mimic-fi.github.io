@@ -6,6 +6,7 @@ import backgroundMobile from '../assets/contact-background-mobile.png'
 import world from '../assets/world.svg'
 import mail from '../assets/mail.svg'
 import twitter from '../assets/twitter.svg'
+import github from '../assets/github.svg'
 import logo from '../assets/contact-logo.svg'
 import logoMobile from '../assets/mimic-logo-mobile.svg'
 import { Link } from "react-router-dom";
@@ -42,21 +43,27 @@ const Contact = () => {
             <Logo src={logo} />
             <h1>Get in touch!</h1>
             <div>
-              <img src={world} />
-              <a target="_blank" href="https://mimic.fi">
+              <img src={world} alt='website' />
+              <a target="_blank" href="https://mimic.fi" rel="noreferrer">
                 mimic.fi
               </a>
             </div>
             <div>
-              <img src={mail} />
-              <a target="_blank" href="mailto:hello@mimic.fi">
+              <img src={mail} alt='mail' />
+              <a target="_blank" href="mailto:hello@mimic.fi" rel="noreferrer">
                 hello@mimic.fi
               </a>
             </div>
             <div>
-              <img src={twitter} />
-              <a target="_blank" href="https://twitter.com/mimicfi">
+              <img src={twitter} alt='twitter' />
+              <a target="_blank" href="https://twitter.com/mimicfi" rel="noreferrer">
                 @mimicfi
+              </a>
+            </div>
+            <div>
+              <img className="github" src={github} alt='github' />
+              <a target="_blank" href="https://github.com/mimic-fi" rel="noreferrer">
+                mimic-fi
               </a>
             </div>
           </ContactBox>
@@ -64,26 +71,28 @@ const Contact = () => {
       </ContactSection>
       {width < breakpoint && (
         <MobileContact>
-          <img className="logo" src={logoMobile} />
+          <img className="logo" src={logoMobile} alt='logo' />
           <br />
           <h1>
             Visit us{' '}
-            <a target="_blank" href="https://mimic.fi">
+            <a target="_blank" href="https://mimic.fi" rel="noreferrer">
               mimic.fi
             </a>
           </h1>
           <p>Get in touch</p>
-          <a
-            className="mail"
-            target="_blank"
-            href="mailto:mimicfi@protonmail.com"
-          >
+          <a className="mail" target="_blank" href="mailto:mimicfi@protonmail.com" rel="noreferrer">
             mimicfi@protonmail.com
           </a>
           <div>
-            <img src={twitter} />
-            <a className="twitter" target="_blank" href="https://twitter.com/mimicfi">
+            <img src={twitter} alt='twitter'/>
+            <a className="twitter" target="_blank" href="https://twitter.com/mimicfi" rel="noreferrer">
               @mimicfi
+            </a>
+          </div>
+          <div className="github">
+            <img src={github} alt='github'/>
+            <a className="twitter" target="_blank" href="https://github.com/mimic-fi" rel="noreferrer">
+              mimic-fi
             </a>
           </div>
         </MobileContact>
@@ -100,7 +109,10 @@ const ContactSection = styled.section`
   margin: auto;
   color: white;
   text-align: center;
-  padding: 76px 0 400px 0;
+  padding: 76px 0 100px 0;
+  @media only screen and (max-width: 700px) {
+    padding: 76px 0 400px 0;
+  }
   background-size: cover;
   background-position: top;
   margin-top: ${p => (p.compact ? '-230px' : '-400px')};
@@ -110,11 +122,14 @@ const ContactSection = styled.section`
   @media only screen and (min-width: 2000px) {
     padding-top: 1500px;
   }
+  .github {
+    width: 45px;
+  }
 
-  
 `
 const Footer = styled.div`
- background-color: white;
+ background-color: #a445e9;
+ color: white;
  padding: 20px 40px;
  display: flex;
  justify-content: flex-end;
@@ -133,7 +148,7 @@ const MobileContact = styled.section`
   color: white;
   height: 500px;
   z-index: 40;
-  padding: 207px 30px;
+  padding: 207px 30px 100px 30px;
   position: relative;
   margin-top: -400px;
   background-size: cover;
@@ -181,6 +196,9 @@ const MobileContact = styled.section`
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    &.github {
+      margin-top: 18px;
+    }
     img {
       margin-right: 10px;
       width: 35px;

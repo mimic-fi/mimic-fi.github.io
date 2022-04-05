@@ -1,23 +1,42 @@
-import React from "react";
-import styled from "styled-components";
-import logo from "../assets/navbar-logo.svg";
-import Networks from "./Networks";
+import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
+import logo from '../assets/navbar-logo.svg'
+import Networks from './Networks'
+import Menu from '../components/Menu'
+import Hamburger from 'hamburger-react'
 
 const Navbar = () => {
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
+  const [isOpen, setOpen] = useState(false)
+  const medium = 700
   return (
     <NavbarSection>
       <Container>
-        <img src={logo} />
-        <Networks />
+        <img src={logo} alt='logo' />
+        {width >= medium ? (
+          <Networks />
+        ) : (
+          <>
+            <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
+            <Menu open={isOpen} />
+          </>
+        )}
       </Container>
     </NavbarSection>
-  );
-};
+  )
+}
 
 const NavbarSection = styled.section`
   background: transparent;
   margin: auto;
-`;
+  .hamburger-react {
+    position: relative;
+    z-index: 3;
+  }
+`
 
 const Container = styled.div`
   padding: 0 40px 0 40px;
@@ -40,6 +59,6 @@ const Container = styled.div`
       width: 50%;
     }
   }
-`;
+`
 
-export default Navbar;
+export default Navbar

@@ -1,41 +1,35 @@
-import React from "react";
-import styled from "styled-components";
-import ethereum from "../assets/ethereum_logo.svg";
-import polygon from "../assets/polygon_logo.svg";
+import React from 'react'
+import styled from 'styled-components'
+import ethereum from '../assets/ethereum_logo.svg'
+import polygon from '../assets/polygon_logo.svg'
+import whitepaper from '../assets/whitepaper.svg'
 
 const Networks = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpointMedium = 1000;
+  const [, setWidth] = React.useState(window.innerWidth)
 
   React.useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
   return (
     <NetworksSection>
-      {width >= breakpointMedium && <h1>Now available on</h1>}
       <ButtonsSection>
-        <a href="https://mainnet.mimic.fi" target="_blank">
-          <img src={ethereum} /> Ethereum
+        <a href="https://www.mimic.fi/whitepaper.pdf" target="_blank" rel="noreferrer">
+          <img src={whitepaper} alt='whitepaper' /> Whitepaper
         </a>
-        <a href="https://polygon.mimic.fi" target="_blank">
-          <img src={polygon} /> Polygon
+        <a href="https://mainnet.mimic.fi" target="_blank" rel="noreferrer">
+          <img src={ethereum} alt='ethereum'/> Ethereum
+        </a>
+        <a href="https://polygon.mimic.fi" target="_blank" rel="noreferrer">
+          <img src={polygon} alt='polygon'/> Polygon
         </a>
       </ButtonsSection>
     </NetworksSection>
-  );
-};
+  )
+}
 
 const NetworksSection = styled.div`
   display: flex;
   align-items: center;
-  h1 {
-    font-family: "Poppins-Bold";
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0.75px;
-    text-align: left;
-    padding-right: 30px;
-  }
   img {
     padding-right: 10px;
     height: 30px;
@@ -48,7 +42,7 @@ const NetworksSection = styled.div`
     border-radius: 5px;
     font-weight: 500;
     font-size: 1.25rem;
-    font-family: "Poppins-Bold";
+    font-family: 'Poppins-Bold';
     background-color: #312357;
     @media only screen and (max-width: 700px) {
       margin: 10px 10px;
@@ -57,7 +51,7 @@ const NetworksSection = styled.div`
       background-color: #a524ff87;
     }
   }
-`;
+`
 
 const ButtonsSection = styled.div`
   display: flex;
@@ -66,6 +60,6 @@ const ButtonsSection = styled.div`
   @media only screen and (max-width: 700px) {
     margin: 30px 0 0 0;
   }
-`;
+`
 
-export default Networks;
+export default Networks

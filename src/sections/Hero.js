@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "./Navbar";
 import styled from "styled-components";
 import background from "../assets/hero-background.png";
-import friends from "../assets/friends.svg";
-import professional from "../assets/professional.svg";
-import dao from "../assets/dao.svg";
+import trust from "../assets/trust.svg";
+import transparency from "../assets/transparency.svg";
+import custodial from "../assets/private.svg";
 import { ValueLocked } from "../components/ValueLocked";
 
 const Hero = () => (
@@ -26,16 +26,16 @@ const Hero = () => (
       </h2>
       <Icons>
         <Box>
-          <img src={dao} />
+          <img src={transparency} alt='transparency' />
           <p>Transparent</p>
         </Box>
 
         <Box>
-          <img src={professional} />
+          <img src={custodial} alt='non-custodial' />
           <p>Non-custodial</p>
         </Box>
         <Box>
-          <img src={friends} />
+          <img src={trust} alt='trustless' />
           <p>Trustless</p>
         </Box>
       </Icons>
@@ -97,7 +97,7 @@ const Container = styled.div`
     font-family: "Poppins-SemiBold";
     font-style: normal;
     width: 560px;
-    max-width: 90vw;
+    max-width: 85vw;
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
@@ -123,12 +123,12 @@ const Box = styled.div`
   text-align: center;
   padding: 0 20px;
   img {
-    width: 50px;
+    width: 70px;
   }
   @media only screen and (max-width: 700px) {
     padding: 0 10px;
     img {
-      width: 30px;
+      width: 50px;
     }
   }
 

@@ -30,38 +30,38 @@ const Features = () => {
           <Box>
             {width >= breakpoint && <h3>All the basics</h3>}
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>Trading</p>
             </div>
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>Investing</p>
             </div>
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>Analysis</p>
             </div>
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>And more</p>
             </div>
           </Box>
           <Box>
             {width >= breakpoint && <h3>Simplified strategies</h3>}
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>Lending</p>
             </div>
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>AMM</p>
             </div>
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>NFTs</p>
             </div>
             <div>
-              <img src={check} />
+              <img src={check} alt='tick'/>
               <p>And more</p>
             </div>
           </Box>
