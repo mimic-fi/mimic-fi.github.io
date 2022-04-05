@@ -25,8 +25,7 @@ const Steps = () => {
             <div>
               <h3>Set portfolio terms</h3>
               <p>
-                Specify the conditions of what assets will be allocated and
-                where
+                Specify the terms under which the owner's assets will be allocated
               </p>
             </div>
           </Card>
@@ -35,7 +34,7 @@ const Steps = () => {
             <div>
               <h3>Seal the deal</h3>
               <p>
-                The DAO agrees on the conditions by simply transferring assets
+                The asset's owner agrees on the terms by simply transferring assets
               </p>
             </div>
           </Card>

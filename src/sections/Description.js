@@ -48,14 +48,14 @@ const Description = () => {
         {width < breakpoint && <Laptop src={laptopMobile} />}
         <Box>
           <h1>
-            DAO members will <br />
+            Assets owners will <br />
             be able to
           </h1>
           <div>
             <img src={check} alt='tick'/>
             <p>
-              Keep full ownership of <br />
-              the treasury
+              Keep in full control <br />
+              over the treasury
             </p>
           </div>
           <div>
