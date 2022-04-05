@@ -2,12 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import ethereum from "../assets/ethereum_logo.svg";
 import polygon from "../assets/polygon_logo.svg";
+import whitepaper from '../assets/whitepaper.svg'
 
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <a href="https://www.mimic.fi/whitepaper.pdf" target="_blank" rel="noreferrer">
-        Whitepaper
+      <img src={whitepaper} alt='whitepaper' /> Whitepaper
       </a>
       <a href="https://mainnet.mimic.fi" target="_blank" rel="noreferrer">
         <img src={ethereum} alt='ethereum'/> Ethereum
@@ -23,6 +24,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   background: #191930;
   height: 100vh;
   text-align: left;
