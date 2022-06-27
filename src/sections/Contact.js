@@ -1,40 +1,40 @@
-import React from 'react'
-import styled from 'styled-components'
-import getInTouch from '../assets/get-in-touch-mobile.png'
-import background from '../assets/contact-background.png'
-import backgroundMobile from '../assets/contact-background-mobile.png'
-import world from '../assets/world.svg'
-import mail from '../assets/mail.svg'
-import twitter from '../assets/twitter.svg'
-import github from '../assets/github.svg'
-import logo from '../assets/contact-logo.svg'
-import logoMobile from '../assets/mimic-logo-mobile.svg'
+import React from "react";
+import styled from "styled-components";
+import getInTouch from "../assets/get-in-touch-mobile.png";
+import background from "../assets/contact-background.png";
+import backgroundMobile from "../assets/contact-background-mobile.png";
+import world from "../assets/world.svg";
+import mail from "../assets/mail.svg";
+import twitter from "../assets/twitter.svg";
+import github from "../assets/github.svg";
+import logo from "../assets/contact-logo.svg";
+import logoMobile from "../assets/mimic-logo-mobile.svg";
 import { Link } from "react-router-dom";
 
-
 const Contact = () => {
-  const [width, setWidth] = React.useState(window.innerWidth)
-  const breakpoint = 700
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 700;
 
   React.useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
-  }, [])
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
   return (
     <>
       <ContactSection compact={width <= breakpoint}>
         <Container>
           <h3>Looking for more?</h3>
           <h1>
-            Customize <span>Mimic</span> for institutional use
+            Customize <span>Mimic</span> for your own processes
           </h1>
           <h2>
-            Mimic is a fully scalable solution suitable for any financial
-            institution looking for tailored capabilities
+            Mimic is a fully scalable solution suitable for anyone looking for
+            tailored capabilities to automate custom treasury management
+            processes.
           </h2>
           <Buttons>
-            <Button>Professional brokers</Button>
-            <Button>Portfolios with KYC</Button>
-            <Button>Custom & private strategies</Button>
+            <Button>Custom actions</Button>
+            <Button>Private strategies</Button>
+            <Button>Extend your own product</Button>
             <Button className="transparent">And more</Button>
           </Buttons>
         </Container>
@@ -43,26 +43,34 @@ const Contact = () => {
             <Logo src={logo} />
             <h1>Get in touch!</h1>
             <div>
-              <img src={world} alt='website' />
+              <img src={world} alt="website" />
               <a target="_blank" href="https://mimic.fi" rel="noreferrer">
                 mimic.fi
               </a>
             </div>
             <div>
-              <img src={mail} alt='mail' />
+              <img src={mail} alt="mail" />
               <a target="_blank" href="mailto:hello@mimic.fi" rel="noreferrer">
                 hello@mimic.fi
               </a>
             </div>
             <div>
-              <img src={twitter} alt='twitter' />
-              <a target="_blank" href="https://twitter.com/mimicfi" rel="noreferrer">
+              <img src={twitter} alt="twitter" />
+              <a
+                target="_blank"
+                href="https://twitter.com/mimicfi"
+                rel="noreferrer"
+              >
                 @mimicfi
               </a>
             </div>
             <div>
-              <img className="github" src={github} alt='github' />
-              <a target="_blank" href="https://github.com/mimic-fi" rel="noreferrer">
+              <img className="github" src={github} alt="github" />
+              <a
+                target="_blank"
+                href="https://github.com/mimic-fi"
+                rel="noreferrer"
+              >
                 mimic-fi
               </a>
             </div>
@@ -71,41 +79,56 @@ const Contact = () => {
       </ContactSection>
       {width < breakpoint && (
         <MobileContact>
-          <img className="logo" src={logoMobile} alt='logo' />
+          <img className="logo" src={logoMobile} alt="logo" />
           <br />
           <h1>
-            Visit us{' '}
+            Visit us{" "}
             <a target="_blank" href="https://mimic.fi" rel="noreferrer">
               mimic.fi
             </a>
           </h1>
           <p>Get in touch</p>
-          <a className="mail" target="_blank" href="mailto:mimicfi@protonmail.com" rel="noreferrer">
+          <a
+            className="mail"
+            target="_blank"
+            href="mailto:mimicfi@protonmail.com"
+            rel="noreferrer"
+          >
             mimicfi@protonmail.com
           </a>
           <div>
-            <img src={twitter} alt='twitter'/>
-            <a className="twitter" target="_blank" href="https://twitter.com/mimicfi" rel="noreferrer">
+            <img src={twitter} alt="twitter" />
+            <a
+              className="twitter"
+              target="_blank"
+              href="https://twitter.com/mimicfi"
+              rel="noreferrer"
+            >
               @mimicfi
             </a>
           </div>
           <div className="github">
-            <img src={github} alt='github'/>
-            <a className="twitter" target="_blank" href="https://github.com/mimic-fi" rel="noreferrer">
+            <img src={github} alt="github" />
+            <a
+              className="twitter"
+              target="_blank"
+              href="https://github.com/mimic-fi"
+              rel="noreferrer"
+            >
               mimic-fi
             </a>
           </div>
         </MobileContact>
       )}
       <Footer>
-      <Link to="/terms">Terms</Link>
-      2022 MIMIC. ALL RIGHTS RESERVED.
+        <Link to="/terms">Terms</Link>
+        2022 MIMIC. ALL RIGHTS RESERVED.
       </Footer>
     </>
-  )
-}
+  );
+};
 const ContactSection = styled.section`
-  background: url(${p => (p.compact ? backgroundMobile : background)});
+  background: url(${(p) => (p.compact ? backgroundMobile : background)});
   margin: auto;
   color: white;
   text-align: center;
@@ -115,8 +138,8 @@ const ContactSection = styled.section`
   }
   background-size: cover;
   background-position: top;
-  margin-top: ${p => (p.compact ? '-230px' : '-400px')};
-  padding-top: ${p => (p.compact ? '110px' : '600px')};
+  margin-top: ${(p) => (p.compact ? "-230px" : "-400px")};
+  padding-top: ${(p) => (p.compact ? "110px" : "600px")};
   position: relative;
   z-index: 3;
   @media only screen and (min-width: 2000px) {
@@ -125,24 +148,23 @@ const ContactSection = styled.section`
   .github {
     width: 45px;
   }
-
-`
+`;
 const Footer = styled.div`
- background-color: #a445e9;
- color: white;
- padding: 20px 40px;
- display: flex;
- justify-content: flex-end;
- a {
-   text-transform: uppercase;
-   font-weight: 500;
-   padding: 0px 20px;
- }
-`
+  background-color: #a445e9;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 20px;
+  }
+`;
 
 const Logo = styled.img`
   max-width: 120px;
-`
+`;
 const MobileContact = styled.section`
   background: url(${getInTouch}) top no-repeat;
   color: white;
@@ -160,7 +182,7 @@ const MobileContact = styled.section`
   }
 
   h1 {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 28px;
     line-height: 40px;
     letter-spacing: 0.9999998807907104px;
@@ -168,7 +190,7 @@ const MobileContact = styled.section`
     display: inline;
 
     a {
-      font-family: 'Poppins-Bold';
+      font-family: "Poppins-Bold";
       font-size: 32px;
       line-height: 44px;
       letter-spacing: 0.99px;
@@ -176,7 +198,7 @@ const MobileContact = styled.section`
     }
   }
   p {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     margin-bottom: 0;
   }
   p,
@@ -189,7 +211,7 @@ const MobileContact = styled.section`
   }
   a.mail,
   a.twitter {
-    font-family: 'Poppins';
+    font-family: "Poppins";
   }
   div {
     display: flex;
@@ -204,7 +226,7 @@ const MobileContact = styled.section`
       width: 35px;
     }
   }
-`
+`;
 
 const Container = styled.div`
   padding: 104px 104px 0 104px;
@@ -220,7 +242,7 @@ const Container = styled.div`
   }
   text-align: left;
   h3 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.99;
@@ -233,7 +255,7 @@ const Container = styled.div`
   }
   h1 {
     margin-top: 20px;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
     font-size: 80px;
     line-height: 90px;
@@ -252,7 +274,7 @@ const Container = styled.div`
     }
   }
   h2 {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 1px;
@@ -263,14 +285,14 @@ const Container = styled.div`
       letter-spacing: 0.75px;
     }
   }
-`
+`;
 
 const Buttons = styled.div`
   display: flex;
   margin-left: -5px;
   margin-top: 50px;
   flex-wrap: wrap;
-`
+`;
 const Button = styled.button`
   text-align: center;
   padding: 0 20px;
@@ -278,7 +300,7 @@ const Button = styled.button`
   border-radius: 100px;
   border: 3px solid #4a006a;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -299,7 +321,7 @@ const Button = styled.button`
     background: transparent;
     color: #4a006a;
   }
-`
+`;
 
 const ContactBox = styled.div`
   padding: 104px 104px 0 104px;
@@ -324,7 +346,7 @@ const ContactBox = styled.div`
     }
   }
   h1 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
     font-size: 64px;
     line-height: 88px;
@@ -338,7 +360,7 @@ const ContactBox = styled.div`
     }
   }
   a {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
@@ -351,6 +373,6 @@ const ContactBox = styled.div`
       letter-spacing: 0.75px;
     }
   }
-`
+`;
 
-export default Contact
+export default Contact;

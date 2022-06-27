@@ -1,64 +1,58 @@
-import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import done from "../assets/done.svg";
 
-const Steps = () => {
-  const [step, setStep] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (step === 3) {
-        setStep(0);
-      } else setStep(step + 1);
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [step]);
-
-  return (
-    <StepsSection>
-      <Container>
-        <h1>Establish a trustless relationship</h1>
-        <CardsContainer>
-          <Card className={step === 0 && "violet"}>
-            <h2>1</h2>
-            <div>
-              <h3>Set portfolio terms</h3>
-              <p>
-                Specify the terms under which the owner's assets will be allocated
-              </p>
-            </div>
-          </Card>
-          <Card className={step === 1 && "violet"}>
-            <h2>2</h2>
-            <div>
-              <h3>Seal the deal</h3>
-              <p>
-                The asset's owner agrees on the terms by simply transferring assets
-              </p>
-            </div>
-          </Card>
-          <Card className={step === 2 && "violet"}>
-            <h2>3</h2>
-            <div>
-              <h3>Put to it work</h3>
-              <p>Choose between multiple DeFi strategies</p>
-            </div>
-          </Card>
-          <Card className={step === 3 && "violet"}>
-            <h2>
-              <img src={done} alt='done' />
-            </h2>
-            <div>
-              <h3>..and done!</h3>
-              <p>Track all the accounting on-chain and generate reports</p>
-            </div>
-          </Card>
-        </CardsContainer>
-      </Container>
-    </StepsSection>
-  );
-};
+const Steps = () => (
+  <StepsSection>
+    <Container>
+      <h1>Automate process such as...</h1>
+      <CardsContainer>
+        <Card className="violet">
+          <div>
+            <img src={done} alt="done" />
+            <h3>Collect & allocate</h3>
+            <p>
+              Collect assets from a specific address when they are received,
+              swap them at the best rate among all decentralized exchanges and
+              join a specific ERC-4626 vault.
+            </p>
+          </div>
+        </Card>
+        <Card className="violet">
+          <div>
+            <img src={done} alt="done" />
+            <h3>Set withdraw goals</h3>
+            <p>
+              Provide liquidity to an AMM pool, keep track of the earnings
+              obtained from swap and liquidity mining and withdraw those gains
+              when they reach a specific amount.
+            </p>
+          </div>
+        </Card>
+        <Card className="violet">
+          <div>
+            <img src={done} alt="done" />
+            <h3>Bridge yield protocols</h3>
+            <p>
+              Bridge assets between lending protocols that are in different
+              layers depending on which one offers the best interest rate.
+            </p>
+          </div>
+        </Card>
+        <Card className="violet">
+          <div>
+            <img src={done} alt="done" />
+            <h3>Switch AMM position</h3>
+            <p>
+              Switch your market maker positions on an AMM protocol by joining
+              or exiting pools when their TVL, volume or APY reach certain
+              pre-set conditions.{" "}
+            </p>
+          </div>
+        </Card>
+      </CardsContainer>
+    </Container>
+  </StepsSection>
+);
 
 const StepsSection = styled.section`
   background: #191930;

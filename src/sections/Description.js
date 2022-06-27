@@ -1,83 +1,115 @@
-import React from 'react'
-import styled from 'styled-components'
-import check from '../assets/purple-check.svg'
-import laptop from '../assets/laptop.png'
-import laptopMobile from '../assets/laptop-mobile.png'
-import laptopLarge from '../assets/laptop-large.png'
-import line from '../assets/line.svg'
+import React from "react";
+import styled from "styled-components";
+import check from "../assets/purple-check.svg";
+import laptop from "../assets/laptop.png";
+import laptopMobile from "../assets/laptop-mobile.png";
+import laptopLarge from "../assets/laptop-large.png";
+import line from "../assets/line.svg";
 
 const Description = () => {
-  const [width, setWidth] = React.useState(window.innerWidth)
-  const breakpoint = 700
-  const large = 2000
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 700;
+  const large = 2000;
 
   React.useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
-  }, [])
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
   return (
     <DescriptionSection>
       <Container>
         <Line src={line} />
         <Box>
           <h1>
-            Get everything <br />
-            at hand
+            Schedule onchain <br />
+            actions
           </h1>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Fully automated DeFi <br />
+              Collect from external <br />
+              addresses
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Swap at best rate on <br />
+              any DEX
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Bridge assets between <br />
+              layers
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Join tons of yield <br />
               strategies
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              One dashboard to manage <br />
-              it all
-            </p>
-          </div>
-          <div>
-            <img src={check} alt='tick'/>
-            <p>
-              On-chain and real-time <br />
-              accounting
+              Withdraw assets to an <br />
+              external address
             </p>
           </div>
         </Box>
         {width < breakpoint && <Laptop src={laptopMobile} />}
         <Box>
           <h1>
-            Assets owners will <br />
-            be able to
+            Configure them to fit <br />
+            your needs
           </h1>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Keep in full control <br />
-              over the treasury
+              Schedule them with a <br />
+              Mimic bot
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Check managers activity <br />
-              on-chain
+              Delegate execution to a <br />
+              third party
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Revoke manager's access <br />
-              at anytime
+              Trigger them under certain <br />
+              market conditions
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Simulate them before
+              <br />
+              execution
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Track them and receive
+              <br />
+              alerts
             </p>
           </div>
         </Box>
       </Container>
-      {width >= breakpoint && <Laptop src={width >= large ? laptopLarge : laptop} />}
+      {width >= breakpoint && (
+        <Laptop src={width >= large ? laptopLarge : laptop} />
+      )}
     </DescriptionSection>
-  )
-}
+  );
+};
 
 const DescriptionSection = styled.section`
   background: #191930;
@@ -87,7 +119,7 @@ const DescriptionSection = styled.section`
   @media only screen and (max-width: 700px) {
     padding: 60px 0 30px 0;
   }
-`
+`;
 
 const Line = styled.img`
   position: absolute;
@@ -97,7 +129,7 @@ const Line = styled.img`
   @media only screen and (max-width: 997px) {
     display: none;
   }
-`
+`;
 
 const Laptop = styled.img`
   margin-left: 0;
@@ -112,7 +144,7 @@ const Laptop = styled.img`
     left: 50%;
     transform: translate(-50%, 0);
   }
-`
+`;
 
 const Container = styled.div`
   max-width: 1056px;
@@ -128,9 +160,9 @@ const Container = styled.div`
   }
 
   h1 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 48px;
     letter-spacing: 1px;
     color: #fcfcfc;
@@ -142,7 +174,7 @@ const Container = styled.div`
     }
   }
   p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.75px;
@@ -153,7 +185,7 @@ const Container = styled.div`
       margin-bottom: 0;
     }
   }
-`
+`;
 
 const Box = styled.div`
   margin: 0 20px;
@@ -167,6 +199,6 @@ const Box = styled.div`
       }
     }
   }
-`
+`;
 
-export default Description
+export default Description;

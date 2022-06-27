@@ -12,29 +12,23 @@ const Hero = () => (
     <Navbar />
     <Container>
       <h1>
-        Trustless treasury management made simple <span>and secure!</span>
+        <span>Automated</span> treasury management
       </h1>
-      <Counter>
-        <Tvl>
-          <ValueLocked />
-        </Tvl>
-        <p> of total value locked across 2 networks and over 7 strategies.</p>
-      </Counter>
       <h2>
-        Mimic is your one-stop platform to allocate third-party assets on
-        different DeFi strategies while saving time & money.
+        Mimic automates the way to allocate your assets to the most popular DeFi
+        Instruments.
       </h2>
       <Icons>
         <Box>
-          <img src={trust} alt='trustless' />
+          <img src={trust} alt="trustless" />
           <p>Trustless</p>
         </Box>
         <Box>
-          <img src={custodial} alt='non-custodial' />
+          <img src={custodial} alt="non-custodial" />
           <p>Non-custodial</p>
         </Box>
         <Box>
-          <img src={transparency} alt='transparency' />
+          <img src={transparency} alt="transparency" />
           <p>Transparent</p>
         </Box>
       </Icons>
@@ -98,7 +92,7 @@ const Container = styled.div`
     width: 560px;
     max-width: 85vw;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 32px;
     @media only screen and (max-width: 700px) {
       font-size: 17px;
@@ -115,14 +109,14 @@ const Icons = styled.div`
   @media only screen and (max-width: 700px) {
     margin-left: -10px;
   }
-  margin-top: 20px;
+  margin-top: 100px;
 `;
 
 const Box = styled.div`
   text-align: center;
   padding: 0 20px;
   img {
-    width: 70px;
+    width: 50px;
   }
   @media only screen and (max-width: 700px) {
     padding: 0 10px;
@@ -135,7 +129,7 @@ const Box = styled.div`
     font-family: "Poppins-Medium";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.75px;
