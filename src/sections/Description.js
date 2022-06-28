@@ -26,36 +26,36 @@ const Description = () => {
           <div>
             <img src={check} alt="tick" />
             <p>
-              Collect from external <br />
-              addresses
+              Collect assets from <br />
+              external addresses
             </p>
           </div>
           <div>
             <img src={check} alt="tick" />
             <p>
-              Swap at best rate on <br />
-              any DEX
+              Swap assets on any <br />
+              DEX
             </p>
           </div>
           <div>
             <img src={check} alt="tick" />
             <p>
               Bridge assets between <br />
-              layers
+              different layers
             </p>
           </div>
           <div>
             <img src={check} alt="tick" />
             <p>
-              Join tons of yield <br />
-              strategies
+              Allocate assets into a <br />
+              DeFi Protocol
             </p>
           </div>
           <div>
             <img src={check} alt="tick" />
             <p>
-              Withdraw assets to an <br />
-              external address
+              Withdraw assets from a <br />
+              DeFi Protocol
             </p>
           </div>
         </Box>

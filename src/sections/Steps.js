@@ -4,49 +4,49 @@ import done from "../assets/done.svg";
 const Steps = () => (
   <StepsSection>
     <Container>
-      <h1>Automate process such as...</h1>
+      <h1>Automate your own processes:</h1>
       <CardsContainer>
         <Card className="violet">
           <div>
-            <img src={done} alt="done" />
+            <h2>example #1</h2>
             <h3>Collect & allocate</h3>
             <p>
-              Collect assets from a specific address when they are received,
-              swap them at the best rate among all decentralized exchanges and
-              join a specific ERC-4626 vault.
+              Collect assets from different places, swap them at the best rate
+              among decentralized exchanges, and join a specific ERC-4626 vault.
             </p>
           </div>
         </Card>
         <Card className="violet">
           <div>
-            <img src={done} alt="done" />
+            <h2>example #2</h2>
             <h3>Set withdraw goals</h3>
             <p>
               Provide liquidity to an AMM pool, keep track of the earnings
-              obtained from swap and liquidity mining and withdraw those gains
-              when they reach a specific amount.
+              obtained from swap fees and liquidity mining, and withdraw those
+              gains on a monthly basis.
             </p>
           </div>
         </Card>
         <Card className="violet">
           <div>
-            <img src={done} alt="done" />
+            <h2>example #3</h2>
             <h3>Bridge yield protocols</h3>
             <p>
-              Bridge assets between lending protocols that are in different
-              layers depending on which one offers the best interest rate.
+              Bridge assets between lending protocols from different layers
+              depending on which one offers the best interest rate.
             </p>
           </div>
         </Card>
         <Card className="violet">
           <div>
-            <img src={done} alt="done" />
-            <h3>Switch AMM position</h3>
+            <h2>example #4</h2>
+            <h3>Trustless delegation</h3>
             <p>
-              Switch your market maker positions on an AMM protocol by joining
-              or exiting pools when their TVL, volume or APY reach certain
-              pre-set conditions.{" "}
+              Keep full custody of your assets by automating most of your
+              treasury management actions and asigning a thid party for specific
+              ones.
             </p>
+            <button>View use case</button>
           </div>
         </Card>
       </CardsContainer>
@@ -102,7 +102,7 @@ const CardsContainer = styled.div`
 `;
 const Card = styled.div`
   border-radius: 16px;
-  padding: 26px;
+  padding: 0 26px 26px 26px;
   width: 218px;
   @media only screen and (max-width: 700px) {
     margin: 0;
@@ -118,19 +118,13 @@ const Card = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  margin: 15px 0;
-
   h2 {
     font-family: "Poppins-Bold";
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: 0.99px;
-    text-align: left;
-    margin: 0;
+    font-size: 14px;
+    text-align: right;
+    margin: 12px 0;
     @media only screen and (max-width: 700px) {
-      font-size: 60px;
-      padding: 20px 30px 30px 30px;
-      min-width: 83px;
+      font-size: 16px;
       text-align: center;
     }
   }
@@ -140,7 +134,7 @@ const Card = styled.div`
     line-height: 32px;
     letter-spacing: 0.99px;
     text-align: left;
-    margin: 0;
+    margin: 30px 0;
     @media only screen and (max-width: 700px) {
       padding-top: 15px;
     }
@@ -159,9 +153,15 @@ const Card = styled.div`
       margin-right: 30px;
     }
   }
+  button {
+    font-family: "Poppins-SemiBold";
+    font-size: 17px;
+    background: #191930;
+    border: none;
+  }
   &.violet {
     background: #a524ff;
-    padding: 30px;
+    padding: 0 30px;
     margin: 0;
     width: 247px;
     -webkit-transition: all 0.5s ease;
@@ -177,9 +177,6 @@ const Card = styled.div`
     @media only screen and (min-width: 701px) {
       h3 {
         font-size: 28px;
-      }
-      h2 {
-        font-size: 80px;
       }
     }
   }

@@ -19,7 +19,7 @@ const Features = () => {
     <FeaturesSection>
       <Logo src={logo} />
       <div className="container">
-        <h1>Connect actions to strategies</h1>
+        <h1>Connect to any DeFi Protocol</h1>
         <h2>
           Mimic strategies hold the integration logic to interact with different
           DeFi protocols
@@ -76,7 +76,7 @@ const FeaturesSection = styled.section`
   background: linear-gradient(95.08deg, #535664 2.49%, #202d3a 97.19%);
   margin: auto;
   color: white;
-  padding: 150px 0 80px 104px;
+  padding: 150px 0 350px 104px;
   display: grid;
   align-items: stretch;
   grid-template-columns: 1fr 1fr;

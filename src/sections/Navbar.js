@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import logo from '../assets/navbar-logo.svg'
-import Networks from './Networks'
-import Menu from '../components/Menu'
-import Hamburger from 'hamburger-react'
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import logo from "../assets/navbar-logo.svg";
+import MenuOptions from "./MenuOptions";
+import Menu from "../components/Menu";
+import Hamburger from "hamburger-react";
 
 const Navbar = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
-  }, [])
-  const [isOpen, setOpen] = useState(false)
-  const medium = 700
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
+  const [isOpen, setOpen] = useState(false);
+  const medium = 700;
   return (
     <NavbarSection>
       <Container>
-        <img src={logo} alt='logo' />
+        <img src={logo} alt="logo" />
         {width >= medium ? (
-          <Networks />
+          <MenuOptions />
         ) : (
           <>
             <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
@@ -26,8 +26,8 @@ const Navbar = () => {
         )}
       </Container>
     </NavbarSection>
-  )
-}
+  );
+};
 
 const NavbarSection = styled.section`
   background: transparent;
@@ -36,7 +36,7 @@ const NavbarSection = styled.section`
     position: relative;
     z-index: 3;
   }
-`
+`;
 
 const Container = styled.div`
   padding: 0 40px 0 40px;
@@ -59,6 +59,6 @@ const Container = styled.div`
       width: 50%;
     }
   }
-`
+`;
 
-export default Navbar
+export default Navbar;
