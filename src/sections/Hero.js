@@ -12,11 +12,11 @@ const Hero = () => (
     <Navbar />
     <Container>
       <h1>
-        <span>Automated</span> treasury management
+        <span>Automating</span> how to interact with <span>DeFi</span>
       </h1>
       <h2>
-        Mimic automates the way to allocate your assets to the most popular DeFi
-        Instruments.
+        Mimic simplifies the interactions with different DeFi protocols by
+        automating them into simple actions.
       </h2>
       <Icons>
         <Box>

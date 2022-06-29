@@ -4,7 +4,7 @@ import done from "../assets/done.svg";
 const Steps = () => (
   <StepsSection>
     <Container>
-      <h1>Automate your own processes:</h1>
+      <h1>Unlimited actions to create</h1>
       <CardsContainer>
         <Card className="violet">
           <div>

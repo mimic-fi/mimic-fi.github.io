@@ -19,7 +19,7 @@ const Features = () => {
     <FeaturesSection>
       <Logo src={logo} />
       <div className="container">
-        <h1>Connect to any DeFi Protocol</h1>
+        <h1>Interact with any DeFi Protocol</h1>
         <h2>
           Mimic strategies hold the integration logic to interact with different
           DeFi protocols

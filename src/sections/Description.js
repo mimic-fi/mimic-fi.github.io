@@ -20,8 +20,8 @@ const Description = () => {
         <Line src={line} />
         <Box>
           <h1>
-            Schedule onchain <br />
-            actions
+            Compose primitives <br />
+            into actions
           </h1>
           <div>
             <img src={check} alt="tick" />
