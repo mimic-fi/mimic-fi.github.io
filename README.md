@@ -16,7 +16,6 @@
 <p align="center">
   <a href="#content">Content</a> •
   <a href="#setup">Setup</a> •
-  <a href="#security">Security</a> •
   <a href="#license">License</a>
 </p>
 
