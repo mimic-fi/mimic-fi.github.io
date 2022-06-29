@@ -32,7 +32,7 @@ const Contact = () => {
             processes.
           </h2>
           <Buttons>
-            <Button>Custom actions</Button>
+            <Button>Custom primitives</Button>
             <Button>Private strategies</Button>
             <Button>Extend your own product</Button>
             <Button className="transparent">And more</Button>
