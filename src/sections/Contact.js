@@ -9,7 +9,7 @@ import twitter from '../assets/twitter.svg'
 import github from '../assets/github.svg'
 import logo from '../assets/contact-logo.svg'
 import logoMobile from '../assets/mimic-logo-mobile.svg'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 
 const Contact = () => {

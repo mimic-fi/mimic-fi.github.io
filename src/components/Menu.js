@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import ethereum from "../assets/ethereum_logo.svg";
-import polygon from "../assets/polygon_logo.svg";
+import ethereum from '../assets/ethereum_logo.svg'
+import polygon from '../assets/polygon_logo.svg'
 import whitepaper from '../assets/whitepaper.svg'
 
 const Menu = ({ open }) => {

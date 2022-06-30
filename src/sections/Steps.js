@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-import done from "../assets/done.svg";
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import done from '../assets/done.svg'
 
 const Steps = () => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(0)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (step === 3) {
-        setStep(0);
-      } else setStep(step + 1);
-    }, 3000);
+        setStep(0)
+      } else setStep(step + 1)
+    }, 3000)
 
-    return () => clearInterval(intervalId);
-  }, [step]);
+    return () => clearInterval(intervalId)
+  }, [step])
 
   return (
     <StepsSection>
       <Container>
         <h1>Establish a trustless relationship</h1>
         <CardsContainer>
-          <Card className={step === 0 && "violet"}>
+          <Card className={step === 0 && 'violet'}>
             <h2>1</h2>
             <div>
               <h3>Set portfolio terms</h3>
@@ -29,7 +29,7 @@ const Steps = () => {
               </p>
             </div>
           </Card>
-          <Card className={step === 1 && "violet"}>
+          <Card className={step === 1 && 'violet'}>
             <h2>2</h2>
             <div>
               <h3>Seal the deal</h3>
@@ -38,14 +38,14 @@ const Steps = () => {
               </p>
             </div>
           </Card>
-          <Card className={step === 2 && "violet"}>
+          <Card className={step === 2 && 'violet'}>
             <h2>3</h2>
             <div>
               <h3>Put to it work</h3>
               <p>Choose between multiple DeFi strategies</p>
             </div>
           </Card>
-          <Card className={step === 3 && "violet"}>
+          <Card className={step === 3 && 'violet'}>
             <h2>
               <img src={done} alt='done' />
             </h2>
@@ -57,8 +57,8 @@ const Steps = () => {
         </CardsContainer>
       </Container>
     </StepsSection>
-  );
-};
+  )
+}
 
 const StepsSection = styled.section`
   background: #191930;
@@ -66,7 +66,7 @@ const StepsSection = styled.section`
   color: white;
   padding: 0 0 30px 0;
   text-align: right;
-`;
+`
 
 const Container = styled.div`
   max-width: 1056px;
@@ -89,7 +89,7 @@ const Container = styled.div`
       text-align: center;
     }
   }
-`;
+`
 
 const CardsContainer = styled.div`
   display: grid;
@@ -105,7 +105,7 @@ const CardsContainer = styled.div`
     align-content: center;
     padding: 0 20px;
   }
-`;
+`
 const Card = styled.div`
   border-radius: 16px;
   padding: 26px;
@@ -189,6 +189,6 @@ const Card = styled.div`
       }
     }
   }
-`;
+`
 
-export default Steps;
+export default Steps
