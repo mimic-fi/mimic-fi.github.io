@@ -45,9 +45,8 @@ const data = {
         "Yes, Mimic protocol allows to create custom strategies. You can connect them to any DeFi instrument you desire or to an existen ERC-4626 vault.",
     },
     {
-      title: "What blockchains are supported by the protocol?",
-      content:
-        "Ethereum and Polygon for now. We're more than happy to know if there is interest in supporting new ones. You can drop a message to us.",
+      title: 'What blockchains are supported by the protocol?',
+      content: 'Ethereum and Polygon for now. We\'re more than happy to know if there is interest in supporting new ones. You can drop a message to us.',
     },
   ],
 };

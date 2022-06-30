@@ -1,11 +1,10 @@
-import React from "react";
-import Navbar from "./Navbar";
-import styled from "styled-components";
-import background from "../assets/hero-background.png";
-import trust from "../assets/trust.svg";
-import transparency from "../assets/transparency.svg";
-import custodial from "../assets/private.svg";
-import { ValueLocked } from "../components/ValueLocked";
+import React from 'react'
+import Navbar from './Navbar'
+import styled from 'styled-components'
+import background from '../assets/hero-background.png'
+import trust from '../assets/trust.svg'
+import transparency from '../assets/transparency.svg'
+import custodial from '../assets/private.svg'
 
 const Hero = () => (
   <HeroSection>
@@ -34,7 +33,7 @@ const Hero = () => (
       </Icons>
     </Container>
   </HeroSection>
-);
+)
 
 const HeroSection = styled.section`
   background: url(${background}) top no-repeat;
@@ -53,7 +52,7 @@ const HeroSection = styled.section`
     width: 100%;
     padding: 35px 0 230px 0;
   }
-`;
+`
 
 const Container = styled.div`
   padding: 104px 104px 0 104px;
@@ -101,7 +100,7 @@ const Container = styled.div`
     letter-spacing: 0.75px;
     color: #fcfcfc;
   }
-`;
+`
 
 const Icons = styled.div`
   display: flex;
@@ -110,7 +109,7 @@ const Icons = styled.div`
     margin-left: -10px;
   }
   margin-top: 100px;
-`;
+`
 
 const Box = styled.div`
   text-align: center;
@@ -146,7 +145,7 @@ const Box = styled.div`
       max-width: 146px;
     }
   }
-`;
+`
 
 const Counter = styled.div`
   text-align: center;
@@ -183,7 +182,7 @@ const Counter = styled.div`
       text-align: center;
     }
   }
-`;
+`
 
 const Tvl = styled.div`
   font-family: "Poppins";
@@ -199,6 +198,6 @@ const Tvl = styled.div`
     letter-spacing: 0.75px;
     display: contents;
   }
-`;
+`
 
-export default Hero;
+export default Hero

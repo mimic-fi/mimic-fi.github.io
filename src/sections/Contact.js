@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import getInTouch from "../assets/get-in-touch-mobile.png";
-import background from "../assets/contact-background.png";
-import backgroundMobile from "../assets/contact-background-mobile.png";
-import world from "../assets/world.svg";
-import mail from "../assets/mail.svg";
-import twitter from "../assets/twitter.svg";
-import github from "../assets/github.svg";
-import logo from "../assets/contact-logo.svg";
-import logoMobile from "../assets/mimic-logo-mobile.svg";
-import { Link } from "react-router-dom";
+import React from 'react'
+import styled from 'styled-components'
+import getInTouch from '../assets/get-in-touch-mobile.png'
+import background from '../assets/contact-background.png'
+import backgroundMobile from '../assets/contact-background-mobile.png'
+import world from '../assets/world.svg'
+import mail from '../assets/mail.svg'
+import twitter from '../assets/twitter.svg'
+import github from '../assets/github.svg'
+import logo from '../assets/contact-logo.svg'
+import logoMobile from '../assets/mimic-logo-mobile.svg'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   const [width, setWidth] = React.useState(window.innerWidth);

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import done from "../assets/done.svg";
 
 const Steps = () => (
   <StepsSection>
@@ -60,7 +59,7 @@ const StepsSection = styled.section`
   color: white;
   padding: 0 0 30px 0;
   text-align: right;
-`;
+`
 
 const Container = styled.div`
   max-width: 1056px;
@@ -83,7 +82,7 @@ const Container = styled.div`
       text-align: center;
     }
   }
-`;
+`
 
 const CardsContainer = styled.div`
   display: grid;
@@ -99,7 +98,7 @@ const CardsContainer = styled.div`
     align-content: center;
     padding: 0 20px;
   }
-`;
+`
 const Card = styled.div`
   border-radius: 16px;
   padding: 0 26px 26px 26px;
@@ -180,6 +179,6 @@ const Card = styled.div`
       }
     }
   }
-`;
+`
 
-export default Steps;
+export default Steps

@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 export default function Whitepaper() {
 
 useEffect(() => {
-  window.location.replace('/whitepaper.pdf');
-  }, []);
+  window.location.replace('/whitepaper.pdf')
+  }, [])
 
   return <div></div>
 }
