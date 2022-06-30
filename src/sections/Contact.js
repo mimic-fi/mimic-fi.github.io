@@ -22,20 +22,19 @@ const Contact = () => {
     <>
       <ContactSection compact={width <= breakpoint}>
         <Container>
-          <h3>Looking for more?</h3>
           <h1>
-            Customize <span>Mimic</span> for your own processes
+            We have a <span>lite version</span> up and running
           </h1>
           <h2>
-            Mimic is a fully scalable solution suitable for anyone looking for
-            tailored capabilities to automate custom treasury management
-            processes.
+            This version automates asset allocation by providing actions to
+            collect, swap and withdraw before joining or exiting those DeFi
+            protocols. You can trigger those actions by youself or delegate
+            their execution to a third party.
           </h2>
+          <h3>Give it a try!</h3>
           <Buttons>
-            <Button>Custom primitives</Button>
-            <Button>Private strategies</Button>
-            <Button>Extend your own product</Button>
-            <Button className="transparent">And more</Button>
+            <Button>Mainnet</Button>
+            <Button>Polygon</Button>
           </Buttons>
         </Container>
         {!(width < breakpoint) && (

@@ -20,8 +20,8 @@ const Description = () => {
         <Line src={line} />
         <Box>
           <h1>
-            Compose primitives <br />
-            into actions
+            All DeFi interactions <br />
+            supported
           </h1>
           <div>
             <img src={check} alt="tick" />
@@ -62,7 +62,7 @@ const Description = () => {
         {width < breakpoint && <Laptop src={laptopMobile} />}
         <Box>
           <h1>
-            Configure them to fit <br />
+            Configure actions to fit <br />
             your needs
           </h1>
           <div>
