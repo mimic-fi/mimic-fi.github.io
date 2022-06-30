@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import twitter from "../assets/twitter.svg";
-import github from "../assets/github.svg";
+import React from 'react'
+import styled from 'styled-components'
+import twitter from '../assets/twitter.svg'
+import github from '../assets/github.svg'
 
 const MenuOptions = () => {
-  const [, setWidth] = React.useState(window.innerWidth);
+  const [, setWidth] = React.useState(window.innerWidth)
 
   React.useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
   return (
     <MenuOptionsSection>
       <ButtonsSection>
@@ -33,8 +33,8 @@ const MenuOptions = () => {
         </a>
       </ButtonsSection>
     </MenuOptionsSection>
-  );
-};
+  )
+}
 
 const MenuOptionsSection = styled.div`
   display: flex;
@@ -53,7 +53,7 @@ const MenuOptionsSection = styled.div`
       margin: 10px 10px;
     }
   }
-`;
+`
 
 const ButtonsSection = styled.div`
   display: flex;
@@ -62,6 +62,6 @@ const ButtonsSection = styled.div`
   @media only screen and (max-width: 700px) {
     margin: 30px 0 0 0;
   }
-`;
+`
 
-export default MenuOptions;
+export default MenuOptions

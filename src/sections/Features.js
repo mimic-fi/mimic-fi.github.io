@@ -1,19 +1,19 @@
-import React from "react";
-import styled from "styled-components";
-import check from "../assets/white-check.svg";
-import app from "../assets/app.svg";
-import appLarge from "../assets/app-large.svg";
-import appMobile from "../assets/app-mobile.svg";
-import logo from "../assets/violet-logo.svg";
+import React from 'react'
+import styled from 'styled-components'
+import check from '../assets/white-check.svg'
+import app from '../assets/app.svg'
+import appLarge from '../assets/app-large.svg'
+import appMobile from '../assets/app-mobile.svg'
+import logo from '../assets/violet-logo.svg'
 
 const Features = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 1000;
-  const large = 1900;
+  const [width, setWidth] = React.useState(window.innerWidth)
+  const breakpoint = 1000
+  const large = 1900
 
   React.useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
 
   return (
     <FeaturesSection>
@@ -69,8 +69,8 @@ const Features = () => {
       </div>
       {width >= breakpoint && <App src={width >= large ? appLarge : app} />}
     </FeaturesSection>
-  );
-};
+  )
+}
 
 const FeaturesSection = styled.section`
   background: linear-gradient(95.08deg, #535664 2.49%, #202d3a 97.19%);
@@ -134,7 +134,7 @@ const FeaturesSection = styled.section`
       margin: auto;
     }
   }
-`;
+`
 
 const App = styled.img`
   max-width: 100%;
@@ -142,7 +142,7 @@ const App = styled.img`
     max-width: 100%;
     margin-top: 80px;
   }
-`;
+`
 
 const Logo = styled.img`
   position: absolute;
@@ -162,7 +162,7 @@ const Logo = styled.img`
     left: calc(50% - 598px);
     transform: translate(-100%, -50%);
   }
-`;
+`
 
 const Container = styled.div`
   width: auto;
@@ -197,7 +197,7 @@ const Container = styled.div`
       font-size: 17px;
     }
   }
-`;
+`
 
 const Box = styled.div`
   margin: 0 50px;
@@ -215,6 +215,6 @@ const Box = styled.div`
       }
     }
   }
-`;
+`
 
-export default Features;
+export default Features

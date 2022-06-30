@@ -12,12 +12,12 @@ import logoMobile from '../assets/mimic-logo-mobile.svg'
 import { Link } from 'react-router-dom'
 
 const Contact = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 700;
+  const [width, setWidth] = React.useState(window.innerWidth)
+  const breakpoint = 700
 
   React.useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
   return (
     <>
       <ContactSection compact={width <= breakpoint}>
@@ -81,7 +81,7 @@ const Contact = () => {
           <img className="logo" src={logoMobile} alt="logo" />
           <br />
           <h1>
-            Visit us{" "}
+            Visit us{' '}
             <a target="_blank" href="https://mimic.fi" rel="noreferrer">
               mimic.fi
             </a>
@@ -124,8 +124,8 @@ const Contact = () => {
         2022 MIMIC. ALL RIGHTS RESERVED.
       </Footer>
     </>
-  );
-};
+  )
+}
 const ContactSection = styled.section`
   background: url(${(p) => (p.compact ? backgroundMobile : background)});
   margin: auto;
@@ -137,8 +137,8 @@ const ContactSection = styled.section`
   }
   background-size: cover;
   background-position: top;
-  margin-top: ${(p) => (p.compact ? "-230px" : "-400px")};
-  padding-top: ${(p) => (p.compact ? "110px" : "600px")};
+  margin-top: ${(p) => (p.compact ? '-230px' : '-400px')};
+  padding-top: ${(p) => (p.compact ? '110px' : '600px')};
   position: relative;
   z-index: 3;
   @media only screen and (min-width: 2000px) {
@@ -147,7 +147,7 @@ const ContactSection = styled.section`
   .github {
     width: 45px;
   }
-`;
+`
 const Footer = styled.div`
   background-color: #a445e9;
   color: white;
@@ -159,11 +159,11 @@ const Footer = styled.div`
     font-weight: 500;
     padding: 0px 20px;
   }
-`;
+`
 
 const Logo = styled.img`
   max-width: 120px;
-`;
+`
 const MobileContact = styled.section`
   background: url(${getInTouch}) top no-repeat;
   color: white;
@@ -225,7 +225,7 @@ const MobileContact = styled.section`
       width: 35px;
     }
   }
-`;
+`
 
 const Container = styled.div`
   padding: 104px 104px 0 104px;
@@ -284,14 +284,14 @@ const Container = styled.div`
       letter-spacing: 0.75px;
     }
   }
-`;
+`
 
 const Buttons = styled.div`
   display: flex;
   margin-left: -5px;
   margin-top: 50px;
   flex-wrap: wrap;
-`;
+`
 const Button = styled.button`
   text-align: center;
   padding: 0 20px;
@@ -320,7 +320,7 @@ const Button = styled.button`
     background: transparent;
     color: #4a006a;
   }
-`;
+`
 
 const ContactBox = styled.div`
   padding: 104px 104px 0 104px;
@@ -372,6 +372,6 @@ const ContactBox = styled.div`
       letter-spacing: 0.75px;
     }
   }
-`;
+`
 
-export default Contact;
+export default Contact

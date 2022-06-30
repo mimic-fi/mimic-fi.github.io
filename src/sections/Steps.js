@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Steps = () => (
   <StepsSection>
@@ -51,7 +51,7 @@ const Steps = () => (
       </CardsContainer>
     </Container>
   </StepsSection>
-);
+)
 
 const StepsSection = styled.section`
   background: #191930;
