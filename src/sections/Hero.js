@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import styled from 'styled-components'
-import background from '../assets/hero-background.png'
+import pattern from '../assets/pattern.png'
 import trust from '../assets/trust.svg'
 import transparency from '../assets/transparency.svg'
 import custodial from '../assets/private.svg'
@@ -36,22 +36,14 @@ const Hero = () => (
 )
 
 const HeroSection = styled.section`
-  background: url(${background}) top no-repeat;
+  background: #2a1d68;
   margin: auto;
   color: white;
   text-align: center;
-  padding: 76px 0 400px 0;
-  background-size: cover;
-  background-position: bottom;
-  @media only screen and (min-width: 2000px) {
-    min-height: 1600px;
-  }
-
-  @media only screen and (max-width: 700px) {
-    min-height: auto;
-    width: 100%;
-    padding: 35px 0 230px 0;
-  }
+  padding: 45px 0 00px 0;
+  background: url(${pattern});
+  height: 100vh;
+  max-height: 1000px;
 `
 
 const Container = styled.div`
@@ -61,7 +53,7 @@ const Container = styled.div`
     padding: 40px 20px 0 20px;
   }
   @media only screen and (min-width: 370px) and (max-width: 7000px) {
-    padding: 0px 40px 0 40px;
+    padding: 100px 40px 0 40px;
   }
   @media only screen and (min-width: 2000px) {
     margin: auto;
@@ -72,9 +64,9 @@ const Container = styled.div`
     font-weight: bold;
     font-size: 80px;
     line-height: 95px;
-    margin: 50px 0px;
+    margin: 15px 0px 0px 0px;
     @media only screen and (max-width: 700px) {
-      font-size: 33px;
+      font-size: 43px;
       line-height: 44px;
       white-space: break-spaces;
       margin: 20px 0px;
@@ -136,7 +128,6 @@ const Box = styled.div`
     max-width: 194px;
     text-align: center;
     margin: 24px auto;
-
     @media only screen and (max-width: 700px) {
       font-family: "Poppins";
       font-size: 15px;

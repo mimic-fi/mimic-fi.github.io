@@ -55,6 +55,7 @@ const Container = styled.div`
     margin: auto;
   }
   img {
+    max-height: 90px;
     @media only screen and (max-width: 1000px) {
       width: 50%;
     }
