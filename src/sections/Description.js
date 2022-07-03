@@ -1,19 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import check from '../assets/purple-check.svg'
-import laptop from '../assets/laptop.png'
-import laptopMobile from '../assets/laptop-mobile.png'
-import laptopLarge from '../assets/laptop-large.png'
 import line from '../assets/line.svg'
 
 const Description = () => {
-  const [width, setWidth] = React.useState(window.innerWidth)
-  const breakpoint = 700
-  const large = 2000
-
-  React.useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
-  }, [])
   return (
     <DescriptionSection>
       <Container>
@@ -54,15 +44,13 @@ const Description = () => {
           <div>
             <img src={check} alt="tick" />
             <p>
-              Withdraw assets from a <br />
-              DeFi Protocol
+              Withdraw assets from a<br />DeFi Protocol
             </p>
           </div>
         </Box>
-        {width < breakpoint && <Laptop src={laptopMobile} />}
         <Box>
           <h1>
-            Configure actions to fit <br />
+            Configure actions  <br />to fit
             your needs
           </h1>
           <div>
@@ -104,9 +92,6 @@ const Description = () => {
           </div>
         </Box>
       </Container>
-      {width >= breakpoint && (
-        <Laptop src={width >= large ? laptopLarge : laptop} />
-      )}
     </DescriptionSection>
   )
 }
@@ -124,25 +109,10 @@ const DescriptionSection = styled.section`
 const Line = styled.img`
   position: absolute;
   left: 100px;
-  top: 100px;
+  top: -150px;
   z-index: 1;
   @media only screen and (max-width: 997px) {
     display: none;
-  }
-`
-
-const Laptop = styled.img`
-  margin-left: 0;
-  position: relative;
-  z-index: 10;
-  @media only screen and (max-width: 700px) {
-    width: 90%;
-    margin-left: auto;
-  }
-  @media only screen and (min-width: 2000px) {
-    margin: auto;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
 `
 

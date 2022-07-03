@@ -53,7 +53,7 @@ const Container = styled.div`
     padding: 40px 20px 0 20px;
   }
   @media only screen and (min-width: 370px) and (max-width: 7000px) {
-    padding: 100px 40px 0 40px;
+    padding: 70px 40px 0 40px;
   }
   @media only screen and (min-width: 2000px) {
     margin: auto;
@@ -69,7 +69,7 @@ const Container = styled.div`
       font-size: 43px;
       line-height: 44px;
       white-space: break-spaces;
-      margin: 20px 0px;
+      margin: 0px 0px;
     }
     letter-spacing: 1.33075px;
     color: #fcfcfc;

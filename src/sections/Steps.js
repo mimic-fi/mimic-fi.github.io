@@ -208,6 +208,7 @@ const CardHolder = styled.section`
 const CardsContainer = styled.div`
   position: absolute;
   display: flex;
+  justify-content: center;
   z-index: 100;
   width: 100%;
   padding: 200px 0;
@@ -253,6 +254,7 @@ const CardsContainerBg = styled.div`
 
 const Card = styled.div`
   background: url(${bgCard});
+  background-size: cover;
   border-radius: 16px;
   padding: 0 26px 26px 26px;
   width: 430px;
@@ -288,7 +290,6 @@ const Card = styled.div`
       text-align: center;
     }
   }
-
   &.alt {
     border-radius: 16px;
     padding: 0 26px 26px 26px;
@@ -342,10 +343,9 @@ const TinyCard = styled.div`
       text-align: center;
     }
   }
-
   &.alt {
     width: 100%;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     @media only screen and (max-width: 700px) {
       width: 100%;
       margin: 10px 20px;
