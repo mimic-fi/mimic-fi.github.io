@@ -131,6 +131,7 @@ const FeaturesSection = styled.section`
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     padding: 0px 20px 250px 20px;
+
   }
 
   h1 {

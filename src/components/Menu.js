@@ -1,21 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import ethereum from '../assets/ethereum_logo.svg'
-import polygon from '../assets/polygon_logo.svg'
-import whitepaper from '../assets/whitepaper.svg'
+import { Link } from 'react-router-dom'
 
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href="https://www.mimic.fi/whitepaper.pdf" target="_blank" rel="noreferrer">
-      <img src={whitepaper} alt='whitepaper' /> Whitepaper
-      </a>
-      <a href="https://mainnet.mimic.fi" target="_blank" rel="noreferrer">
-        <img src={ethereum} alt='ethereum'/> Ethereum
-      </a>
-      <a href="https://polygon.mimic.fi" target="_blank" rel="noreferrer">
-        <img src={polygon} alt='polygon'/> Polygon
-      </a>
+      <Link to="//docs.mimic.fi">Documentation</Link>
+      <Link to="//twitter.com/mimicfi">Twitter</Link>
+      <Link to="//discord.mimic.fi/ ">Discord</Link>
+      <Link to="//mainnet.mimic.fi'">Lite app - Mainnet</Link>
+      <Link to="//polygon.mimic.fi'">Lite app - Polygon</Link>
+      <Link to="//github.com/mimic-fi">Github</Link>
     </StyledMenu>
   )
 }
@@ -43,7 +38,7 @@ export const StyledMenu = styled.nav`
 
   a {
     display: flex;
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.75px;

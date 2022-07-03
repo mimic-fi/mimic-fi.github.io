@@ -17,20 +17,20 @@ const Footer = () => {
         </Mimic>
         <Links>
           <LinkSection title="Devs">
-            <Link to="#">Documentation</Link>
-            <Link to="#">Lite app - Mainnet</Link>
-            <Link to="#">Lite app - Polygon</Link>
-            <Link to="#">Github</Link>
+            <Link to="//docs.mimic.fi">Documentation</Link>
+            <Link to="//mainnet.mimic.fi'">Lite app - Mainnet</Link>
+            <Link to="//polygon.mimic.fi'">Lite app - Polygon</Link>
+            <Link to="//github.com/mimic-fi">Github</Link>
           </LinkSection>
 
           <LinkSection title="Mimic">
-            <Link to="#">Blog</Link>
-            <Link to="#">Terms</Link>
+            <Link to="//medium.com/mimicfi">Blog</Link>
+            <Link to="//mimic.fi/terms">Terms</Link>
           </LinkSection>
 
           <LinkSection title="Contact">
-            <Link to="#">Twitter</Link>
-            <Link to="#">Discord</Link>
+            <Link to="//twitter.com/mimicfi">Twitter</Link>
+            <Link to="//discord.mimic.fi/ ">Discord</Link>
           </LinkSection>
         </Links>
       </Container>

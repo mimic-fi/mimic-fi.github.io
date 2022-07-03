@@ -10,19 +10,24 @@ const MenuOptions = () => {
   }, [])
 
   const data = [
-    { id: 0, label: 'Mainnet' },
-    { id: 1, label: 'Polygon' },
+    { id: 1, label: 'Mainnet' },
+    { id: 137, label: 'Polygon' },
   ]
 
   const DropdownElement = () => {
     const [isOpen, setOpen] = useState(false)
-    const [items, ] = useState(data)
+    const [items] = useState(data)
     const [selectedItem, setSelectedItem] = useState(null)
 
     const toggleDropdown = () => setOpen(!isOpen)
 
     const handleItemClick = (id) => {
-      selectedItem === id ? setSelectedItem(null) : setSelectedItem(id)
+      setSelectedItem(id)
+      if (id === 1) {
+        window.location.replace('//mainnet.mimic.fi/')
+      } else {
+        window.location.replace('//polygon.mimic.fi/')
+      }
     }
 
     return (
@@ -35,17 +40,11 @@ const MenuOptions = () => {
         <div className={`dropdown-body ${isOpen && 'open'}`}>
           {items.map((item) => (
             <div
+              key={item.id}
               className="dropdown-item"
-              onClick={(e) => handleItemClick(e.target.id)}
+              onClick={(e) => handleItemClick(item.id)}
               id={item.id}
             >
-              <span
-                className={`dropdown-item-dot ${
-                  item.id === selectedItem && 'selected'
-                }`}
-              >
-                •{' '}
-              </span>
               {item.label}
             </div>
           ))}
@@ -65,13 +64,17 @@ const MenuOptions = () => {
         >
           Whitepaper
         </a>
-        <a href="https://mainnet.mimic.fi" target="_blank" rel="noreferrer">
+        <a href="https://docs.mimic.fi" target="_blank" rel="noreferrer">
           Docs
         </a>
-        <a href="https://polygon.mimic.fi" target="_blank" rel="noreferrer">
-          Faqs
+        <a
+          href="https://docs.mimic.fi/miscellaneous/faqs"
+          target="_blank"
+          rel="noreferrer"
+        >
+          FAQs
         </a>
-        <a href="https://polygon.mimic.fi" target="_blank" rel="noreferrer">
+        <a href="https://github.com/mimic-fi" target="_blank" rel="noreferrer">
           <img src={github} alt="github" />
         </a>
       </ButtonsSection>

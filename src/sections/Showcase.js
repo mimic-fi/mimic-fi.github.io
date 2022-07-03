@@ -40,6 +40,8 @@ const ContactSection = styled.section`
   @media only screen and (max-width: 700px) {
     flex-wrap: wrap;
     padding: 40px 0 100px 0;
+    margin-top: -244px;
+
   }
   background-size: cover;
   background-position: top;
@@ -67,9 +69,11 @@ const Container = styled.div`
   padding: 104px 104px 0 104px;
   @media only screen and (min-width: 900px) {
     width: 874px;
+    
   }
   @media only screen and (max-width: 700px) {
-    padding: 0px 40px 0 40px;
+    padding: 240px 40px 0 40px;
+
   }
   @media only screen and (min-width: 2000px) {
     padding: 0px 40px 0 40px;
