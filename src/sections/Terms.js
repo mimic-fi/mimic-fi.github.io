@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import logo from "../assets/violet-logo.svg";
+import styled from 'styled-components'
+import logo from '../assets/violet-logo.svg'
 
 export default function Terms() {
   return (
@@ -215,7 +215,7 @@ export default function Terms() {
         </div>
       </Box>
     </>
-  );
+  )
 }
 
 const Line = styled.div`
@@ -225,7 +225,7 @@ const Line = styled.div`
   h2 {
     padding-left: 15px;
   }
-`;
+`
 
 const Box = styled.div`
   margin: 40px 20px;
@@ -245,4 +245,4 @@ const Box = styled.div`
       padding: 0 15px;
     }
   }
-`;
+`

@@ -1,80 +1,97 @@
 import React from 'react'
 import styled from 'styled-components'
 import check from '../assets/purple-check.svg'
-import laptop from '../assets/laptop.png'
-import laptopMobile from '../assets/laptop-mobile.png'
-import laptopLarge from '../assets/laptop-large.png'
 import line from '../assets/line.svg'
 
 const Description = () => {
-  const [width, setWidth] = React.useState(window.innerWidth)
-  const breakpoint = 700
-  const large = 2000
-
-  React.useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
-  }, [])
   return (
     <DescriptionSection>
       <Container>
         <Line src={line} />
         <Box>
           <h1>
-            Get everything <br />
-            at hand
+            All DeFi interactions <br />
+            supported
           </h1>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Fully automated DeFi <br />
-              strategies
+              Collect assets from <br />
+              external addresses
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              One dashboard to manage <br />
-              it all
+              Swap assets on any <br />
+              DEX
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              On-chain and real-time <br />
-              accounting
+              Bridge assets between <br />
+              different layers
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Allocate assets into a <br />
+              DeFi Protocol
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Withdraw assets from a<br />DeFi Protocol
             </p>
           </div>
         </Box>
-        {width < breakpoint && <Laptop src={laptopMobile} />}
         <Box>
           <h1>
-            Assets owners will <br />
-            be able to
+            Configure actions  <br />to fit
+            your needs
           </h1>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Keep in full control <br />
-              over the treasury
+              Schedule them with a <br />
+              Mimic bot
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Check managers activity <br />
-              on-chain
+              Delegate execution to a <br />
+              third party
             </p>
           </div>
           <div>
-            <img src={check} alt='tick'/>
+            <img src={check} alt="tick" />
             <p>
-              Revoke manager's access <br />
-              at anytime
+              Trigger them under certain <br />
+              market conditions
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Simulate them before
+              <br />
+              execution
+            </p>
+          </div>
+          <div>
+            <img src={check} alt="tick" />
+            <p>
+              Track them and receive
+              <br />
+              alerts
             </p>
           </div>
         </Box>
       </Container>
-      {width >= breakpoint && <Laptop src={width >= large ? laptopLarge : laptop} />}
     </DescriptionSection>
   )
 }
@@ -92,25 +109,10 @@ const DescriptionSection = styled.section`
 const Line = styled.img`
   position: absolute;
   left: 100px;
-  top: 100px;
+  top: -150px;
   z-index: 1;
   @media only screen and (max-width: 997px) {
     display: none;
-  }
-`
-
-const Laptop = styled.img`
-  margin-left: 0;
-  position: relative;
-  z-index: 10;
-  @media only screen and (max-width: 700px) {
-    width: 90%;
-    margin-left: auto;
-  }
-  @media only screen and (min-width: 2000px) {
-    margin: auto;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
 `
 
@@ -128,9 +130,9 @@ const Container = styled.div`
   }
 
   h1 {
-    font-family: 'Poppins-Bold';
+    font-family: "Poppins-Bold";
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 48px;
     letter-spacing: 1px;
     color: #fcfcfc;
@@ -142,7 +144,7 @@ const Container = styled.div`
     }
   }
   p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.75px;

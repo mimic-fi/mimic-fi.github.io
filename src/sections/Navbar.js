@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import logo from '../assets/navbar-logo.svg'
-import Networks from './Networks'
+import MenuOptions from './MenuOptions'
 import Menu from '../components/Menu'
 import Hamburger from 'hamburger-react'
 
@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <NavbarSection>
       <Container>
-        <img src={logo} alt='logo' />
+        <img src={logo} alt="logo" />
         {width >= medium ? (
-          <Networks />
+          <MenuOptions />
         ) : (
           <>
             <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
@@ -55,6 +55,7 @@ const Container = styled.div`
     margin: auto;
   }
   img {
+    max-height: 90px;
     @media only screen and (max-width: 1000px) {
       width: 50%;
     }

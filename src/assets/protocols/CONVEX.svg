@@ -1,0 +1,133 @@
+<svg
+   viewBox="0 0 128 128"
+   id="cvx"
+   version="1.1"
+   width="128"
+   height="128"
+   >
+
+  <!-- retrieved from https://www.convexfinance.com/static/icons/svg/crypto-icons-stack.svg#cvx -->
+  <defs
+     id="defs11">
+    <linearGradient
+       id="eypaint0_linear"
+       x1="22.895201"
+       y1="5.0984998"
+       x2="4.0444999"
+       y2="34.549702"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.523204,0,0,2.523204,18.582704,13.0442)">
+      <stop
+         stop-color="#1682FE"
+         id="stop2" />
+      <stop
+         offset="0.3"
+         stop-color="#60D8A4"
+         id="stop4" />
+      <stop
+         offset="0.7"
+         stop-color="#FCA75B"
+         id="stop6" />
+      <stop
+         offset="1"
+         stop-color="#FF5A5A"
+         id="stop8" />
+    </linearGradient>
+  </defs>
+  <circle
+     style="fill:#ffffff;stroke-width:4"
+     cx="64"
+     cy="64"
+     r="64"
+     id="circle13" />
+  <path
+     d="m 100.752,54.008 v -20 h -10 v -10 H 70.756 v -10 h -20 v 10 h -20 v 10 h -10 v 59.996 h 10 v 10 h 20 V 114 h 19.996 v -9.996 h 20 v -10 h 10 v -20 H 80.756 v 10 h -10 v 10 h -20 v -10 H 40.764 V 44.008 h 10 v -10 H 70.76 v 10 h 10 v 10 z"
+     fill="url(#eypaint0_linear)"
+     id="path15"
+     style="fill:url(#eypaint0_linear);stroke-width:4" />
+  <rect
+     x="70.755997"
+     y="33.504002"
+     width="6.9640002"
+     height="10.5"
+     fill="#1682fe"
+     id="rect17"
+     style="stroke-width:4" />
+  <rect
+     x="50.740002"
+     width="6.9640002"
+     height="10.5"
+     fill="#1682fe"
+     y="14"
+     id="rect19"
+     style="stroke-width:4" />
+  <rect
+     x="30.747999"
+     y="24"
+     width="6.9640002"
+     height="10.5"
+     fill="#60d8a4"
+     id="rect21"
+     style="stroke-width:4" />
+  <rect
+     x="20.743999"
+     y="64"
+     width="7.0359998"
+     height="29.996"
+     fill="#f4bb3b"
+     id="rect23"
+     style="stroke-width:4" />
+  <rect
+     x="20.743999"
+     y="34.007999"
+     width="7.0359998"
+     height="29.996"
+     fill="#60d8a4"
+     id="rect25"
+     style="stroke-width:4" />
+  <rect
+     x="80.748001"
+     y="43.5"
+     width="6.9640002"
+     height="10.5"
+     fill="#1682fe"
+     id="rect27"
+     style="stroke-width:4" />
+  <rect
+     x="80.744003"
+     y="74"
+     width="6.9640002"
+     height="10.5"
+     fill="#ff5a5a"
+     id="rect29"
+     style="stroke-width:4" />
+  <rect
+     x="70.755997"
+     y="84"
+     width="6.9640002"
+     height="10.5"
+     fill="#ff5a5a"
+     id="rect31"
+     style="stroke-width:4" />
+  <rect
+     x="50.743999"
+     y="103.496"
+     width="6.9640002"
+     height="10.5"
+     fill="#ff5a5a"
+     id="rect33"
+     style="stroke-width:4" />
+  <rect
+     x="30.743999"
+     y="93.5"
+     width="6.9640002"
+     height="10.5"
+     fill="#f4bb3b"
+     id="rect35"
+     style="stroke-width:4" />
+  <path
+     d="M 107.256,54 V 34 H 97.252 V 24 H 77.256 V 14 h -20 v 10 h -20 V 34 H 27.252 v 60 h 10 v 10 h 19.996 v 9.996 h 20 V 104 H 97.252 V 94 h 10.004 V 74 h -20 v 10 h -10 v 10 h -20 V 84 h -10 V 44 h 10 V 34 h 20 v 10 h 10 v 10 z"
+     fill="#3a3a3a"
+     id="path37"
+     style="stroke-width:4" />
+</svg>
