@@ -173,7 +173,7 @@ const LogosContainer = styled.div`
   padding-right: 30px;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px;
   align-items: center;
 
   @media only screen and (max-width: 1000px) {
