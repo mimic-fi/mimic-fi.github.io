@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Terms from './sections/Terms'
 import Whitepaper from './sections/Whitepaper'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 ReactDOM.render(
   <React.StrictMode>
+    <ParallaxProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" >
@@ -18,6 +20,7 @@ ReactDOM.render(
         </Route>
       </Routes>
     </BrowserRouter>
+    </ParallaxProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
