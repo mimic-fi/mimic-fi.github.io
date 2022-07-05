@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import styled from 'styled-components'
 import pattern from '../assets/pattern.png'
-import trust from '../assets/trust.svg'
-import transparency from '../assets/transparency.svg'
-import custodial from '../assets/private.svg'
+import trustless from '../assets/trustless.png'
+import noncustodial from '../assets/noncustodial.png'
+import transparent from '../assets/transparent.png'
 
 const Hero = () => (
   <HeroSection>
@@ -19,15 +19,15 @@ const Hero = () => (
       </h2>
       <Icons>
         <Box>
-          <img src={trust} alt="trustless" />
+          <img src={trustless} alt="trustless" />
           <p>Trustless</p>
         </Box>
         <Box>
-          <img src={custodial} alt="non-custodial" />
+          <img src={noncustodial} alt="non-custodial" />
           <p>Non-custodial</p>
         </Box>
         <Box>
-          <img src={transparency} alt="transparency" />
+          <img src={transparent} alt="transparency" />
           <p>Transparent</p>
         </Box>
       </Icons>
@@ -90,13 +90,13 @@ const Container = styled.div`
       line-height: 28px;
     }
     letter-spacing: 0.75px;
-    color: #fcfcfc;
+    color: #D0D0D0;
   }
 `
 
 const Icons = styled.div`
   display: flex;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   @media only screen and (max-width: 700px) {
     margin-left: -10px;
   }
@@ -105,14 +105,16 @@ const Icons = styled.div`
 
 const Box = styled.div`
   text-align: center;
-  padding: 0 20px;
+  padding: 0 60px 0 0;
+
   img {
-    width: 50px;
+    height: 58px;
+
   }
   @media only screen and (max-width: 700px) {
-    padding: 0 10px;
+    padding: 0 20px 0 0;
     img {
-      width: 50px;
+      height: 58px;
     }
   }
 
@@ -120,7 +122,7 @@ const Box = styled.div`
     font-family: "Poppins-Medium";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.75px;

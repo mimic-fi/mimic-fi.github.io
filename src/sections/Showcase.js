@@ -50,7 +50,7 @@ const ContactSection = styled.section`
   position: relative;
   z-index: 3;
   @media only screen and (min-width: 2000px) {
-    padding-top: 1500px;
+    padding-top: 400px;
   }
   .github {
     width: 45px;

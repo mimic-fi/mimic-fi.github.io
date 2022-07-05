@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-
 import styled from 'styled-components'
 import { useParallax } from 'react-scroll-parallax'
 import bgCard from '../assets/bg-card.png'
@@ -9,6 +8,10 @@ import r3 from '../assets/r3.png'
 import r4 from '../assets/r4.png'
 import r5 from '../assets/r5.png'
 import r6 from '../assets/r6.png'
+import collect from '../assets/collect.svg'
+import withdraw from '../assets/withdraw.png'
+import trustless from '../assets/trustless.png'
+import bridge from '../assets/bridge.png'
 
 const Steps = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -29,6 +32,8 @@ const Steps = () => {
               description="Collect assets from different places, swap them at the best rate
         among decentralized exchanges, and join a specific ERC-4626 vault."
               scrollDisabled={width <= medium}
+              icon={collect}
+
             />
 
             <BigCard
@@ -37,6 +42,8 @@ const Steps = () => {
               description=" Bridge assets between lending protocols from different layers
         depending on which one offers the best interest rate."
               scrollDisabled={width <= medium}
+              icon={bridge}
+
             />
             <BigCard
               className="alt"
@@ -46,6 +53,8 @@ const Steps = () => {
           treasury management actions and asigning a thid party for specific
           ones."
               scrollDisabled={width <= medium}
+              icon={trustless}
+
             />
             <SmallCard
               speed={-30}
@@ -54,6 +63,8 @@ const Steps = () => {
           obtained from swap fees and liquidity mining, and withdraw those
           gains on a monthly basis."
               scrollDisabled={width <= medium}
+              icon={withdraw}
+
             />
           </CardsContainer>
           <CardsContainerBg>
@@ -107,7 +118,7 @@ const Steps = () => {
   )
 }
 
-const BigCard = ({ title, description, className, speed, scrollDisabled }) => {
+const BigCard = ({ title, description, className, speed, scrollDisabled, icon }) => {
   const parallax = useParallax({
     speed: speed,
     disabled: scrollDisabled,
@@ -115,6 +126,7 @@ const BigCard = ({ title, description, className, speed, scrollDisabled }) => {
 
   return (
     <Card className={className} ref={parallax.ref}>
+      <img src={icon} alt="mimic" />
       <div>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -129,6 +141,7 @@ const SmallCard = ({
   className,
   speed,
   scrollDisabled,
+  icon
 }) => {
   const parallax = useParallax({
     speed: speed,
@@ -137,6 +150,7 @@ const SmallCard = ({
 
   return (
     <TinyCard className={className} ref={parallax.ref}>
+      <img src={icon} alt="mimic" />
       <div>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -290,6 +304,11 @@ const Card = styled.div`
       text-align: center;
     }
   }
+  img{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
   &.alt {
     border-radius: 16px;
     padding: 0 26px 26px 26px;
@@ -342,6 +361,11 @@ const TinyCard = styled.div`
       padding: 0 15px;
       text-align: center;
     }
+  }
+  img{
+    position: fixed;
+    top: 20px;
+    left: 20px;
   }
   &.alt {
     width: 100%;
