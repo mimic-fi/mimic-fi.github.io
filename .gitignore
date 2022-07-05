@@ -2,3 +2,5 @@ node_modules
 build
 .next
 *.log
+.DS_Store
+src/.DS_Store
