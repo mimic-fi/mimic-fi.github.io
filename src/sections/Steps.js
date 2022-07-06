@@ -18,7 +18,7 @@ const Steps = () => {
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
-  const medium = 700
+  const medium = 900
   return (
     <StepsSection>
       <Container>
@@ -186,7 +186,7 @@ const StepsSection = styled.section`
   padding: 100px 0 30px 0;
   text-align: right;
   min-height: 1600px;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     flex-wrap: wrap;
     padding: 0;
   }
@@ -204,7 +204,7 @@ const Container = styled.div`
     color: #fcfcfc;
     text-align: left;
     max-width: 33px;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       width: 100%;
       font-size: 48px;
       line-height: 64px;
@@ -226,7 +226,7 @@ const CardsContainer = styled.div`
   z-index: 100;
   width: 100%;
   padding: 200px 0;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     position: unset;
     flex-wrap: wrap;
     padding: 0;
@@ -238,7 +238,7 @@ const CardsContainer = styled.div`
     letter-spacing: 0.75px;
     text-align: left;
     min-height: 84px;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       margin: 5px;
       font-size: 18px;
       line-height: 24px;
@@ -254,7 +254,7 @@ const CardsContainerBg = styled.div`
   z-index: 1;
   width: 100%;
   padding: 200px 0;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     position: unset;
     display: none;
     grid-template-columns: 100%;
@@ -274,7 +274,7 @@ const Card = styled.div`
   width: 430px;
   margin: 0 10px;
   height: 700px;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     margin: 0;
     width: 100%;
     height: 300px;
@@ -296,7 +296,7 @@ const Card = styled.div`
     color: #fcfcfc;
     text-align: left;
     max-width: 33px;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       font-size: 28px;
       line-height: 44px;
       white-space: break-spaces;
@@ -308,6 +308,10 @@ const Card = styled.div`
     position: fixed;
     top: 20px;
     left: 20px;
+    opacity: 0.6;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
   &.alt {
     border-radius: 16px;
@@ -315,7 +319,7 @@ const Card = styled.div`
     width: 430px;
     margin: 0 10px;
     height: 700px;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       width: 100%;
       margin-top: 20px;
       height: 300px;
@@ -338,7 +342,7 @@ const TinyCard = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     margin: 0;
     padding: 15px;
     height: 300px;
@@ -354,7 +358,7 @@ const TinyCard = styled.div`
     font-size: 45px;
     text-align: left;
     margin: 12px 0;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       font-size: 28px;
       line-height: 44px;
       white-space: break-spaces;
@@ -366,11 +370,15 @@ const TinyCard = styled.div`
     position: fixed;
     top: 20px;
     left: 20px;
+    opacity: 0.6;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
   &.alt {
     width: 100%;
     /* margin-top: 200px; */
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       width: 100%;
       margin: 10px 20px;
       margin-top: 20px;

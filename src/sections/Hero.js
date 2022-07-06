@@ -98,7 +98,10 @@ const Icons = styled.div`
   display: flex;
   /* margin-left: -20px; */
   @media only screen and (max-width: 700px) {
-    margin-left: -10px;
+    /* margin-left: -10px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between
   }
   margin-top: 100px;
 `
