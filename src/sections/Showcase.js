@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import background from '../assets/union-bg.png'
 import demoScreen from '../assets/demoscreen.png'
+import { Link } from 'react-router-dom'
 
 const Showcase = () => {
   return (
@@ -19,8 +20,8 @@ const Showcase = () => {
           </h2>
           <h3>Give it a try!</h3>
           <Buttons>
-            <Button>Mainnet</Button>
-            <Button>Polygon</Button>
+            <Button><Link to="//mainnet.mimic.fi">Mainnet</Link></Button>
+            <Button><Link to="//polygon.mimic.fi">Polygon</Link></Button>
           </Buttons>
         </Container>
         <ContactBox>

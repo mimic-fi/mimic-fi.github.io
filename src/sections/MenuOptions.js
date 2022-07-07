@@ -24,9 +24,9 @@ const MenuOptions = () => {
     const handleItemClick = (id) => {
       setSelectedItem(id)
       if (id === 1) {
-        window.location.replace('//mainnet.mimic.fi/')
+        window.location.replace('//mainnet.mimic.fi')
       } else {
-        window.location.replace('//polygon.mimic.fi/')
+        window.location.replace('//polygon.mimic.fi')
       }
     }
 
