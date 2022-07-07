@@ -109,7 +109,6 @@ const Icons = styled.div`
 const Box = styled.div`
   text-align: center;
   padding: 0 60px 0 0;
-
   img {
     height: 58px;
 

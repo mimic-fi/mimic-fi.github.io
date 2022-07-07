@@ -21,7 +21,7 @@ const Navbar = () => {
         ) : (
           <>
             <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
-            <Menu open={isOpen} />
+            {isOpen && <Menu open={isOpen} />}
           </>
         )}
       </Container>
@@ -33,7 +33,9 @@ const NavbarSection = styled.section`
   background: transparent;
   margin: auto;
   .hamburger-react {
-    position: relative;
+    position: fixed !important;
+    right: 0;
+    padding-right: 30px;
     z-index: 3;
   }
 `

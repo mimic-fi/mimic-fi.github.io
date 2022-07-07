@@ -17,6 +17,8 @@ const Menu = ({ open }) => {
 
 export const StyledMenu = styled.nav`
   display: flex;
+  position: fixed !important;
+  top: 0;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -30,7 +32,6 @@ export const StyledMenu = styled.nav`
   right: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
-
   img {
     padding-right: 10px;
     height: 30px;
