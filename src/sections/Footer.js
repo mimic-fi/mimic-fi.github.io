@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../assets/contact-logo.svg'
+import onethereum from '../assets/onethereum.png'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -12,6 +13,7 @@ const Footer = () => {
           <h1>mimic.fi</h1>
           <h2>DeFi automation platform</h2>
           <p>2022 MIMIC. ALL RIGHTS RESERVED.</p>
+          <Built src={onethereum} />
         </Mimic>
         <Links>
           <LinkSection title="Devs">
@@ -68,6 +70,8 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 0px 25px;
+  margin-bottom: 40px;
+
   }
 
   h1 {
@@ -145,6 +149,11 @@ const LinkColumn = styled.div`
 
 const Logo = styled.img`
   max-width: 150px;
+`
+
+const Built = styled.img`
+  padding-top: 20px;
+  max-width: 200px;
 `
 
 export default Footer
