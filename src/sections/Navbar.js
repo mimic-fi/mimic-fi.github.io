@@ -33,9 +33,8 @@ const NavbarSection = styled.section`
   background: transparent;
   margin: auto;
   .hamburger-react {
-    position: fixed !important;
+    position: relative;
     right: 0;
-    padding-right: 30px;
     z-index: 3;
   }
 `

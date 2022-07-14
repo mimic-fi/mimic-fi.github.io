@@ -49,6 +49,9 @@ const HeroSection = styled.section`
 const Container = styled.div`
   padding: 104px 104px 0 104px;
   max-width: 874px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media only screen and (max-width: 370px) {
     padding: 40px 20px 0 20px;
   }
