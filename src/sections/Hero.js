@@ -40,10 +40,13 @@ const HeroSection = styled.section`
   margin: auto;
   color: white;
   text-align: center;
-  padding: 45px 0 00px 0;
+  padding: 45px 0 0px 0;
   background: url(${pattern});
   height: 100vh;
   max-height: 1000px;
+  @media only screen and (max-width: 390px) {
+    padding: 15px 0 0px 0;
+  }
 `
 
 const Container = styled.div`

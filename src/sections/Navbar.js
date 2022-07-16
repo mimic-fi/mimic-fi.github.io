@@ -40,13 +40,13 @@ const NavbarSection = styled.section`
 `
 
 const Container = styled.div`
-  padding: 0 40px 0 40px;
+  padding: 0 40px 0 10px;
   display: flex;
   max-width: 94%;
   justify-content: space-between;
   flex-wrap: wrap;
   @media only screen and (max-width: 370px) {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 10px;
   }
   @media only screen and (min-width: 700px) {
     width: 100%;
