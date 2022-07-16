@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import logo from '../assets/navbar-logo.svg'
+import logo from '../assets/navbar-logo-l.svg'
 import MenuOptions from './MenuOptions'
 import Menu from '../components/Menu'
 import Hamburger from 'hamburger-react'
@@ -56,7 +56,7 @@ const Container = styled.div`
     margin: auto;
   }
   img {
-    max-height: 90px;
+    max-height: 100px;
     @media only screen and (max-width: 1000px) {
       width: 50%;
     }

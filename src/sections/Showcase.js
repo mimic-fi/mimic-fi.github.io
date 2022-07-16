@@ -104,7 +104,7 @@ const Container = styled.div`
     letter-spacing: 1.33075px;
     color: #fcfcfc;
     span {
-      color: #7b61ff;
+      color: #c072ff;
     }
     @media only screen and (max-width: 700px) {
       font-size: 32px;
@@ -138,7 +138,7 @@ const Buttons = styled.div`
 const Button = styled.button`
   text-align: center;
   padding: 0 20px;
-  background: #7b61ff;
+  background: #c072ff;
   border-radius: 100px;
   border: 3px solid #4a006a;
   box-sizing: border-box;

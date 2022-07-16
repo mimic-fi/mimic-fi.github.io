@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import styled from 'styled-components'
 import pattern from '../assets/pattern.png'
-import trustless from '../assets/trustless.png'
-import noncustodial from '../assets/noncustodial.png'
-import transparent from '../assets/transparent.png'
+import trustless from '../assets/trustless-v.png'
+import noncustodial from '../assets/noncustodial-v.png'
+import transparent from '../assets/transparent-v.png'
 
 const Hero = () => (
   <HeroSection>
@@ -56,7 +56,7 @@ const Container = styled.div`
     padding: 40px 20px 0 20px;
   }
   @media only screen and (min-width: 370px) and (max-width: 7000px) {
-    padding: 70px 40px 0 40px;
+    padding: 40px 40px 0 40px;
   }
   @media only screen and (min-width: 2000px) {
     margin: auto;
@@ -77,7 +77,7 @@ const Container = styled.div`
     letter-spacing: 1.33075px;
     color: #fcfcfc;
     span {
-      color: #a524ff;
+      color: #c072ff;
     }
   }
   h2 {
@@ -99,9 +99,7 @@ const Container = styled.div`
 
 const Icons = styled.div`
   display: flex;
-  /* margin-left: -20px; */
   @media only screen and (max-width: 700px) {
-    /* margin-left: -10px; */
     display: flex;
     width: 100%;
     justify-content: space-between
