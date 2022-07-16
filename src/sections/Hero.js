@@ -52,15 +52,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 390px) {
     padding: 40px 20px 0 20px;
   }
-  @media only screen and (min-width: 370px) and (max-width: 7000px) {
-    padding: 40px 40px 0 40px;
+  @media only screen and (min-width: 391px) and (max-width: 7000px) {
+    padding: 100px 40px 0 40px;
   }
-  @media only screen and (min-width: 2000px) {
+  /* @media only screen and (min-width: 2000px) {
     margin: auto;
-  }
+  } */
   text-align: left;
   h1 {
     font-family: "Poppins-Bold";
