@@ -4,6 +4,7 @@ import Description from './sections/Description'
 import Features from './sections/Features'
 import Showcase from './sections/Showcase'
 import Footer from './sections/Footer'
+import { Subscribe } from './sections/Subscribe'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Description />
       <Features />
       <Showcase />
+      <Subscribe />
       <Footer />
     </div>
   )
