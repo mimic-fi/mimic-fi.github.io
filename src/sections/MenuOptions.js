@@ -35,7 +35,7 @@ const MenuOptions = () => {
         <div className="dropdown-header" onClick={toggleDropdown}>
           {selectedItem
             ? items.find((item) => item.id === selectedItem).label
-            : 'lite-app >'}
+            : 'legacy-app >'}
         </div>
         <div className={`dropdown-body ${isOpen && 'open'}`}>
           {items.map((item) => (
@@ -57,13 +57,6 @@ const MenuOptions = () => {
     <MenuOptionsSection>
       <ButtonsSection>
         <DropdownElement />
-        <a
-          href="https://www.mimic.fi/whitepaper.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Whitepaper
-        </a>
         <a href="https://docs.mimic.fi" target="_blank" rel="noreferrer">
           Docs
         </a>

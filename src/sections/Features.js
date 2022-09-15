@@ -25,44 +25,28 @@ const Features = () => {
     <FeaturesSection>
       <Logo src={logo} />
       <div className="container">
-        <h1>Interact with any DeFi Protocol</h1>
+        <h1><span>Smart Vaults</span> can interact with any DeFi protocol</h1>
         <h2>
-          Mimic strategies hold the integration logic to interact with different
-          DeFi protocols
+          They hold the integration logic with most popular protocols 
+          and can scale to access new ones.
         </h2>
         <Container>
           <Box>
-           <h3>All the basics & simplified for DeFi</h3>
             <div>
               <img src={check} alt="tick" />
-              <p>Yield-bearing</p>
+              <p>Aave, Compound (Lending) </p>
             </div>
             <div>
               <img src={check} alt="tick" />
-              <p>Auto-compounding</p>
+              <p>Uniswap, Balancer, Curve (AMM)</p>
             </div>
             <div>
               <img src={check} alt="tick" />
-              <p>Extendable</p>
+              <p>1inch, Paraswap (DEX aggregator)</p>
             </div>
             <div>
               <img src={check} alt="tick" />
-              <p>And more</p>
-            </div>
-          </Box>
-          <Box>
-           <h3>ERC-4626 compatible</h3>
-            <div>
-              <img src={check} alt="tick" />
-              <p>Yearn Vaults</p>
-            </div>
-            <div>
-              <img src={check} alt="tick" />
-              <p>mStable Vaults</p>
-            </div>
-            <div>
-              <img src={check} alt="tick" />
-              <p>Balancer Vaults</p>
+              <p>Yearn, Convex Finance (Yield aggregator)</p>
             </div>
             <div>
               <img src={check} alt="tick" />
@@ -135,6 +119,9 @@ const FeaturesSection = styled.section`
   }
 
   h1 {
+    span {
+      color: #c072ff;
+    }
     @media only screen and (min-width: 600px) {
       max-width: 598px;
     }

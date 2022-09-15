@@ -21,8 +21,10 @@ const Steps = () => {
   const medium = 900
   return (
     <StepsSection>
+      <h1><span>Smart Vaults</span> use preset & custom actions to automate any DeFi interaction</h1>
+      <h2>such as</h2>
       <Container>
-        <h1>Create unlimited actions</h1>
+       
         <CardHolder>
           <CardsContainer>
             <SmallCard
@@ -184,26 +186,20 @@ const StepsSection = styled.section`
   margin: auto;
   color: white;
   padding: 100px 0 30px 0;
-  text-align: right;
+  text-align: center;
   min-height: 1600px;
-  @media only screen and (max-width: 900px) {
-    flex-wrap: wrap;
-    padding: 0;
-  }
-`
-
-const Container = styled.div`
-  text-align: right;
   h1 {
-    padding-left: 25%;
     font-family: "Poppins-Bold";
     font-weight: bold;
-    font-size: 60px;
-    line-height: 76px;
+    font-size: 40px;
+    line-height: 56px;
     letter-spacing: 1px;
     color: #fcfcfc;
-    text-align: left;
-    max-width: 33px;
+    margin-left: 20%;
+    max-width: 60%;
+    span {
+      color: #c072ff;
+    }
     @media only screen and (max-width: 900px) {
       width: 100%;
       font-size: 48px;
@@ -213,6 +209,14 @@ const Container = styled.div`
       text-align: center;
     }
   }
+  @media only screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+`
+
+const Container = styled.div`
+  text-align: right;
 `
 
 const CardHolder = styled.section`

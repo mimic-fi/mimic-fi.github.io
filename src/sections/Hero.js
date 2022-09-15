@@ -11,24 +11,24 @@ const Hero = () => (
     <Navbar />
     <Container>
       <h1>
-        <span>Automating</span> how to interact with <span>DeFi</span>
+        Achieve your DeFi goals in a <span> smarter, more efficent </span> way
       </h1>
       <h2>
-        Mimic simplifies the interactions with different DeFi protocols by
-        automating them into simple actions.
+        Our Smart Vaults help you grow your business by transforming manual work into
+         automated actions.
       </h2>
       <Icons>
         <Box>
-          <img src={trustless} alt="trustless" />
-          <p>Trustless</p>
+          <img src={noncustodial} alt="trustless and non-custodial" />
+          <p>Trustless & non-custodial</p>
         </Box>
         <Box>
-          <img src={noncustodial} alt="non-custodial" />
-          <p>Non-custodial</p>
+          <img src={trustless} alt="non-custodial" />
+          <p>Flexible and customizable</p>
         </Box>
         <Box>
-          <img src={transparent} alt="transparency" />
-          <p>Transparent</p>
+          <img src={transparent} alt="transparent and easy to follow up" />
+          <p>Transparent and easy to follow up</p>
         </Box>
       </Icons>
     </Container>
@@ -128,7 +128,7 @@ const Box = styled.div`
     font-family: "Poppins-Medium";
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.75px;

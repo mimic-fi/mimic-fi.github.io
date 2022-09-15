@@ -10,19 +10,16 @@ const Showcase = () => {
       <ContactSection>
         <Container>
           <h1>
-            We have a <span>lite version</span> up and running
+            Interested in deploying your first <span>Smart Vault</span>?
           </h1>
           <h2>
-            This version automates asset allocation by providing actions to
-            collect, swap and withdraw before joining or exiting those DeFi
-            protocols. You can trigger those actions by youself or delegate
-            their execution to a third party.
+            Get in touch to learn how Mimic platform can support your specific needs. 
+            We'd love to hear from you!
           </h2>
-          <h3>Give it a try!</h3>
           <Buttons>
-            <Button><Link to="//mainnet.mimic.fi">Mainnet</Link></Button>
-            <Button><Link to="//polygon.mimic.fi">Polygon</Link></Button>
+            <Button><Link to="//calendly.com/mimicfi/30min">Schedule a call</Link></Button>
           </Buttons>
+          <h2>or find us on <Link to="//discord.mimic.fi/ "><u>Discord</u></Link></h2>
         </Container>
         <ContactBox>
           <Screen src={demoScreen} alt="github" />
