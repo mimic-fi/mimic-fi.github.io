@@ -10,8 +10,8 @@ const Description = () => {
         <Line src={line} />
         <Box>
           <h1>
-            All DeFi interactions <br />
-            supported
+            DeFi primitives to  <br />
+            compose any action <br /> 
           </h1>
           <div>
             <img src={check} alt="tick" />
@@ -24,7 +24,7 @@ const Description = () => {
             <img src={check} alt="tick" />
             <p>
               Swap assets on any <br />
-              DEX
+              DEX or DEX aggregator
             </p>
           </div>
           <div>
@@ -44,19 +44,19 @@ const Description = () => {
           <div>
             <img src={check} alt="tick" />
             <p>
-              Withdraw assets from a<br />DeFi Protocol
+              Withdraw assets to a<br />specific account
             </p>
           </div>
         </Box>
         <Box>
           <h1>
-            Configure actions  <br />to fit
-            your needs
+            Flexible configuration <br />
+            to automate actions 
           </h1>
           <div>
             <img src={check} alt="tick" />
             <p>
-              Schedule them with a <br />
+              Schedule actions with a <br />
               Mimic bot
             </p>
           </div>
@@ -132,7 +132,7 @@ const Container = styled.div`
   h1 {
     font-family: "Poppins-Bold";
     font-weight: bold;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 48px;
     letter-spacing: 1px;
     color: #fcfcfc;

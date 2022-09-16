@@ -18,8 +18,8 @@ const Footer = () => {
         <Links>
           <LinkSection title="Devs">
             <Link to="//docs.mimic.fi">Documentation</Link>
-            <Link to="//mainnet.mimic.fi'">Lite app - Mainnet</Link>
-            <Link to="//polygon.mimic.fi'">Lite app - Polygon</Link>
+            <Link to="//mainnet.mimic.fi'">Legacy app - Mainnet</Link>
+            <Link to="//polygon.mimic.fi'">Legacy app - Polygon</Link>
             <Link to="//github.com/mimic-fi">Github</Link>
           </LinkSection>
 
