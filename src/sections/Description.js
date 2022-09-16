@@ -10,9 +10,8 @@ const Description = () => {
         <Line src={line} />
         <Box>
           <h1>
-            Preset and custom <br /> 
             DeFi primitives to  <br />
-            compose any action
+            compose any action <br /> 
           </h1>
           <div>
             <img src={check} alt="tick" />
@@ -52,8 +51,7 @@ const Description = () => {
         <Box>
           <h1>
             Flexible configuration <br />
-            to automate actions <br />
-            and follow them up
+            to automate actions 
           </h1>
           <div>
             <img src={check} alt="tick" />
