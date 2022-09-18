@@ -6,16 +6,15 @@ import balancer from '../assets/protocols/BALANCER.svg'
 import curve from '../assets/protocols/CURVE.svg'
 import lido from '../assets/protocols/LIDO.svg'
 import compound from '../assets/protocols/COMPOUND.svg'
-
 import oneinch from '../assets/protocols/ONEINCH.svg'
-import torn from '../assets/protocols/TORN.png'
+import swapr from '../assets/protocols/swapr.png'
 import uniswap from '../assets/protocols/UNISWAP.png'
 import fei from '../assets/protocols/FEI.svg'
 import frax from '../assets/protocols/FRAX.svg'
 import maker from '../assets/protocols/MAKER.png'
 import sushi from '../assets/protocols/SUSHI.svg'
 import yearn from '../assets/protocols/YEARN.svg'
-import mstable from '../assets/protocols/MSTABLE.svg'
+import paraswap from '../assets/protocols/paraswap.png'
 import alchemix from '../assets/protocols/ALCHEMIX.svg'
 import convex from '../assets/protocols/CONVEX.png'
 import logo from '../assets/contact-logo.svg'
@@ -38,15 +37,15 @@ const Features = () => {
             </div>
             <div>
               <img src={check} alt="tick" />
-              <p>Uniswap, Balancer, Curve (AMM)</p>
+              <p>Uniswap, Balancer, Curve, Swapr (AMM)</p>
             </div>
             <div>
               <img src={check} alt="tick" />
-              <p>1inch, Paraswap (DEX aggregator)</p>
+              <p>Paraswap, 1inch (DEX aggregator)</p>
             </div>
             <div>
               <img src={check} alt="tick" />
-              <p>Yearn, Convex Finance (Yield aggregator)</p>
+              <p>Yearn, Convex Finance, Alchemix (Yield aggregator)</p>
             </div>
             <div>
               <img src={check} alt="tick" />
@@ -69,8 +68,8 @@ const DefiProtocols = () => {
       <Img className="set2" src={compound} />
 
       <Img src={lido} />
-      <Img className="set5" src={oneinch} />
-      <Img className="set4" src={torn} />
+      <Img className="set5" src={paraswap} />
+      <Img className="set4" src={swapr} />
       <Img className="set2" src={uniswap} />
 
       <Img className="set5" src={fei} />
@@ -79,7 +78,7 @@ const DefiProtocols = () => {
 
       <Img src={sushi}  className="set5" />
       <Img className="set1" src={yearn} />
-      <Img className="set6" src={mstable} />
+      <Img className="set5" src={oneinch} />
       <Img className="set4" src={alchemix} />
       <Img className="set5" src={convex} />
     </LogosContainer>

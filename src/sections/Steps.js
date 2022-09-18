@@ -21,10 +21,12 @@ const Steps = () => {
   const medium = 900
   return (
     <StepsSection>
-      <h1><span>Smart Vaults</span> use preset & custom actions to automate any DeFi interaction</h1>
+      <h1>
+        <span>Smart Vaults</span> use preset & custom actions to automate any
+        DeFi interaction
+      </h1>
       <h2>such as</h2>
       <Container>
-       
         <CardHolder>
           <CardsContainer>
             <SmallCard
@@ -35,7 +37,6 @@ const Steps = () => {
         among decentralized exchanges, and join a specific ERC-4626 vault."
               scrollDisabled={width <= medium}
               icon={collect}
-
             />
 
             <BigCard
@@ -45,7 +46,6 @@ const Steps = () => {
         depending on which one offers the best interest rate."
               scrollDisabled={width <= medium}
               icon={bridge}
-
             />
             <BigCard
               className="alt"
@@ -56,7 +56,6 @@ const Steps = () => {
           ones."
               scrollDisabled={width <= medium}
               icon={trustless}
-
             />
             <SmallCard
               speed={-30}
@@ -66,7 +65,6 @@ const Steps = () => {
           gains on a monthly basis."
               scrollDisabled={width <= medium}
               icon={withdraw}
-
             />
           </CardsContainer>
           <CardsContainerBg>
@@ -120,7 +118,14 @@ const Steps = () => {
   )
 }
 
-const BigCard = ({ title, description, className, speed, scrollDisabled, icon }) => {
+const BigCard = ({
+  title,
+  description,
+  className,
+  speed,
+  scrollDisabled,
+  icon,
+}) => {
   const parallax = useParallax({
     speed: speed,
     disabled: scrollDisabled,
@@ -143,7 +148,7 @@ const SmallCard = ({
   className,
   speed,
   scrollDisabled,
-  icon
+  icon,
 }) => {
   const parallax = useParallax({
     speed: speed,
@@ -201,12 +206,16 @@ const StepsSection = styled.section`
       color: #c072ff;
     }
     @media only screen and (max-width: 900px) {
-      width: 100%;
-      font-size: 48px;
-      line-height: 64px;
-      white-space: break-spaces;
-      padding: 0 25px;
+      width: 90%;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0 5%;
       text-align: center;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 100%;
     }
   }
   @media only screen and (max-width: 900px) {
@@ -308,7 +317,7 @@ const Card = styled.div`
       text-align: center;
     }
   }
-  img{
+  img {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -370,7 +379,7 @@ const TinyCard = styled.div`
       text-align: center;
     }
   }
-  img{
+  img {
     position: fixed;
     top: 20px;
     left: 20px;

@@ -42,7 +42,6 @@ export const Subscribe = () => {
   return (
     <ContactSection>
       <Container>
-        <h1>.</h1>
         <h2>Stay in the loop ser</h2>
         {status === 'SUCCESS' && (
           <>

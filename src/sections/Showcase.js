@@ -10,16 +10,24 @@ const Showcase = () => {
       <ContactSection>
         <Container>
           <h1>
-            Interested in deploying your first <span>Smart Vault</span>?
+            <div>Interested in</div> deploying your first{' '}
+            <span>Smart Vault</span>?
           </h1>
           <h2>
-            Get in touch to learn how Mimic platform can support your specific needs. 
-            We'd love to hear from you!
+            Get in touch to learn how Mimic platform can support your specific
+            needs. We'd love to hear from you!
           </h2>
           <Buttons>
-            <Button><Link to="//calendly.com/mimicfi/30min">Schedule a call</Link></Button>
+            <Button>
+              <Link to="//calendly.com/mimicfi/30min">Schedule a call</Link>
+            </Button>
           </Buttons>
-          <h2>or find us on <Link to="//discord.mimic.fi/ "><u>Discord</u></Link></h2>
+          <h2>
+            or find us on{' '}
+            <Link to="//discord.mimic.fi/ ">
+              <u>Discord</u>
+            </Link>
+          </h2>
         </Container>
         <ContactBox>
           <Screen src={demoScreen} alt="github" />
@@ -39,7 +47,6 @@ const ContactSection = styled.section`
     flex-wrap: wrap;
     padding: 40px 0 100px 0;
     margin-top: -244px;
-
   }
   background-size: cover;
   background-position: top;
@@ -67,11 +74,9 @@ const Container = styled.div`
   padding: 104px 104px 0 104px;
   @media only screen and (min-width: 900px) {
     width: 874px;
-    
   }
   @media only screen and (max-width: 700px) {
     padding: 240px 40px 0 40px;
-
   }
   @media only screen and (min-width: 2000px) {
     padding: 0px 40px 0 40px;
@@ -110,6 +115,7 @@ const Container = styled.div`
     }
     @media only screen and (min-width: 900px) {
       max-width: 873px;
+      min-width: 540px;
     }
   }
   h2 {

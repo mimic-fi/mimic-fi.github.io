@@ -30,6 +30,8 @@ const Navbar = () => {
 }
 
 const NavbarSection = styled.section`
+  z-index: 3;
+  position: relative;
   background: transparent;
   margin: auto;
   .hamburger-react {
@@ -52,8 +54,8 @@ const Container = styled.div`
     width: 100%;
   }
   @media only screen and (min-width: 2000px) {
-    max-width: 1100px;
-    margin: auto;
+    /* max-width: 1100px;
+    margin: auto; */
   }
   img {
     max-height: 100px;
