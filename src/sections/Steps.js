@@ -52,7 +52,7 @@ const Steps = () => {
               speed={10}
               title="Trustless delegation"
               description="  Keep full custody of your assets by automating most of your
-          treasury management actions and asigning a thid party for specific
+          treasury management actions and assigning a third party for specific
           ones."
               scrollDisabled={width <= medium}
               icon={trustless}

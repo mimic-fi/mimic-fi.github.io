@@ -11,7 +11,7 @@ const Hero = () => (
     <Navbar />
     <Container>
       <h1>
-        Achieve your DeFi goals in a <span> smarter, more efficent </span> way
+        Achieve your DeFi goals in a <span> smarter, more efficient </span> way
       </h1>
       <h2>
         Our Smart Vaults help you grow your business by transforming manual work into
