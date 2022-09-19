@@ -66,7 +66,6 @@ const Steps = () => {
           gains on a monthly basis."
               scrollDisabled={width <= medium}
               icon={withdraw}
-
             />
           </CardsContainer>
           <CardsContainerBg>
@@ -202,10 +201,10 @@ const StepsSection = styled.section`
     }
     @media only screen and (max-width: 900px) {
       width: 100%;
-      font-size: 48px;
-      line-height: 64px;
+      font-size: 25px;
+      line-height: 40px;
       white-space: break-spaces;
-      padding: 0 25px;
+      padding: 25px 0;
       text-align: center;
     }
   }
@@ -300,6 +299,10 @@ const Card = styled.div`
     color: #fcfcfc;
     text-align: left;
     max-width: 33px;
+    @media only screen and (max-width: 1500px) {
+      font-size: 35px;
+      line-height: 44px;
+    }
     @media only screen and (max-width: 900px) {
       font-size: 28px;
       line-height: 44px;
@@ -362,6 +365,10 @@ const TinyCard = styled.div`
     font-size: 45px;
     text-align: left;
     margin: 12px 0;
+    @media only screen and (max-width: 1500px) {
+      font-size: 35px;
+      line-height: 44px;
+    }
     @media only screen and (max-width: 900px) {
       font-size: 28px;
       line-height: 44px;
@@ -375,9 +382,9 @@ const TinyCard = styled.div`
     top: 20px;
     left: 20px;
     opacity: 0.6;
-    @media only screen and (max-width: 900px) {
-      display: none;
-    }
+    //@media only screen and (max-width: 900px) {
+    //  display: none;
+    //}
   }
   &.alt {
     width: 100%;

@@ -11,7 +11,7 @@ const Hero = () => (
     <Navbar />
     <Container>
       <h1>
-        Achieve your DeFi goals in a <span> smarter, more efficient </span> way
+        Achieve your DeFi goals in a <span>smarter and more efficient</span> way
       </h1>
       <h2>
         Our Smart Vaults help you grow your business by transforming manual work into
@@ -61,15 +61,15 @@ const Container = styled.div`
   @media only screen and (min-width: 391px) and (max-width: 7000px) {
     padding: 100px 40px 0 40px;
   }
-  /* @media only screen and (min-width: 2000px) {
+  @media only screen and (min-width: 2000px) {
     margin: auto;
-  } */
+  }
   text-align: left;
   h1 {
     font-family: "Poppins-Bold";
     font-weight: bold;
-    font-size: 80px;
-    line-height: 95px;
+    font-size: 70px;
+    line-height: 75px;
     margin: 15px 0px 0px 0px;
     @media only screen and (max-width: 700px) {
       font-size: 43px;
@@ -102,12 +102,12 @@ const Container = styled.div`
 
 const Icons = styled.div`
   display: flex;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 900px) {
     display: flex;
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
   }
-  margin-top: 100px;
+  margin-top: 90px;
 `
 
 const Box = styled.div`
