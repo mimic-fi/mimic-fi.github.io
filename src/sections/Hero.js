@@ -99,7 +99,7 @@ const Container = styled.div`
     font-weight: bold;
     font-size: 70px;
     line-height: 75px;
-    margin: 15px 0px 0px 0px;
+    margin: 55px 0px 0px 0px;
     @media only screen and (max-width: 700px) {
       font-size: 43px;
       line-height: 44px;

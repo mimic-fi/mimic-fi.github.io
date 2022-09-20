@@ -8,8 +8,6 @@ const Menu = ({ open }) => {
       <Link to="//docs.mimic.fi">Documentation</Link>
       <Link to="//twitter.com/mimicfi">Twitter</Link>
       <Link to="//discord.mimic.fi">Discord</Link>
-      <Link to="//mainnet.mimic.fi">Lite app - Mainnet</Link>
-      <Link to="//polygon.mimic.fi">Lite app - Polygon</Link>
       <Link to="//github.com/mimic-fi">Github</Link>
     </StyledMenu>
   )
