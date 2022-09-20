@@ -10,8 +10,7 @@ const Showcase = () => {
       <ContactSection>
         <Container>
           <h1>
-            <div>Interested in</div> deploying your first{' '}
-            <span>Smart Vault</span>?
+            Are you interested in deploying a <span>Smart Vault</span>?
           </h1>
           <h2>
             Get in touch to learn how Mimic platform can support your specific
@@ -80,7 +79,6 @@ const Container = styled.div`
   }
   @media only screen and (min-width: 2000px) {
     padding: 0px 40px 0 40px;
-
     margin: auto;
     max-width: 1500px;
   }

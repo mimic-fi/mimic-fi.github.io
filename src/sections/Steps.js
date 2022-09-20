@@ -52,7 +52,7 @@ const Steps = () => {
               speed={10}
               title="Trustless delegation"
               description="  Keep full custody of your assets by automating most of your
-          treasury management actions and asigning a thid party for specific
+          treasury management actions and assigning a third party for specific
           ones."
               scrollDisabled={width <= medium}
               icon={trustless}
@@ -206,10 +206,18 @@ const StepsSection = styled.section`
       color: #c072ff;
     }
     @media only screen and (max-width: 900px) {
+<<<<<<< HEAD
       width: 90%;
       font-size: 40px;
       line-height: 48px;
       margin: 0 5%;
+=======
+      width: 100%;
+      font-size: 25px;
+      line-height: 40px;
+      white-space: break-spaces;
+      padding: 25px 0;
+>>>>>>> 9677522bbb0b4e979e42a7deae1cd9dbd20100da
       text-align: center;
       margin-left: 0;
       display: flex;
@@ -309,6 +317,10 @@ const Card = styled.div`
     color: #fcfcfc;
     text-align: left;
     max-width: 33px;
+    @media only screen and (max-width: 1500px) {
+      font-size: 35px;
+      line-height: 44px;
+    }
     @media only screen and (max-width: 900px) {
       font-size: 28px;
       line-height: 44px;
@@ -371,6 +383,10 @@ const TinyCard = styled.div`
     font-size: 45px;
     text-align: left;
     margin: 12px 0;
+    @media only screen and (max-width: 1500px) {
+      font-size: 35px;
+      line-height: 44px;
+    }
     @media only screen and (max-width: 900px) {
       font-size: 28px;
       line-height: 44px;
@@ -384,9 +400,9 @@ const TinyCard = styled.div`
     top: 20px;
     left: 20px;
     opacity: 0.6;
-    @media only screen and (max-width: 900px) {
-      display: none;
-    }
+    //@media only screen and (max-width: 900px) {
+    //  display: none;
+    //}
   }
   &.alt {
     width: 100%;

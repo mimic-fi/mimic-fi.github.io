@@ -233,7 +233,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   @media only screen and (max-width: 1000px) {
     justify-content: space-between;
-    margin: auto;
+    margin: 20px auto;
     max-width: 333px;
   }
   h3 {
@@ -274,6 +274,12 @@ const Box = styled.div`
         margin-right: 10px;
         width: 25px;
       }
+    }
+    p {
+        @media only screen and (max-width: 900px) {
+          line-height: 20px;
+          font-size: 15px;
+        }
     }
   }
 `
