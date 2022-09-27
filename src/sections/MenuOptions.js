@@ -12,6 +12,12 @@ const MenuOptions = () => {
   return (
     <MenuOptionsSection>
       <ButtonsSection>
+        <a href="/whitepaper" target="_blank" rel="noreferrer">
+          Whitepaper
+        </a>
+        <a href="https://docs.mimic.fi" target="_blank" rel="noreferrer">
+          Docs
+        </a>
         <a
           href="https://docs.mimic.fi/miscellaneous/faqs"
           target="_blank"

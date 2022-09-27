@@ -18,6 +18,7 @@ const Footer = () => {
         <Links>
           <LinkSection title="Devs">
             <Link to="/whitepaper" target="_blank">Whitepaper</Link>
+            <Link to="//docs.mimic.fi">Documentation</Link>
             <Link to="//github.com/mimic-fi">Github</Link>
           </LinkSection>
 

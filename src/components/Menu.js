@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
+      <Link to="//docs.mimic.fi">Documentation</Link>
       <Link to="//twitter.com/mimicfi">Twitter</Link>
       <Link to="//discord.mimic.fi">Discord</Link>
       <Link to="//github.com/mimic-fi">Github</Link>
