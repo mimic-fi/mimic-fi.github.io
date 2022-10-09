@@ -131,9 +131,9 @@ const CarouselSection = () => {
         <Card custom={true} mode="black">
           <Icon src={plus} />
           <div>
-            <H5>Create your custom actions</H5>
+            <H5>And more use cases!</H5>
             <BodyM>
-              Model and customize any action to suit your operational need
+              Use Mimic to suit your  operational need
             </BodyM>
           </div>
         </Card>
