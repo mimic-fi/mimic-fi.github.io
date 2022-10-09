@@ -30,6 +30,7 @@ const CardContainer = styled.div`
   }
   @media only screen and (max-width: 500px) {
     width: 87%;
+    min-height: 611px;
   }
   color: white;
   z-index: 1;
