@@ -1,16 +1,17 @@
 import styled from 'styled-components'
-import logo from '../assets/violet-logo.svg'
+import Navbar from './Navbar'
+import { BoldL, BodyL, Button, Container } from '../styles/texts'
 
 export default function Terms() {
   return (
-    <>
-      <Box>
+    <div>
+      <Navbar />
+      <TContainer>
         <Line>
-          <img src={logo} alt="Mimic Logo" height="50px" />
-          <h2>MIMIC TERMS & CONDITION</h2>
+          <BoldL>TERMS & CONDITION</BoldL>
         </Line>
 
-        <div>
+        <BodyL>
           Welcome to https://mimic.fi, a website-hosted user interface (the
           “Interface” or “App”) provided by Mimic Team. (“we”, “our”, or “us”).
           The Interface provides access to a decentralized tool to manage defi
@@ -21,7 +22,7 @@ export default function Terms() {
           you signify that you have read, understand, and agree to be bound by
           this Agreement in its entirety. If you do not agree, you are not
           authorized to access or use the Interface. Exit now.
-          <h2>1. Modification of this Agreement</h2>
+          <BoldL>1. Modification of this Agreement</BoldL>
           We reserve the right, in our sole discretion, to modify this Agreement
           from time to time. If we make any modifications, we will notify you by
           updating the date at the top of the Agreement and by maintaining a
@@ -31,7 +32,7 @@ export default function Terms() {
           acceptance of those modifications. If you do not agree with any
           modifications to this Agreement, you must immediately stop accessing
           and using the Interface and the protocol.
-          <h2>2. Eligibility</h2>
+          <BoldL>2. Eligibility</BoldL>
           To access or use the Interface, you must be able to form a legally
           binding contract with us. Accordingly, you represent that you are at
           least eighteen years old and have the full right, power, and authority
@@ -45,7 +46,7 @@ export default function Terms() {
           the Interface will fully comply with all applicable laws and
           regulations, and that you will not access or use the Interface to
           conduct, promote, or otherwise facilitate any illegal activity.
-          <h2>3. Proprietary Rights</h2>
+          <BoldL>3. Proprietary Rights</BoldL>
           We own all intellectual property and other rights in the Interface and
           its contents, including (but not limited to) software, text, images,
           trademarks, service marks, copyrights, patents, and designs. Unless
@@ -71,7 +72,7 @@ export default function Terms() {
           strictly prohibited. Unlike the Interface, the Protocol is comprised
           entirely of open-source software running on the public Ethereum
           blockchain and is not our proprietary property.
-          <h2>4. Prohibited Activity</h2>
+          <BoldL>4. Prohibited Activity</BoldL>
           You agree not to engage in, or attempt to engage in, any of the
           following categories of prohibited activity in relation to your access
           and use of the Interface: A. Intellectual Property
@@ -93,7 +94,7 @@ export default function Terms() {
           violates any applicable law, rule, or regulation of the United States
           or another relevant jurisdiction, including (but not limited to) the
           restrictions and regulatory requirements imposed by U.S. law.
-          <h2>5. No Professional Advice</h2>
+          <BoldL>5. No Professional Advice</BoldL>
           All information provided by the Interface is for informational
           purposes only and should not be construed as professional advice. You
           should not take, or refrain from taking, any action based on any
@@ -101,7 +102,7 @@ export default function Terms() {
           legal, or other decisions involving the Interface, you should seek
           independent professional advice from an individual who is licensed and
           qualified in the area for which such advice would be appropriate.
-          <h2>6. No Warranties</h2>
+          <BoldL>6. No Warranties</BoldL>
           The Interface is provided on an “AS IS” and “AS AVAILABLE” basis. We
           do not guarantee that the Site will be secure or free from bugs or
           viruses. To the fullest extent permitted by law, we disclaim any
@@ -118,7 +119,7 @@ export default function Terms() {
           concerning the Interface. We do not endorse, guarantee, or assume
           responsibility for any advertisements, offers, or statements made by
           third parties concerning the Interface.
-          <h2>7. No Fiduciary Duties</h2>
+          <BoldL>7. No Fiduciary Duties</BoldL>
           This Agreement is not intended to, and does not, create or impose any
           fiduciary duties on us. To the fullest extent permitted by law, you
           acknowledge and agree that we owe no fiduciary duties or liabilities
@@ -127,7 +128,7 @@ export default function Terms() {
           liabilities are hereby irrevocably disclaimed, waived, and eliminated.
           You further agree that the only duties and obligations that we owe you
           are those set out expressly in this Agreement.
-          <h2>8. Compliance Obligations</h2>
+          <BoldL>8. Compliance Obligations</BoldL>
           The Interface is operated from facilities within the United States.
           The Interface may not be available or appropriate for use in other
           jurisdictions. By accessing or using the Interface, you agree that you
@@ -139,7 +140,7 @@ export default function Terms() {
           applicable law. The Interface and all of its contents are solely
           directed to individuals, companies, and other entities located within
           the United States.
-          <h2>9. Assumption of Risk</h2>
+          <BoldL>9. Assumption of Risk</BoldL>
           By accessing and using the Interface, you represent that you
           understand the inherent risks associated with using cryptographic and
           blockchain-based systems, and that you have a working knowledge of the
@@ -153,7 +154,7 @@ export default function Terms() {
           Polygon are variable and may increase dramatically at any time. You
           further acknowledge the risk that your digital assets may lose some or
           all of their value while they are supplied to the Protocol.
-          <h2>10. Third-Party Resources and Promotions</h2>
+          <BoldL>10. Third-Party Resources and Promotions</BoldL>
           The Interface may contain references or links to third-party
           resources, including (but not limited to) information, materials,
           products, or services, that we do not own or control. In addition,
@@ -165,14 +166,14 @@ export default function Terms() {
           relationships with any third parties. You expressly relieve us of any
           and all liability arising from your use of any such resources or
           participation in any such promotions.
-          <h2>11. Release of Claims</h2>
+          <BoldL>11. Release of Claims</BoldL>
           You expressly agree that you assume all risks in connection with your
           access and use of the Interface and your interaction with the
           Protocol. You further expressly waive and release us from any and all
           liability, claims, causes of action, or damages arising from or in any
           way relating to your use of the Interface and your interaction with
           the Protocol.
-          <h2>12. Indemnity</h2>
+          <BoldL>12. Indemnity</BoldL>
           You agree to hold harmless, release, defend, and indemnify us and our
           officers, directors, employees, contractors, agents, affiliates, and
           subsidiaries from and against all claims, damages, obligations,
@@ -182,7 +183,7 @@ export default function Terms() {
           applicable law, rule, or regulation; and (c) any other party’s access
           and use of the Interface with your assistance or using any device or
           account that you own or control.
-          <h2>13. Limitation of Liability</h2>
+          <BoldL>13. Limitation of Liability</BoldL>
           Under no circumstances shall we or any of our officers, directors,
           employees, contractors, agents, affiliates, or subsidiaries be liable
           to you for any indirect, punitive, incidental, special, consequential,
@@ -208,13 +209,13 @@ export default function Terms() {
           liabilities, obligations, damages, losses, or costs in an amount
           exceeding the amount you paid to us in exchange for access to and use
           of the Interface, or $100.00, whichever is greater.
-          <h2>14. Contacting Us</h2>
+          <BoldL>14. Contacting Us</BoldL>
           Should you have any question about these Terms, or wish to contact us
           for any reason whatsoever, please do so by sending us an email
           at mimicfi@protonmail.com
-        </div>
-      </Box>
-    </>
+        </BodyL>
+      </TContainer>
+    </div>
   )
 }
 
@@ -222,27 +223,11 @@ const Line = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  h2 {
+  BoldL {
     padding-left: 15px;
   }
 `
 
-const Box = styled.div`
-  margin: 40px 20px;
-  color: white;
-  text-align: left;
-  h1 {
-    font-family: "Poppins-Bold";
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: 1px;
-    color: #fcfcfc;
-    @media only screen and (max-width: 700px) {
-      font-size: 28px;
-      line-height: 44px;
-      white-space: break-spaces;
-      padding: 0 15px;
-    }
-  }
+const TContainer = styled(Container)`
+  padding-top: 150px;
 `

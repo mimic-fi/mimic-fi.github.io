@@ -1,20 +1,22 @@
+import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
-import Steps from './sections/Steps'
-import Description from './sections/Description'
-import Features from './sections/Features'
-import Showcase from './sections/Showcase'
+import Security from './sections/Security'
+import TrackActivity from './sections/TrackActivity'
 import Footer from './sections/Footer'
-import { Subscribe } from './sections/Subscribe'
+import LearnMore from './sections/LearnMore'
+import SmartVaults from './sections/SmartVaults'
+import WorkSmarter from './sections/WorkSmarter'
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Hero />
-      <Steps />
-      <Description />
-      <Features />
-      <Showcase />
-      <Subscribe />
+      <SmartVaults />
+      <Security />
+      <WorkSmarter />
+      <TrackActivity />
+      <LearnMore />
       <Footer />
     </div>
   )

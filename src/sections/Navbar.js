@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import logo from '../assets/navbar-logo-l.svg'
-import MenuOptions from './MenuOptions'
+import logo from '../assets/logo-navbar.svg'
 import Menu from '../components/Menu'
+import Tabs from '../components/Tabs'
 import Hamburger from 'hamburger-react'
+import { Container } from '../styles/texts'
 
 const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -12,57 +13,66 @@ const Navbar = () => {
   }, [])
   const [isOpen, setOpen] = useState(false)
   const medium = 700
+
   return (
     <NavbarSection>
-      <Container>
-        <img src={logo} alt="logo" />
+      <NavbarContainer className={!isOpen && 'isClosed'}>
+        <Logo src={logo} />
         {width >= medium ? (
-          <MenuOptions />
+          <Tabs mode={'large'} />
         ) : (
           <>
             <Hamburger toggled={isOpen} toggle={setOpen} direction="right" />
-            {isOpen && <Menu open={isOpen} />}
+            <Menu open={isOpen} />
           </>
         )}
-      </Container>
+      </NavbarContainer>
     </NavbarSection>
   )
 }
 
-const NavbarSection = styled.section`
-  z-index: 3;
-  position: relative;
-  background: transparent;
-  margin: auto;
-  .hamburger-react {
-    position: relative;
-    right: 0;
-    z-index: 3;
+const Logo = styled.img`
+  @media only screen and (max-width: 700px) {
+    height: 37px;
   }
 `
 
-const Container = styled.div`
-  padding: 0 40px 0 10px;
+const NavbarSection = styled.section`
+  z-index: 100;
+  background: transparent;
+  background: #121418;
+  @media only screen and (max-width: 700px) {
+    background: #1b1f24;
+  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  .hamburger-react {
+    position: relative;
+    z-index: 3;
+    color: white;
+  }
+
+  .hamburger-react :nth-child(2) {
+    background: #1b1f24 !important;
+  }
+  .isClosed .hamburger-react :nth-child(3) {
+    left: 22px !important;
+    width: 18px !important;
+  }
+`
+
+const NavbarContainer = styled(Container)`
+  padding: 24px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media only screen and (max-width: 700px) {
+    padding: 10px 0;
+    align-items: center;
+  }
   display: flex;
-  max-width: 94%;
   justify-content: space-between;
-  flex-wrap: wrap;
-  @media only screen and (max-width: 370px) {
-    padding: 0 20px 0 10px;
-  }
-  @media only screen and (min-width: 700px) {
-    width: 100%;
-  }
-  @media only screen and (min-width: 2000px) {
-    /* max-width: 1100px;
-    margin: auto; */
-  }
-  img {
-    max-height: 100px;
-    @media only screen and (max-width: 1000px) {
-      width: 50%;
-    }
-  }
 `
 
 export default Navbar

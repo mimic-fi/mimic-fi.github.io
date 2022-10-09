@@ -1,19 +1,14 @@
 
-html, body {
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'GTWalsheimPro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #191930;
+  background: #121418;
   overflow-x: hidden;
-  max-width: 100%;
-}
-
-#id {
-  overflow-x: hidden;
-  max-width: 100%;
+  width: 100vw;
 }
 
 code {
@@ -29,21 +24,11 @@ a, a span, button {
 }
 
 @font-face {
- font-family: 'Poppins';
- src: url('./fonts/Poppins-Regular.ttf') format('opentype');
+ font-family: 'GTWalsheimPro';
+ src: url('./fonts/GTWalsheimPro-Regular.ttf') format('opentype');
 }
 
 @font-face {
- font-family: 'Poppins-Bold';
- src: url('./fonts/Poppins-Bold.ttf') format('opentype');
-}
-
-@font-face {
- font-family: 'Poppins-SemiBold';
- src: url('./fonts/Poppins-SemiBold.ttf') format('opentype');
-}
-
-@font-face {
- font-family: 'Poppins-Medium';
- src: url('./fonts/Poppins-Medium.ttf') format('opentype');
+ font-family: 'GTWalsheimProBold';
+ src: url('./fonts/GTWalsheimPro-Bold.ttf') format('opentype');
 }

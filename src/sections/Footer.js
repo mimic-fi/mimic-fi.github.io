@@ -1,158 +1,117 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/contact-logo.svg'
-import onethereum from '../assets/onethereum.png'
-import { Link } from 'react-router-dom'
+import logo from '../assets/footer-logo.svg'
+import whitepaper from '../assets/whitepaper.svg'
+import github from '../assets/github.svg'
+import { H3, H5, H6, LinkS, BoldL, Container } from '../styles/texts'
 
-const Footer = () => {
-  return (
-    <FooterSection>
-      <Container>
-        <Mimic>
-          <Logo src={logo} />
-          <h1>mimic.fi</h1>
-          <h2>DeFi automation platform</h2>
-          <p>2022 MIMIC. ALL RIGHTS RESERVED.</p>
-          <Built src={onethereum} />
-        </Mimic>
-        <Links>
-          <LinkSection title="Devs">
-            <Link to="/whitepaper" target="_blank">Whitepaper</Link>
-            <Link to="//docs.mimic.fi">Documentation</Link>
-            <Link to="//github.com/mimic-fi">Github</Link>
-          </LinkSection>
-
-          <LinkSection title="Mimic">
-            <Link to="//medium.com/mimicfi">Blog</Link>
-            <Link to="//mimic.fi/terms">Terms</Link>
-          </LinkSection>
-
-          <LinkSection title="Contact">
-            <Link to="//twitter.com/mimicfi">Twitter</Link>
-            <Link to="//discord.mimic.fi/ ">Discord</Link>
-          </LinkSection>
-        </Links>
-      </Container>
-    </FooterSection>
-  )
-}
-
-const LinkSection = ({ children, title }) => {
-  return (
-    <LinkColumn>
-      <div className="title">{title}</div>
-      {children}
-    </LinkColumn>
-  )
-}
+const Footer = () => (
+  <FooterSection>
+    <FContainer>
+      <img src={logo} />
+      <FooterContainer>
+        <div>
+          <H3>Mimic.fi</H3>
+          <H6>DeFi automation platform</H6>
+        </div>
+        <Box>
+          <div>
+            <BoldL>Developers</BoldL>
+            <LinkS href="https://www.mimic.fi/whitepaper.pdf" target="_blank">
+              <img src={whitepaper} />
+              Whitepaper
+            </LinkS>
+            <LinkS
+              href="https://docs.mimic.fi/general/whats-mimic"
+              target="_blank"
+            >
+              <img src={whitepaper} />
+              Documentation
+            </LinkS>
+            <LinkS href="https://github.com/mimic-fi" target="_blank">
+              <img src={github} />
+              Github
+            </LinkS>
+          </div>
+          <div>
+            <BoldL>About us</BoldL>
+            <LinkS href="https://medium.com/mimicfi" target="_blank">
+              Blog
+            </LinkS>
+            <LinkS href="https://www.mimic.fi/terms" target="_blank">
+              Terms of use
+            </LinkS>
+          </div>
+          <div>
+            <BoldL>Connect</BoldL>
+            <LinkS href="https://twitter.com/mimicfi" target="_blank">
+              Twitter
+            </LinkS>
+            <LinkS href="https://discord.com/invite/pZsRmtTgNa" target="_blank">
+              Discord
+            </LinkS>
+          </div>
+        </Box>
+      </FooterContainer>
+    </FContainer>
+  </FooterSection>
+)
 
 const FooterSection = styled.section`
-  background: #0e0b1e;
-  color: white;
-  padding: 100px 0 30px 0;
-  display: flex;
-  width: 100%;
+  background: #1b1f24;
+  height: auto;
+  padding-bottom: 150px;
   @media only screen and (max-width: 700px) {
-    padding: 60px 0 30px 0;
+    height: 1000px;
   }
 `
 
-const Container = styled.div`
-  margin-bottom: 100px;
-  text-align: right;
+const FContainer = styled(Container)`
+  border-top: solid 1px #c7c7c7;
+  padding-top: 100px;
+  height: auto;
+`
+const Box = styled.div`
   display: flex;
-  width: 100%;
-  padding: 0px 100px;
-
+  align-items: flex-start;
   justify-content: space-between;
+
   @media only screen and (max-width: 700px) {
     flex-direction: column;
-    justify-content: center;
-    padding: 0px 25px;
-  margin-bottom: 40px;
-
-  }
-
-  h1 {
-    font-family: "Poppins-Bold";
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 1px;
-    color: #fcfcfc;
-    @media only screen and (max-width: 700px) {
-      font-size: 28px;
-      line-height: 44px;
-      white-space: break-spaces;
-      padding: 0 15px;
+    text-align: left;
+    gap: 0;
+    div {
+      text-align: left;
     }
   }
-  p {
-    font-family: "Poppins";
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0.75px;
-    color: #fcfcfc;
-    @media only screen and (max-width: 700px) {
-      font-size: 17px;
-      line-height: 28px;
-      margin-bottom: 0;
-    }
-  }
-`
-
-const Mimic = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @media only screen and (max-width: 997px) {
-    align-items: center;
-  }
-`
-
-const Links = styled.div`
-  margin-top: 150px;
-  display: flex;
-  align-items: flex-start;
-  @media only screen and (max-width: 997px) {
-    justify-content: center;
-  }
-  &.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-`
-
-const LinkColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 100px;
-  @media only screen and (max-width: 997px) {
-    margin-right: 20px;
-  }
-  .title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    padding-bottom: 20px;
-  }
+  gap: 68px;
   a {
-    padding-bottom: 20px;
-    &:hover {
-      text-decoration: underline;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    cursor: pointer;
+    img {
+      padding-right: 7px;
     }
   }
 `
 
-const Logo = styled.img`
-  max-width: 150px;
-`
-
-const Built = styled.img`
-  padding-top: 20px;
-  max-width: 200px;
+const FooterContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  h3,
+  h5,
+  h6 {
+    margin: 12px 0;
+  }
+  h3 {
+    margin-top: 24px;
+  }
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+  }
 `
 
 export default Footer
