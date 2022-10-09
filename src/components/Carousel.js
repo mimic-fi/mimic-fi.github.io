@@ -5,7 +5,7 @@ import Card from './Card'
 import { H5, BodyM } from '../styles/texts'
 import treasury from '../assets/treasury.svg'
 import fee from '../assets/fee.svg'
-import plus from '../assets/fee.svg'
+import plus from '../assets/useCases.svg'
 import strategies from '../assets/strategies.svg'
 import indexes from '../assets/indexes.svg'
 import liquidity from '../assets/liquidity.svg'
@@ -106,7 +106,7 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card>
-          <Icon src={liquidity} />
+          <Icon src={plus} />
           <BodyM>up to 5 actions</BodyM>
           <H5>Liquidity provision</H5>
           <BodyM>
@@ -129,11 +129,11 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card custom={true} mode="black">
-          <Icon src={plus} />
+          <Icon src={liquidity} />
           <div>
             <H5>And more use cases!</H5>
             <BodyM>
-              Use Mimic to suit your  operational need
+              Use Mimic to suit your operational need
             </BodyM>
           </div>
         </Card>
