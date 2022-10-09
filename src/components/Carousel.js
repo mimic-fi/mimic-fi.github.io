@@ -129,8 +129,9 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card custom={true} mode="black">
-          <Icon src={liquidity} />
+          <p></p>
           <div>
+            <img src={liquidity} />
             <H5>And more use cases!</H5>
             <BodyM>
               Use Mimic to suit your operational need

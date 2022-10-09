@@ -23,7 +23,7 @@ const CardContainer = styled.div`
 
   ${props =>
     props.custom == true &&
-    'display: flex; align-items: flex-start; flex-direction: column; justify-content: space-between; p { margin-bottom: 70px; text-align: center;} h5 {text-align: center}'} @media only screen and (max-width: 700px) {
+    'div {text-align: center;}; display: flex; align-items: flex-start; flex-direction: column; justify-content: space-between; img {text-align: center; margin: auto; margin-bottom: 40px;}; p { margin-bottom: 70px; text-align: center;} h5 {text-align: center}'} @media only screen and (max-width: 700px) {
     margin: 0;
     padding: 15px;
     height: auto;
