@@ -1,8 +1,8 @@
 {
   "name": "mimic-website",
-  "homepage": "https://mimic-fi.github.io/webiste",
+  "homepage": "https://mimic-fi.github.io/website/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "lint": "eslint .",
     "start": "react-scripts start",
