@@ -8,7 +8,7 @@ const Hero = () => (
     <Container>
       <Box>
         <H1>
-          Interact with DeFi  in a simpler, safer way through Smart Vaults
+          Interact with DeFi in a simpler, safer way through Smart Vaults
         </H1>
         <BodyL>
           Our platform helps you grow your business by transforming manual work
