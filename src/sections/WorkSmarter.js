@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Parallax } from 'react-scroll-parallax'
 import styled from 'styled-components'
 import laptop from '../assets/laptop.svg'
 import arrow from '../assets/arrow-rounded.svg'
@@ -17,10 +18,12 @@ const WorkSmarter = () => {
     <WorkSmarterSection>
       <WorkSmarterContainer>
         <div>
-          <BodyL>You know the saying..</BodyL>
-          <H1>Work smarter, not harder</H1>
-          <BodyL>These are some Smart Vault use cases</BodyL>
-          {width >= large && <Arrow src={arrow} />}
+          <Parallax speed={10}>
+            <BodyL>You know the saying..</BodyL>
+            <H1>Work smarter, not harder</H1>
+            <BodyL>These are some Smart Vault use cases</BodyL>
+            {width >= large && <Arrow src={arrow} />}
+          </Parallax>
         </div>
         <CarouselBox>
           <CarouselSection />

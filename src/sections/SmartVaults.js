@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import { Parallax } from 'react-scroll-parallax'
 import smartVaults from '../assets/smartvaults.svg'
 import smartVaultsMobile from '../assets/smartVaultsMobile.svg'
 import arrow from '../assets/arrow-rounded.svg'
@@ -16,16 +17,24 @@ const SmartVaults = () => {
   return (
     <SmartVaultsSection>
       <SmartVaultsContainer>
-        {width >= medium && <img src={smartVaults} />}
+        {width >= medium && (
+          <Parallax speed={-13}>
+            <img src={smartVaults} />
+          </Parallax>
+        )}
         <Box>
-          <H2>
-            Smart Vaults allow you to automate <br /> everything you need
-            through customizable actions
-          </H2>
-          <BodyL>
-            Each action is composed of predefined primitives that cover all DeFi
-            operations.
-          </BodyL>
+          <Parallax speed={10}>
+            <H2>
+              Smart Vaults allow you to automate <br /> everything you need
+              through customizable actions
+            </H2>
+          </Parallax>
+          <Parallax speed={width >= medium ? 5 : 10}>
+            <BodyL>
+              Each action is composed of predefined primitives that cover all
+              DeFi operations.
+            </BodyL>
+          </Parallax>
         </Box>
         {width < medium && <img src={smartVaultsMobile} />}
       </SmartVaultsContainer>
