@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const Card = ({ mode, custom, children, ...rest }) => {
@@ -13,8 +13,8 @@ const Card = ({ mode, custom, children, ...rest }) => {
 
 const CardContainer = styled.div`
   border: ${props =>
-    props.mode == 'black' ? 'solid 1px #151515' : 'solid 1px white'};
-  background: ${props => (props.mode == 'black' ? '#151515' : '#1B1F24')};
+    props.mode === 'black' ? 'solid 1px #151515' : 'solid 1px white'};
+  background: ${props => (props.mode === 'black' ? '#151515' : '#1B1F24')};
   border-radius: 8px;
   height: 630px;
   width: 298px;
@@ -22,7 +22,7 @@ const CardContainer = styled.div`
   padding: 25px;
 
   ${props =>
-    props.custom == true &&
+    props.custom === true &&
     'div {text-align: center;}; display: flex; align-items: flex-start; flex-direction: column; justify-content: space-between; img {text-align: center; margin: auto; margin-bottom: 40px;}; p { margin-bottom: 70px; text-align: center;} h5 {text-align: center}'} @media only screen and (max-width: 700px) {
     margin: 0;
     padding: 15px;
