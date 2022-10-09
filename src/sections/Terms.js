@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Navbar from './Navbar'
-import { BoldL, BodyL, Button, Container } from '../styles/texts'
+import { BoldL, BodyL, Container } from '../styles/texts'
 
 export default function Terms() {
   return (
