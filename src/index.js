@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Terms from './sections/Terms'
 import Whitepaper from './sections/Whitepaper'
 import { ParallaxProvider } from 'react-scroll-parallax'
@@ -11,7 +11,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 ReactDOM.render(
   <React.StrictMode>
     <ParallaxProvider>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" >
           <Route index element={<App />} />
@@ -19,7 +19,7 @@ ReactDOM.render(
           <Route path="whitepaper" element={<Whitepaper />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </ParallaxProvider>
   </React.StrictMode>,
   document.getElementById('root')
