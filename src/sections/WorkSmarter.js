@@ -21,7 +21,7 @@ const WorkSmarter = () => {
           <Parallax speed={10}>
             <BodyL>You know the saying..</BodyL>
             <H1>Work smarter, not harder</H1>
-            <BodyL>These are some Smart Vault use cases</BodyL>
+            <Body>These are some Smart Vault use cases</Body>
             {width >= large && <Arrow src={arrow} />}
           </Parallax>
         </div>
@@ -32,6 +32,11 @@ const WorkSmarter = () => {
     </WorkSmarterSection>
   )
 }
+const Body = styled(BodyL)`
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 50px;
+  }
+`
 
 const WorkSmarterSection = styled.section`
   background: #1b1f24;
