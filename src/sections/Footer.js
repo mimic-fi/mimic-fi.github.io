@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import logo from '../assets/footer-logo.svg'
 import whitepaper from '../assets/whitepaper.svg'
 import github from '../assets/github.svg'
-import { H3, H5, H6, LinkS, BoldL, Container } from '../styles/texts'
+import { H3, H6, LinkS, BoldL, Container } from '../styles/texts'
 
 const Footer = () => (
   <FooterSection>
