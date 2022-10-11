@@ -17,7 +17,7 @@ const Footer = () => (
         <Box>
           <div>
             <BoldL>Developers</BoldL>
-            <LinkS href="https://www.mimic.fi/whitepaper.pdf" target="_blank">
+            <LinkS href="https://mimic.fi/whitepaper.pdf" target="_blank">
               <img src={whitepaper} />
               Whitepaper
             </LinkS>

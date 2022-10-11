@@ -8,7 +8,7 @@ import discord from '../assets/discord.svg'
 const Tabs = ({ mode }) => {
   return (
     <TabsBox mode={mode}>
-      <LinkL href="https://www.mimic.fi/whitepaper.pdf" target="_blank">
+      <LinkL href="https://mimic.fi/whitepaper.pdf" target="_blank">
         Whitepaper
       </LinkL>
       <LinkL href="https://docs.mimic.fi/general/whats-mimic" target="_blank">
