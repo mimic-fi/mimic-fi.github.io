@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://discord.mimic.fi">
-    <img src="https://img.shields.io/discourse/status?server=https%3A%2F%2Fmeta.discourse.org" alt="Discord">
+    <img alt="Discord" src="https://img.shields.io/discord/989984112397922325">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/license-GLP_3.0-green">
