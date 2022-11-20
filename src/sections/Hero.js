@@ -15,7 +15,7 @@ const Hero = () => (
           into automated actions.
         </BodyL>
         <Button
-          href="https://calendly.com/mimicfi/30min?month=2022-10"
+          href="https://airtable.com/shrSvH8fTJcbHq0xl"
           target="_blank"
         >
           Request a demo
