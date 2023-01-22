@@ -212,7 +212,7 @@ export default function Terms() {
           <BoldL>14. Contacting Us</BoldL>
           Should you have any question about these Terms, or wish to contact us
           for any reason whatsoever, please do so by sending us an email
-          at mimicfi@protonmail.com
+          at hello@mimic.fi
         </BodyL>
       </TContainer>
     </div>
