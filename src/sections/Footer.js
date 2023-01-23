@@ -38,7 +38,7 @@ const Footer = () => (
             <LinkS href="https://medium.com/mimicfi" target="_blank">
               Blog
             </LinkS>
-            <LinkS href="https://www.mimic.fi/terms" target="_blank">
+            <LinkS href="https://www.mimic.fi/#/terms" target="_blank">
               Terms of use
             </LinkS>
           </div>

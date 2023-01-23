@@ -26,7 +26,7 @@ export default function Terms() {
           We reserve the right, in our sole discretion, to modify this Agreement
           from time to time. If we make any modifications, we will notify you by
           updating the date at the top of the Agreement and by maintaining a
-          current version of the Agreement at https://mimic.fi/terms. All
+          current version of the Agreement at https://mimic.fi/#/terms. All
           modifications will be effective when they are posted, and your
           continued use of the Interface will serve as confirmation of your
           acceptance of those modifications. If you do not agree with any
