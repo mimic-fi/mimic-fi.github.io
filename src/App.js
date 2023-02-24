@@ -1,5 +1,6 @@
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
+import TrustedBy from './sections/TrustedBy'
 import Security from './sections/Security'
 import TrackActivity from './sections/TrackActivity'
 import Footer from './sections/Footer'
@@ -12,6 +13,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <TrustedBy />
       <SmartVaults />
       <Security />
       <WorkSmarter />
