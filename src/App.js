@@ -7,6 +7,7 @@ import Footer from './sections/Footer'
 import LearnMore from './sections/LearnMore'
 import SmartVaults from './sections/SmartVaults'
 import WorkSmarter from './sections/WorkSmarter'
+import PageNotFound from './sections/PageNotFound'
 
 function App() {
   return (
@@ -23,5 +24,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App
