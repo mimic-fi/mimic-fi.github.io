@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.07faa488.css",
-    "main.js": "/static/js/main.a5141d30.js",
+    "main.js": "/static/js/main.5926625d.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/laptop.svg": "/static/media/laptop.6e43a6aa847c0a829af4b81df9e4d455.svg",
     "static/media/GTWalsheimPro-Bold.ttf": "/static/media/GTWalsheimPro-Bold.2dbf49e9fcb548837711.ttf",
@@ -11,6 +11,7 @@
     "static/media/Paraswap.svg": "/static/media/Paraswap.9ddf81244bf71055622d8910aec3020b.svg",
     "static/media/Balancer.svg": "/static/media/Balancer.6bee226f9735d5e81e4ca4c9fe80330c.svg",
     "static/media/logo-navbar.svg": "/static/media/logo-navbar.9cdb551562c4ae7c88211aeed627ea0b.svg",
+    "static/media/Trustwallet.svg": "/static/media/Trustwallet.e89b96f2c8926c4f0bd4ef66d21d38a7.svg",
     "static/media/Descentraland.svg": "/static/media/Descentraland.719c450ec6a8fec08d05529f894eca79.svg",
     "static/media/smartvaults.svg": "/static/media/smartvaults.2c1b076c403b8faa98f264151fe04da4.svg",
     "static/media/footer-logo.svg": "/static/media/footer-logo.31467f800423efcbe5b28d719e993c24.svg",
@@ -32,11 +33,11 @@
     "static/media/useCases.svg": "/static/media/useCases.ea069a3c96fde534935289197d4ab22a.svg",
     "static/media/arrow-rounded.svg": "/static/media/arrow-rounded.560b368aa8407679258188dc9f797b9d.svg",
     "main.07faa488.css.map": "/static/css/main.07faa488.css.map",
-    "main.a5141d30.js.map": "/static/js/main.a5141d30.js.map",
+    "main.5926625d.js.map": "/static/js/main.5926625d.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07faa488.css",
-    "static/js/main.a5141d30.js"
+    "static/js/main.5926625d.js"
   ]
 }
