@@ -13,7 +13,7 @@ import liquidity from '../assets/liquidity.svg'
 const CarouselSection = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    window.addEventListener('resize', () => setWidth(window.innerWidth), {passive: true})
   }, [])
   const medium = 850
 
@@ -22,10 +22,10 @@ const CarouselSection = () => {
       <Carousel
         itemsToShow={width >= medium ? 2 : 1}
         itemsToScroll={width >= medium ? 2 : 1}
-        pagination={width >= medium ? false : true}
+        pagination={false}
       >
         <Card>
-          <Icon src={treasury} />
+          <Icon src={treasury} alt="treasury management"/>
           <BodyM>up to 5 actions</BodyM>
           <H5>Manage your treasury</H5>
           <BodyM>
@@ -48,7 +48,7 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card mode="black">
-          <Icon src={fee} />
+          <Icon src={fee} alt="Fee distribution" />
           <BodyM>up to 8 actions</BodyM>
           <H5>Fee distribution</H5>
           <BodyM>
@@ -69,7 +69,7 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card>
-          <Icon src={strategies} />
+          <Icon src={strategies} alt="Composed strategies"/>
           <BodyM>up to 5 actions</BodyM>
           <H5>Composed strategies</H5>
           <BodyM>
@@ -89,7 +89,7 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card mode="black">
-          <Icon src={indexes} />
+          <Icon src={indexes} alt="Auto-rebalancing indexes"/>
           <BodyM>up to 5 actions</BodyM>
           <H5>Auto-rebalancing indexes</H5>
           <BodyM>
@@ -106,7 +106,7 @@ const CarouselSection = () => {
           </Tags>
         </Card>
         <Card>
-          <Icon src={plus} />
+          <Icon src={plus} alt="Liquidity provision"/>
           <BodyM>up to 5 actions</BodyM>
           <H5>Liquidity provision</H5>
           <BodyM>
@@ -131,7 +131,7 @@ const CarouselSection = () => {
         <Card custom={true} mode="black">
           <p></p>
           <div>
-            <img src={liquidity} />
+            <img src={liquidity}  alt="liquidity"/>
             <H5>And more use cases!</H5>
             <BodyM>
               Use Mimic to suit your operational need

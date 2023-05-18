@@ -8,7 +8,7 @@ import { H3, H6, LinkS, BoldL, Container } from '../styles/texts'
 const Footer = () => (
   <FooterSection>
     <FContainer>
-      <img src={logo} />
+      <img src={logo} alt="mimic finance" />
       <FooterContainer>
         <div>
           <H3>Mimic.fi</H3>
@@ -17,37 +17,62 @@ const Footer = () => (
         <Box>
           <div>
             <BoldL>Developers</BoldL>
-            <LinkS href="https://mimic.fi/whitepaper.pdf" target="_blank">
-              <img src={whitepaper} />
+            <LinkS
+              href="https://mimic.fi/whitepaper.pdf"
+              target="_blank"
+              aria-label="mimic whitepaper"
+            >
+              <img src={whitepaper} alt="whitepaper" />
               Whitepaper
             </LinkS>
             <LinkS
               href="https://docs.mimic.fi/general/whats-mimic"
               target="_blank"
+              aria-label="mimic docs"
             >
-              <img src={whitepaper} />
+              <img src={whitepaper} alt="documentations" />
               Documentation
             </LinkS>
-            <LinkS href="https://github.com/mimic-fi" target="_blank">
-              <img src={github} />
+            <LinkS
+              href="https://github.com/mimic-fi"
+              target="_blank"
+              aria-label="mimic github"
+            >
+              <img src={github} alt="github" />
               Github
             </LinkS>
           </div>
           <div>
             <BoldL>About us</BoldL>
-            <LinkS href="https://medium.com/mimicfi" target="_blank">
+            <LinkS
+              href="https://medium.com/mimicfi"
+              target="_blank"
+              aria-label="mimic medium"
+            >
               Blog
             </LinkS>
-            <LinkS href="https://www.mimic.fi/#/terms" target="_blank">
+            <LinkS
+              href="https://www.mimic.fi/#/terms"
+              target="_blank"
+              aria-label="terms of use"
+            >
               Terms of use
             </LinkS>
           </div>
           <div>
             <BoldL>Connect</BoldL>
-            <LinkS href="https://twitter.com/mimicfi" target="_blank">
+            <LinkS
+              href="https://twitter.com/mimicfi"
+              target="_blank"
+              aria-label="mimic twitter"
+            >
               Twitter
             </LinkS>
-            <LinkS href="https://discord.com/invite/pZsRmtTgNa" target="_blank">
+            <LinkS
+              href="https://discord.com/invite/pZsRmtTgNa"
+              target="_blank"
+              aria-label="mimic discord"
+            >
               Discord
             </LinkS>
           </div>

@@ -9,7 +9,7 @@ import { Container } from '../styles/texts'
 const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    window.addEventListener('resize', () => setWidth(window.innerWidth), {passive: true})
   }, [])
   const [isOpen, setOpen] = useState(false)
   const medium = 700
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <NavbarSection>
       <NavbarContainer className={!isOpen && 'isClosed'}>
-        <Logo src={logo} />
+        <Logo src={logo} alt="mimic finance"/>
         {width >= medium ? (
           <Tabs mode={'large'} />
         ) : (

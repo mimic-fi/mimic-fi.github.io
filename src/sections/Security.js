@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Hxl, H6, BodyL, Container } from '../styles/texts'
 import Trail from '../components/Trail'
@@ -22,7 +22,7 @@ const Securyty = () => {
         </Box>
         <Items>
           <div>
-            <img src={allowlisted} />
+            <img src={allowlisted} alt="allowlisted actions"/>
             <H6>Allowlisted actions</H6>
             <BodyL>
               Give or revoke permissions to execute actions restricting how to
@@ -30,7 +30,7 @@ const Securyty = () => {
             </BodyL>
           </div>
           <div>
-            <img src={noncustodial} />
+            <img src={noncustodial} alt="non custodial"/>
             <H6>100% non custodial</H6>
             <BodyL>
               Designated action executors never have ownership of the assets in
@@ -38,7 +38,7 @@ const Securyty = () => {
             </BodyL>
           </div>
           <div>
-            <img src={transparency} />
+            <img src={transparency} alt="transparency"/>
             <H6>Extra-clear transparency</H6>
             <BodyL>
               All Smart Vault’s activity is on-chain becoming auditable and
