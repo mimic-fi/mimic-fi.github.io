@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import styled from 'styled-components'
-import laptop from '../assets/laptop.svg'
 import arrow from '../assets/arrow-rounded.svg'
 import CarouselSection from '../components/Carousel'
 import { H1, BodyL, Container } from '../styles/texts'
@@ -9,9 +8,8 @@ import { H1, BodyL, Container } from '../styles/texts'
 const WorkSmarter = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    window.addEventListener('resize', () => setWidth(window.innerWidth), {passive: true})
   }, [])
-  const medium = 700
   const large = 1163
 
   return (
@@ -22,7 +20,7 @@ const WorkSmarter = () => {
             <BodyL>You know the saying..</BodyL>
             <H1>Work smarter, not harder</H1>
             <Body>These are some Smart Vault use cases</Body>
-            {width >= large && <Arrow src={arrow} />}
+            {width >= large && <Arrow src={arrow} alt="arrow"/>}
           </Parallax>
         </div>
         <CarouselBox>

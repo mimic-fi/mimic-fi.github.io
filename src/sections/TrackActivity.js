@@ -10,10 +10,10 @@ const TrackActivity = () => (
     <TrackActivityContainer>
       <div>
         <H1>Track all activity on chain</H1>
-        <Body>With notifications on <img src={telegram} /> <img src={discord} /></Body>
+        <Body>With notifications on <img src={telegram} alt="telegram"/> <img src={discord} alt="discord"/></Body>
       </div>
       <div>
-        <img src={laptop} />
+        <img src={laptop} alt="mimic finance"/>
       </div>
     </TrackActivityContainer>
   </TrackActivitySection>

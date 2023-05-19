@@ -3,14 +3,12 @@ import styled from 'styled-components'
 import { Parallax } from 'react-scroll-parallax'
 import smartVaults from '../assets/smartvaults.svg'
 import smartVaultsMobile from '../assets/smartVaultsMobile.svg'
-import arrow from '../assets/arrow-rounded.svg'
-import CarouselSection from '../components/Carousel'
 import { H2, BodyL, Container } from '../styles/texts'
 
 const SmartVaults = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    window.addEventListener('resize', () => setWidth(window.innerWidth), {passive: true})
   }, [])
   const medium = 700
 
@@ -19,7 +17,7 @@ const SmartVaults = () => {
       <SmartVaultsContainer>
         {width >= medium && (
           <Parallax speed={-13}>
-            <img src={smartVaults} />
+            <img src={smartVaults} alt="smart vaults" />
           </Parallax>
         )}
         <Box>
@@ -36,7 +34,7 @@ const SmartVaults = () => {
             </BodyL>
           </Parallax>
         </Box>
-        {width < medium && <img src={smartVaultsMobile} />}
+        {width < medium && <img src={smartVaultsMobile} alt="smart vaults" />}
       </SmartVaultsContainer>
     </SmartVaultsSection>
   )

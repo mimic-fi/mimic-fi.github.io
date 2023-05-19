@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import styled from 'styled-components'
 import { BodyL, Container } from '../styles/texts'
 import balancer from '../assets/trusted/Balancer.svg'
